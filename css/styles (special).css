@@ -491,7 +491,8 @@ input, textarea {
 }
 
 .button--size-xl {
-  padding: 0.55rem 1.5rem 1.5rem 0.55rem;
+  clip-path: var(--ui-notch-path);
+  padding: 0.55rem 0.7rem 0.7rem 0.55rem;
 }
 
 .button--primary {
