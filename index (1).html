@@ -15,66 +15,70 @@
  <title>Possibilités pour Cards CSS en Holographic Effect</title>
 
 <!--=============== FAVICON ===============-->
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-<link rel="shortcut icon" href="img/slides/slide (40).png" type="image/x-icon"/>
+<link rel="shortcut icon" href="img/slides/slide (40).png" alt="img" type="image/x-icon"/>
 
 <!--=============== ICONS & text ===============-->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Heebo:wght@100..900&display=swap"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap"/>
+<!----> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float|font-effect-anaglyph"/>
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap"/>
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap"/> <!-- -->
 
-
+<!-- =============== lightbox CSS  ===============-->
 <!--=============== Css ===============
 <link rel="stylesheet" href="dist/main.css"/>
 
 <link rel="stylesheet" href="css/style (2).css"/>
 <link rel="stylesheet" href="css/ArchitectureStyleNeon.css"/>
 <link rel="stylesheet" href="css/ArchitectureStyleNeon (2).css"/>
-<link rel="stylesheet" href="public/app.css"/><link rel="stylesheet" href="css/styles (special).css"/>
-<link rel="stylesheet" href="normalize.css"/><link rel="stylesheet" href="style (2).css"/>-->
+<link rel="stylesheet" href="public/app.css"/>
+<link rel="stylesheet" href="normalize.css"/><link rel="stylesheet" href="style (2).css"/>
+<link rel="stylesheet" href="css/styles (special).css"/>
+
+<link rel="stylesheet" href="public/input.css"/>
+<link rel="stylesheet" href="public/css/cards.css"/>
+
+
+ -->
+
+<!-- =============== SWIPER Css  ===============-->
+
+
+    <link rel="preload" as="image" href="assets/images/loading.png" alt="img"/>
+    <link rel="preload" as="image" href="assets/images/loading-circle.svg"/>
+ <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+
+<link href="css/lightbox.css" rel="stylesheet"/>
+
 
 
 
 <link rel="stylesheet" href="style.css"/>
 <link rel="stylesheet" href="css/style.css"/>
 
+<link rel="stylesheet" href="css/demo.css"/>
 
 <link rel="stylesheet" href="css/styles.css"/>
 <link rel="stylesheet" href="dist/output.css"/>
 
-<link rel="stylesheet" href="public/input.css"/>
-<link rel="stylesheet" href="public/css/cards.css"/>
-<link rel="stylesheet" href="css/demo.css"/>
 <link rel="stylesheet" href="css/normalize.min.css"/>
 
 <link rel="stylesheet" href="assets/css/ArchitectureStyleNeon.css"/>
 
-<!-- =============== lightbox CSS  ===============-->
 
-<link href="css/lightbox.css" rel="stylesheet"/>
-
-<!-- =============== SWIPER Css  ===============-->
-
-<link rel="stylesheet" href="css/swiper-bundle.min.css"/>
-
-<!--      - preload images    -->
-
-    <link rel="preload" as="image" href="assets/images/loading.png"/>
-    <link rel="preload" as="image" href="assets/images/loading-circle.svg"/>
-<link rel="stylesheet" href="assets/css/fontawesome.css"/>
-<link rel="stylesheet" href="assets/css/font.css"/>
-<link rel="stylesheet" href="css/style.scss">
 </head>
 
 <!--=============== Body ===============-->
 
-<body class="body" translate="no" data-new-gr-c-s-check-loaded="14.1009.0" data-gr-ext-installed="" id="top">
+<body class="body" data-new-gr-c-s-check-loaded="14.1009.0" data-gr-ext-installed="" id="top">
 
 <!--=============== HEADER ===============-->
 
-<header class="app-header" id="header">
+<header class="app-header" id="header" x-content-type-options>
 
 <div class="hero-title" id="hero">
 
@@ -156,31 +160,32 @@ CYBERPUNK
 <div class="ball"></div>
 </label>
 </div>
-
+<li class="nav__item nav__link">
+    <a href="#" class="back-to-top" id="back-to-top">
+      °<i class='bx bxs-up-arrow-alt bx-tada'></i>°
+    </a>
+  </li>
 </header>
 
 <!--=============== Main ===============-->
 
-<main class="landing-page glitch-area">
+<main class="landing-page glitch-area" id="home">
 
-<section class="home__container" id="home">
+<section class="about__container" id="cyberSlider about">
+<iframe class="card about__img intro" type="video/mp4" width="auto" height="300" justify-content="center" border-radius="22px" src="https://www.youtube.com/embed/1DSutjnvTX4" title="Cyberpunk 2077 — Bande-annonce de lancement officielle — V" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
-<iframe class="card about__img intro" style="animation:textWave 6s;" type="video/mp4" width="auto" height="300" justify-content="center" border-radius="22px" src="https://www.youtube.com/embed/1DSutjnvTX4" title="Cyberpunk 2077 — Bande-annonce de lancement officielle — V" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</section>
- <br>
-<section class="about__container" id="about">
+    <div class="col-rt-12" style="color:rgba(48, 129, 5, 0.297);">
 
+      <div class="Scriptcontent" style="color:rgba(4, 125, 95, 0.545); background:rgba(21, 9, 149, 0.204); font-size: 1em;">
 
-  <div class="content" style="color:rgb(11, 248, 205);">
-    <div class="col-rt-12" style="color:rgb(94, 248, 11);">
-      <div class="Scriptcontent" style="color:rgb(248, 208, 11); background:rgba(21, 9, 149, 0.204); font-size: 1em;">
+<div class="content" style="color:rgba(21, 65, 57, 0.525);">
 
   <div id="cyberSlider" class="cyber-slider">
     <ul class="cyber-slider__wrapper">
 
     <li data-slideid="1" class="cyber-slider__slide active" id="1">
     <span class="cyber-slider__imgwrap">
-    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" width="483" height="30" src="./img/slides/slide-2.jpg" alt="Slide 1">
+    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" width="483" height="30" src="./img/slides/slide-2.jpg" alt="img" alt="Slide 1">
     <!--  -->
     <span class="glitch-area">
 
@@ -190,27 +195,23 @@ CYBERPUNK
     <div class="cyber-slider__content">
     <!-- class glitching -->
     <div class="cyber-slider__slidetext">
-    <h2>Slide 00</h2>
-    <h2 class="heading-lg">VIVRE DANS LA VILLE, DU FUTUR ???</h2>
+    <h3 class="heading-lg	font-effect-anaglyph">VIVRE DANS LA VILLE, DU FUTUR ???</h3>
     <br>
-
-    <p>Entrez dans le très immersif Open World de Cyberpunk 2077.</p>
-    <br>
-
     <div class="container">
-<section class="intro"><hr></section>
-    <div class="meta">
+<section class="intro">
+    <div class="meta"><p>Entrez dans le très immersif Open World de Cyberpunk 2077.
+  <br>Un lieu qui établit de nouvelles normes en termes de visuels,
+    de complexité et de profondeur narrative.</p>
 
-    <div class="meta__inner">
-    <h2>Slide 01</h2>
-    <br><p>
-    <br>Un lieu qui établit de nouvelles normes en termes de visuels,
-    <br>de complexité et de profondeur narrative.<br>
-    <br><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide-1.jpg" alt="Slide 3">
-    </p>
+<div class="meta__inner">
+
+
+
+
     </div>
     <!-- 	 -->
-    </div><hr>
+    </div>
+  </section>
     </div>
     </div>
     </div>
@@ -218,7 +219,7 @@ CYBERPUNK
 
     <li data-slideid="2" class="cyber-slider__slide" id="2">
     <span class="cyber-slider__imgwrap">
-    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (2).png" alt="Slide 2">
+    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (2).png" alt="img" alt="Slide 2">
     <span class="glitch-area">
 
     </span>
@@ -227,24 +228,22 @@ CYBERPUNK
     <div class="cyber-slider__content">
     <!-- class glitching -->
     <div class="cyber-slider__slidetext">
-    <h2>Slide 02</h2>
-    <h3 class="heading-lg">NIGHT CITY VOUS TRANSFORME !</h3>
-    <br>
+        <h3 class="heading-lg">NIGHT CITY VOUS TRANSFORME !</h3>
+
     <p>
     Cyberpunk 2077 est un jeu d’action-aventure en monde ouvert,
-    <br>se déroulant à Night City et surnommé aussi : "La Cité Des Rêves".<br>
-    <br>Une mégalopole obsédée par le pouvoir, la séduction et les modifications corporelles...
-    <hr>
-    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (3).png" alt="Slide 2">
-    <hr>
-    <br></p>
+    se déroulant à Night City et surnommé aussi : "La Cité Des Rêves".    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (3).png" alt="img" alt="Slide 2"><br>
+    Une mégalopole obsédée par le pouvoir, la séduction et les modifications corporelles...
+
+
+</p>
     </div>
     </div>
     </li>
 
-    <li data-slideid="3" class="cyber-slider__slide ">
+    <li data-slideid="3" class="cyber-slider__slide">
     <span class="cyber-slider__imgwrap">
-    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide (114).png" alt="Slide 3">
+    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide (114).png" alt="img" alt="Slide 3">
     <span class="glitch-area">
 
     </span>
@@ -253,46 +252,44 @@ CYBERPUNK
     <div class="cyber-slider__content">
     <!-- class glitching -->
     <div class="cyber-slider__slidetext">
-    <h2> Slide 03</h2><h3 class="heading-lg">Incarnation</h3>
-    <br><p>Dans Night City, vous incarnez & orienté <h2><strong class="neon-img">V</strong></h2>
-    <br><br>
-    Vous débutez votre aventure suite à une proposition
-    pour récupérer du matériel cybernétique. Celui-ci pouvant être la clé pour vous,
-    <br>de gagner en prestige & notoriété voir d'après les rumeurs,
-    <br>d'accéder à une certaine immortalité...<br>
 
-    <br><hr>
-    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide (113).png" alt="Slide 3"><hr>
-    </p>
+    <h3 class="heading-lg">Incarnation</h3>
+    <p>
+      Dans Night City, vous incarnez & orienté
+      <strong class="neon-img">V</strong>
+    Vous débutez votre aventure suite à une proposition
+    pour récupérer du matériel cybernétique.
+    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide (113).png" alt="img" alt="Slide 3">
+    Celui-ci pouvant être la clé pour vous,
+   de gagner en prestige & notoriété voir d'après les rumeurs,
+   d'accéder à une certaine immortalité...
+  </p>
     </div>
     </div>
     </li>
 
     <li data-slideid="4" class="cyber-slider__slide ">
     <span class="cyber-slider__imgwrap">
-    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (31).png" alt="Slide 4">
+    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (31).png" alt="img" alt="Slide 4">
     <span class="glitch-area">
 
-    </span><img class="card__img" src="img/Nouveau dossier/clouds1.png">
+    </span>
     </span>
 
     <div class="cyber-slider__content">
     <!-- class glitching -->
     <div class="cyber-slider__slidetext">
-    <h2>Slide 04</h2>
+
     <h3 class="heading-lg">Personnalisation</h3>
     <p>
-    <br>
+
     Suivant 3 orientations possibles d'introduction au jeu.
-    <br>
+<br>
     (<strong>Corporatiste </strong>, <strong>Gosse des Rues</strong> ou <strong>Badlands</strong>)
     <br>Personnalisez le style de jeu de votre personnage,
-    <br>ses compétences  ou les cyberlogiciels que vous trouverez en chemin. <br><br>
-    <hr>
+    ses compétences  ou les cyberlogiciels que vous trouverez en chemin.<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (4).png" alt="img" alt="Slide 4">
     <br>Explorez cette ville immense où chacun de vos choix
-    <br>aura un impact direct sur l’histoire et le monde qui vous entoure.<br>
-    <br>
-    <hr><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (4).png" alt="Slide 4"><hr>
+    aura un impact direct sur l’histoire et le monde qui vous entoure.
 
 
 
@@ -303,7 +300,7 @@ CYBERPUNK
 
     <li data-slideid="5" class="cyber-slider__slide ">
     <span class="cyber-slider__imgwrap">
-    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide (35).png" alt="Slide 5">
+    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide (35).png" alt="img" alt="Slide 5">
     <span class="glitch-area">
 
     </span>
@@ -312,21 +309,20 @@ CYBERPUNK
     <div class="cyber-slider__content">
     <!-- class glitching -->
     <div class="cyber-slider__slidetext">
-    <h2>Slide 05</h2><h3 class="heading-lg">EXPLOREZ LA VILLE DU FUTUR</h3>
+
+    <h3 class="heading-lg">EXPLOREZ LA VILLE DU FUTUR</h3>
     <p>
-    <br>
+
     Night City regorge de choses à faire, d'endroits à voir et de gens à rencontrer.<br><br>
-    <hr>
-    <br>Et vous êtes libre d'aller où vous voulez, quand vous voulez, <br>comme vous voulez.<br>
-    <br>
-    <hr><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (5).png" alt="Slide 5"><hr>
+Et vous êtes libre d'aller où vous voulez, quand vous voulez, <br>comme vous voulez.<br>
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (5).png" alt="img" alt="Slide 5">
     </p>
     </div>
     </div>
     </li>
     <li data-slideid="6" class="cyber-slider__slide ">
     <span class="cyber-slider__imgwrap">
-    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide (67).png" alt="Slide 6">
+    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide (67).png" alt="img" alt="Slide 6">
     <span class="glitch-area">
     Erreur 404
     </span>
@@ -335,13 +331,11 @@ CYBERPUNK
     <div class="cyber-slider__content">
     <!-- class glitching -->
     <div class="cyber-slider__slidetext">
-    <h2>Slide 06</h2><h3 class="heading-lg">FORGEZ VOTRE LÉGENDE</h3>
+<h3 class="heading-lg">FORGEZ VOTRE LÉGENDE</h3>
 
-    <p></br>Affrontez des grands patrons, des escrocs miteux et tous les individus les plus craints de Night City.<br><br>
+    <p>Affrontez des grands patrons, des escrocs miteux et tous les individus les plus craints de Night City.
 
-    <br>Qui ne reculeront devant rien pour s’emparer de cette puce.<br>
-    <br>
-    <hr><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (6).png" alt="Slide 6"><hr>
+   Qui ne reculeront devant rien pour s’emparer de cette puce.<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (6).png" alt="img" alt="Slide 6">
     </p>
     </div>
     </div>
@@ -349,7 +343,7 @@ CYBERPUNK
 
     <li data-slideid="7" class="cyber-slider__slide ">
     <span class="cyber-slider__imgwrap">
-    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (7).png" alt="Slide 7">
+    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (7).png" alt="img" alt="Slide 7">
     <span class="glitch-area">
 
     </span>
@@ -358,46 +352,41 @@ CYBERPUNK
     <div class="cyber-slider__content">
     <!-- class glitching -->
     <div class="cyber-slider__slidetext">
-    <h2>Slide 7</h2>
+
     <h3 class="heading-lg">Interactions</h3>
-    <p><br>Marchandez avec des fixers malhonnêtes, des stars désespérées et des intelligences artificielles renégates,
-      <br><br><hr>
-      <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (7).png" alt="Slide 7">
-      <hr><br>Qui luttent tous & toutes pour se faire un nom à Night City.<br><br><hr></p>
+    <p>Marchandez avec des fixers malhonnêtes, des stars désespérées et des intelligences artificielles renégates,
+
+      <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (7).png" alt="img" alt="Slide 7">
+      Qui luttent tous & toutes pour se faire un nom à Night City.</p>
     </div>
     </div>
     </li>
 
     <li data-slideid="8" class="cyber-slider__slide ">
     <span class="cyber-slider__imgwrap">
-    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide (118).png" alt="Slide 8">
+    <img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide (118).png" alt="img" alt="Slide 8">
     <span class="glitch-area">
-
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image breath-neon" src="https://www.cyberpunk.net/build/images/edgerunners/phase2/cover-mobile-539a2f80.jpg" id="button" alt="Slide">
     </span>
     </span>
 
     <div class="cyber-slider__content">
     <!-- class glitching -->
     <div class="cyber-slider__slidetext">
-    <h2>Slide 8</h2>
+
     <h3 class="heading-lg">Différents choix</h3>
     <p>
-    <br>Découvrez comment vos choix et vos actions influenceront l’histoire du jeu.
-    </p>
-    <br>
-    <p>
-
-    <br>
-    <span class="glitch-area cybr-btn">
-    <a href="https://youtu.be/-x4s6NIdS_I" title="Cyberpunk 2077 PHANTOM LIBERTY : Bande Annonce 4K">Easter Eggs</a>
-    </span>
-    <br>
-    <img src="./img/slides/slide  (8).png" class="slide-image" data-lightbox="example-set" data-title="Optional caption." id="example-image" alt="Slide 5">
-    <button class="border-neon" id="">
-      <img data-lightbox="example-set" data-title="Optional caption." class="slide-image breath-neon" src="https://www.cyberpunk.net/build/images/edgerunners/phase2/cover-mobile-539a2f80.jpg" id="right-button" alt="Slide 2"><a href="https://www.cyberpunk.net/fr/edgerunners">
+    Découvrez comment vos choix et vos actions influenceront l’histoire du jeu.
+        <img src="./img/slides/slide  (8).png" alt="img" class="slide-image" data-lightbox="example-set" data-title="Optional caption." id="example-image" alt="Slide 5">
+        <button class="border-neon" id="">
+      <a href="https://www.cyberpunk.net/fr/edgerunners" class="border-neon	font-effect-anaglyph">
         Lire
-        Plus ...</a>
-    </button></p>
+
+Plus ...</a></button>
+<span class="glitch-area cybr-btn">
+    <a href="https://youtu.be/-x4s6NIdS_I" title="Cyberpunk 2077 PHANTOM LIBERTY : Bande Annonce 4K">Easter Eggs PHANTOM</a>
+    </span>
+</p>
 
     </div>
     </div>
@@ -433,21 +422,14 @@ CYBERPUNK
     </ul>
   </div>
 
-
-<br>
-
-
   <div class="cards" style="animation: outcome 4s;">
-
 <h1>Animations</h1>
-
-
     <div class="card card__one">
       <div class="card__bg"></div>
 
       <div class="card__text">
         <p class="card__title">Nomad</p>
-      </div><img class="swiper-cards card__img relative preserve-3d group-hover:my-rotate-x-180 w-full h-full duration-1000" src="assets/img/HolloGami (12).png" />
+      </div><img class="swiper-cards card__img relative preserve-3d group-hover:my-rotate-x-180 w-full h-full duration-1000" src="assets/img/HolloGami (12).png" alt="img" />
     </div>
 
     <div class="card card__two">
@@ -455,7 +437,7 @@ CYBERPUNK
 
       <div class="card__text">
         <p class="card__title">Corpo</p>
-      </div><img class="swiper-cards card__img relative preserve-3d group-hover:my-rotate-x-180 w-full h-full duration-1000" src="assets/img/HolloGami (11).png" />
+      </div><img class="swiper-cards card__img relative preserve-3d group-hover:my-rotate-x-180 w-full h-full duration-1000" src="assets/img/HolloGami (11).png" alt="img" />
     </div>
 
     <div class="card card__three">
@@ -463,27 +445,24 @@ CYBERPUNK
 
       <div class="card__text">
         <p class="card__title">Street Kids</p>
-      </div><img class="swiper-cards card__img relative preserve-3d group-hover:my-rotate-x-180 w-full h-full duration-1000" src="assets/img/HolloGami (14).png" />
+      </div><img class="swiper-cards card__img relative preserve-3d group-hover:my-rotate-x-180 w-full h-full duration-1000" src="assets/img/HolloGami (14).png" alt="img" />
     </div>
 
-
-
-<br>
 <h2>Populaire</h2>
-<br>
+
     <div class="card card__five">
       <div class="card__bg"></div>
 
       <div class="card__text">
         <p class="card__title">Lifepath-01</p>
-      </div><img class="swiper-cards card__img relative preserve-3d group-hover:my-rotate-x-180 w-full h-full duration-1000" src="./img/Cyberpunk_2077_Lifepath-01.jpg" />
+      </div><img class="swiper-cards card__img relative preserve-3d group-hover:my-rotate-x-180 w-full h-full duration-1000" src="./img/Cyberpunk_2077_Lifepath-01.jpg" alt="img" />
     </div>
     <div class="card card__four">
       <div class="card__bg"></div>
 
       <div class="card__text">
         <p class="card__title">Edge Runners</p>
-      </div><img class="swiper-cards card__img relative preserve-3d group-hover:my-rotate-x-180 w-full h-full duration-1000" src="./img/slides/slide (113).png" />
+      </div><img class="swiper-cards card__img relative preserve-3d group-hover:my-rotate-x-180 w-full h-full duration-1000" src="./img/slides/slide (113).png" alt="img" />
     </div>
 
     <div class="card card__six">
@@ -491,29 +470,515 @@ CYBERPUNK
 
       <div class="card__text">
         <p class="card__title">Lifepath-02</p>
-      </div><img class="swiper-cards card__img relative preserve-3d group-hover:my-rotate-x-180 w-full h-full duration-1000" src="./img/Cyberpunk_2077_Lifepath-02.jpg" />
-    </div>
+      </div>
+      <img class="swiper-cards card__img relative preserve-3d group-hover:my-rotate-x-180 w-full h-full duration-1000" src="./img/Cyberpunk_2077_Lifepath-02.jpg" alt="img" />
 
+      </div>
+</div>
+
+<div class="bg-gray-400 h-screen flex justify-center items-center gap-x-40 text-white" id="">
+<div
+class="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective"
+>
+<div
+class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000"
+>
+<div class="absolute backface-hidden border-2 w-full h-full">
+<img data-lightbox="example-set"  data-title="Optional caption." src="src/assets/Cyberpunk_2077_Lifepath_Nomad.png" alt="img" class="w-full h-full"  alt="c77"/>
+</div>
+<div
+class="absolute my-rotate-y-180 backface-hidden w-full h-full bg-gray-600 overflow-hidden"
+>
+<div
+class="text-center flex flex-col items-center justify-center h-full text-gray-900 px-2 pb-24"
+>
+<h1 class="text-3xl font-semibold">Nomad</h1>
+<p class="my-2">9.0 Rating</p>
+<p>
+Lorem ipsum sit amet consectetur adipisicing elit, odit natus
+veritatis enim culpa nam inventore doloribus quidem temporibus
+amet accusamus.
+</p>
+<button
+class="bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125"
+>
+Watch Now
+</button>
+</div>
+</div>
+</div>
+</div>
+<div
+class="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective"
+>
+<div
+class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000"
+>
+<div class="absolute backface-hidden border-2 w-full h-full">
+<img   data-lightbox="example-set"  data-title="Optional caption." src="src/assets/Cyberpunk_2077_Lifepath_Streetkid.png" alt="img" class="w-full h-full" alt="c77"/>
+</div>
+
+<div
+class="absolute my-rotate-y-180 backface-hidden w-full h-full bg-gray-600 overflow-hidden"
+>
+<div
+class="text-center flex flex-col items-center justify-center h-full text-gray-900 px-2 pb-24"
+><br>
+<h1 class="text-3xl font-semibold">Street</h1>
+<p class="my-2">8.00 Rating</p>
+<p><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="src/assets/Cyberpunk_2077_Lifepath_Nomad_Streetkid_Corpo.png" alt="img" alt="c77"/>
+<!-- <div class="bg-transparent">
+
+</div> -->
+</p>
+<button
+class="bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125"
+>
+Watch Now
+</button>
+</div>
 
 </div>
+
+</div>
+</div>
+<div class="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective">
+<div class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
+<div class="absolute backface-hidden border-2 w-full h-full">
+<img data-lightbox="example-set" data-title="Optional caption." src="src/assets/Cyberpunk_2077_Lifepath_Corpo.png" alt="img" class="w-full h-full" alt="c77"/>
+</div>
+
+<div class="absolute my-rotate-y-180 backface-hidden w-full h-full bg-gray-600 overflow-hidden">
+<div class="text-center flex flex-col items-center justify-center h-full text-gray-900 px-2 pb-24">
+<h1 class="text-3xl font-semibold">Corpo</h1>
+<p class="my-2">7.0 Rating</p>
+<p>
+Lorem ipsum odit natus veritatis enim culpa nam inventore doloribus quidem temporibus
+amet velit accusamus.
+</p>
+<button class="bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125">
+Watch Now
+</button>
+</div>
+</div>
+</div>
+<span class="c-news__image--glitch-effect" src="background-image:url(https://static.cdprojektred.com/cms.cdprojektred.com/16x9_big/23f12c864022304aeaf05d8f760417d583a1602d-1280x720.jpg);"></span>
+</div>
+</div>
+
+<div class="container border-neon">
+<h1>DÉFI MODE PHOTO</h1>
+<button class="cybr-btn" aria-hidden="false" target="_blank">
+<span aria-hidden="false">
+</span>
+<span aria-hidden="true" class="cybr-btn__glitch">°... :x ...°</span>
+<a href="https://www.cyberpunk.net/fr/photo-mode-challenge" target="_blank">Participer<box-icon type='solid' name='down-arrow-alt' animation='tada' flip='vertical'></box-icon></a>
+<span aria-hidden="false" class="cybr-btn__tag sky-neon"><i class='bx bxs-down-arrow-alt' type='solid' name='down-arrow-alt' animation='tada' flip='vertical'></i>R26</span>
+</button>
+
+  <div class="img-slider">
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (79).png" alt="img">
+  <div class="info">
+  <h2>Slide 01</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (80).png" alt="img">
+  <div class="info">
+  <h2>Slide 02</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (83).png" alt="img">
+  <div class="info">
+  <h2>Slide 03</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (84).png" alt="img">
+  <div class="info">
+  <h2>Slide 04</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (85).png" alt="img">
+  <div class="info">
+  <h2>Slide 05</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (86).png" alt="img">
+  <div class="info">
+  <h2>Slide 06</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (87).png" alt="img">
+  <div class="info">
+  <h2>Slide 07</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (88).png" alt="img">
+  <div class="info">
+  <h2>Slide 08</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (89).png" alt="img">
+  <div class="info">
+  <h2>Slide 09</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (90).png" alt="img">
+  <div class="info">
+  <h2>Slide 10</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (79).png" alt="img">
+  <div class="info">
+  <h2>Slide 11</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (80).png" alt="img">
+  <div class="info">
+  <h2>Slide 12</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (83).png" alt="img">
+  <div class="info">
+  <h2>Slide 13</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (84).png" alt="img">
+  <div class="info">
+  <h2>Slide 14</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (85).png" alt="img">
+  <div class="info">
+  <h2>Slide 15</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (86).png" alt="img">
+  <div class="info">
+  <h2>Slide 16</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (87).png" alt="img">
+  <div class="info">
+  <h2>Slide 17</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (88).png" alt="img">
+  <div class="info">
+  <h2>Slide 18</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (89).png" alt="img">
+  <div class="info">
+  <h2>Slide 19</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+  <div class="slide swiper-slide">
+  <img src="img/slides/slide (90).png" alt="img">
+  <div class="info">
+  <h2>Slide 20</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+
+  <div class="navigation">
+  <div class="btn active"><h3>1</h3></div>
+  <div class="btn"><h3>2</h3></div>
+  <div class="btn"><h3>3</h3></div>
+  <div class="btn"><h3>4</h3></div>
+  <div class="btn"><h3>5</h3></div>
+  <div class="btn"><h3>6</h3></div>
+  <div class="btn"><h3>7</h3></div>
+  <div class="btn"><h3>8</h3></div>
+  <div class="btn"><h3>9</h3></div>
+  <div class="btn"><h3>10</h3></div>
+  <div class="btn"><h3>11</h3></div>
+  <div class="btn"><h3>12</h3></div>
+  <div class="btn"><h3>13</h3></div>
+  <div class="btn"><h3>14</h3></div>
+  <div class="btn"><h3>15</h3></div>
+  <div class="btn"><h3>16</h3></div>
+  <div class="btn"><h3>17</h3></div>
+  <div class="btn"><h3>18</h3></div>
+  <div class="btn"><h3>19</h3></div>
+  <div class="btn"><h3>20</h3></div>
+  </div>
 
   </div>
 
+  <div class="bg-gray-600 h-screen flex justify-center items-center gap-x-40 text-white" id="">
+
+
+    <div class="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective">
+<div class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
+<div class="absolute backface-hidden border-2 w-full h-full">
+<img   data-lightbox="example-set"  data-title="Optional caption." src="img/Cyberpunk_2077_Lifepath-01.jpg" alt="img" class="w-full h-full" alt="c77">
+</div>
+
+<div class="absolute my-rotate-y-180 backface-hidden w-full h-full bg-gray-300 overflow-hidden" >
+<div class="text-center flex flex-col items-center justify-center h-full text-gray-900 px-2 pb-24" >
+<h1 class="text-3xl font-semibold">DISPOSITIONS GÉNÉRALES </h1>
+<p class="my-2">1. Ce document (le "Règlement") décrit les conditions du concours "Histoire Style Over Substance"
+(le "Concours").</p>
+<button
+class="bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125"
+><a href="https://cdn-l-mkt.cdprojektred.com/document/Rules-FR_p6yd6fw7cmsyisfc.pdf" target="_blank">PDF</a>
+
+</button>
 
 </div>
-<iframe style="animation:textWave 6s;" class="intro card about__img" id="youtube" type="video/mp4" width="auto" height="25%" justify-content="center" border-radius="22px" src="https://www.youtube.com/embed/mH2wmyeiIpA" title="Cyberpunk: Edgerunners | This Fffire by Franz Ferdinand | Music Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 </div>
+</div>
+</div>
+<div class="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective"
+>
+<div
+class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000"
+>
+<div class="absolute backface-hidden border-2 w-full h-full">
+<img   data-lightbox="example-set"  data-title="Optional caption." src="img/Cyberpunk_2077_Lifepath-02.jpg" alt="img" class="w-full h-full"  alt="c77"/>
+</div>
+<div
+class="absolute my-rotate-y-180 backface-hidden w-full h-full bg-gray-800 overflow-hidden"
+>
+<div
+class="text-center flex flex-col items-center justify-center h-full text-gray-900 px-2 pb-24"
+>
+<h1 class="text-3xl font-semibold">The 02</h1>
+<p class="my-2">2. Dans le cadre du Concours, nous vous invitons (les "Participants") à nous présenter votre Histoire
+prenant place en 2077 à Night City ("Histoire") en envoyant l'Histoire dans une publication sur le forum officiel de CD
+PROJEKT RED ("Forum") dans le topic dédié aux participations du Concours. Les prix seront décernés aux Participants
+ayant soumis l'Histoire la plus créative, la plus originale et de la meilleure qualité ("Finalistes").
 
-<h1>Carte Interactive Pure CSS</h1>
+</p>
 
+</div>
+</div>
+</div>
+</div>
+</div>
+      <div>
+        <h1>Liens divers</h1>
+
+        <button class="cybr-btn">
+          Cyber<span aria-hidden="true">_</span>
+          <span aria-hidden="false" class="cybr-btn__glitch">
+            <a href="https://www.cyberpunk.net/fr/fr/">Cyber_</a>
+          </span>
+
+          <span aria-hidden="false" class="cybr-btn__tag sky-neon">R24</span>
+        </button>
+
+        <button class="cybr-btn" aria-hidden="true">
+          _<span aria-hidden="false">Buttons</span>
+          <a href="https://youtu.be/gyM_HysQN7s"><span aria-hidden="true" class="cybr-btn__glitch">
+              Buttons_</span></a>
+          <span aria-hidden="false" class="cybr-btn__tag sky-neon">R25</span>
+        </button>
+
+        <button class="cybr-btn" aria-hidden="true">
+          Chimères<span aria-hidden="true">_</span>
+          <span aria-hidden="true" class="cybr-btn__glitch"><a href="https://www.cyberpunk.net/fr/fr/">Cyber_</a></span>
+
+          <span aria-hidden="false" class="cybr-btn__tag sky-neon">R27</span>
+        </button>
+
+        <button class="cybr-btn" aria-hidden="true">
+          _<span aria-hidden="true">Hard SF</span>
+          <a href="https://youtu.be/gyM_HysQN7s"><span aria-hidden="true" class="cybr-btn__glitch">
+              Buttons_</span></a>
+          <span aria-hidden="false" class="cybr-btn__tag sky-neon">R28</span>
+        </button>
+
+
+      </div>
+          <article class="cyber-slider__content">
+        <div class="product-grid">
+          <div class="card stacked">
+            <img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (108).png" alt="img"
+              class="card__img">
+            <div class="card__content">
+              <h3 class="card__title">Lipsum dolor.</h3>
+
+              <p class="card__description">
+
+                <img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (108).png" alt="img"
+                  class="card__img">
+              </p>
+              <h3 class="card__price">0.25 €</h3>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (91).png" alt="img"
+              class="card__img">
+            <div class="card__content">
+              <h2 class="card__title">Ullam, cum ut.</h2>
+              <p class="card__price">0.25 €</p><br>
+              <p class="card__description">Iure, voluptate corrupti.</p>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (92).png" alt="img"
+              class="card__img">
+            <div class="card__content">
+              <h2 class="card__title">Libero, ab dolorem?</h2>
+
+              <p class="card__description">Eveniet, necessitatibus id.<img data-lightbox="example-set"
+                  data-title="Optional caption." src="img/slides/slide (92).png" alt="img" class="card__img"></p>
+              <h3 class="card__price">0.50 €</h3>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (102).png" alt="img"
+              class="card__img">
+            <div class="card__content">
+              <h2 class="card__title">Minima, earum ipsam.</h2>
+              <p class="card__price">1 €</p>
+              <p class="card__description">Illo, dolorem magnam?</p>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (90).png" alt="img"
+              alt="a grey baseball hat with a small palm tree on the front" class="card__img">
+            <div class="card__content">
+              <h2 class="card__title">Lorem, ipsum dolor.</h2>
+              <p class="card__price">1.50 €</p>
+              <p class="card__description">Lorem, ipsum dolor.</p>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (103).png" alt="img"
+              class="card__img">
+            <div class="card__content">
+              <h2 class="card__title">Odio, nam consequatur.</h2>
+              <p class="card__price">1.25 €</p>
+              <p class="card__description">Quos, facere alias.</p>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (99).png" alt="img"
+              class="card__img">
+            <div class="card__content">
+              <h2 class="card__title">Ullam, cum ut.</h2>
+              <p class="card__price">0.25 €</p>
+              <p class="card__description">Iure, voluptate corrupti.</p>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (100).png" alt="img"
+              class="card__img">
+            <div class="card__content">
+              <h2 class="card__title">Libero, ab dolorem?</h2>
+              <p class="card__price">0.50 €</p>
+              <p class="card__description">Eveniet, necessitatibus id.</p>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (101).png" alt="img"
+              alt="a grey baseball hat with a small palm tree on the front" class="card__img">
+            <div class="card__content">
+              <h2 class="card__title">Lorem, ipsum dolor.</h2>
+              <p class="card__price">1.50 €</p>
+              <p class="card__description">Lorem, ipsum dolor.</p>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (109).png" alt="img"
+              class="card__img">
+            <div class="card__content">
+              <h2 class="card__title">Ullam, cum ut.</h2>
+              <p class="card__price">0.25 €</p>
+              <p class="card__description">Iure, voluptate corrupti.</p>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (110).png" alt="img"
+              class="card__img">
+            <div class="card__content">
+              <h2 class="card__title">Libero, ab dolorem?</h2>
+              <p class="card__price">0.50 €</p>
+              <p class="card__description">Eveniet, necessitatibus id.</p>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (111).png" alt="img"
+              class="card__img">
+            <div class="card__content">
+              <h2 class="card__title">Minima, earum ipsam.</h2>
+              <p class="card__price">1 €</p>
+              <p class="card__description">Illo, dolorem magnam?</p>
+            </div>
+          </div>
+
+        </div>
+      </article>
 <div class="container">
+<p class="description">
+<iframe id="ytplayer" class="card about__img intro" type="video/mp4" width="360" height="240" src="https://www.youtube.com/embed/gyM_HysQN7s" title="Cyberpunk 2077: Phantom Liberty — Teaser officiel" alt="Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; " target="_blank" allowfullscreen><img src="https://www.cyberpunk.net/build/images/home/button-play-6fa85e5a.png" alt="img" alt="Play">
+</iframe>
+ <svg width="500" height="50" viewBox="0 0 500 50" fill="none" xmlns="http://www.w3.org/1000/svg">
+            <g clip-path="url(#clip0_181_364)">
+            <path d="M0 0H463V40H0V0Z" fill="transparent" class=" flex justify-center items-center "/>
+            <path d="M455.026 59.5867L438.174 51.6802L491.148 -62.5609L508.001 -54.6544L455.026 59.5867ZM479.781 -54.3855L463.923 -61.8295L411.409 51.4112L427.267 58.8552L479.77 -54.3855H479.781ZM451.551 -54.1166L436.677 -61.098L384.622 51.1423L399.496 58.1237L451.551 -54.1166V-54.1166ZM423.321 -53.8476L409.441 -60.3665L357.846 50.8841L371.726 57.403L423.321 -53.8476ZM395.091 -53.5787L382.195 -59.635L331.06 50.6152L343.956 56.6715L395.091 -53.5787V-53.5787ZM366.861 -53.3098L354.959 -58.8927L304.294 50.3678L316.196 55.9508L366.861 -53.3098ZM338.63 -53.0409L327.723 -58.1613L277.519 50.0989L288.426 55.2193L338.63 -53.0516V-53.0409ZM310.4 -52.7719L300.477 -57.4298L250.732 49.8299L260.655 54.4878L310.4 -52.7934V-52.7719ZM282.17 -52.503L273.241 -56.6983L223.956 49.5718L232.885 53.7671L282.17 -52.5245V-52.503ZM253.94 -52.2341L245.995 -55.956L197.17 49.3136L205.115 53.0356L253.94 -52.2556V-52.2341ZM225.71 -51.9651L218.759 -55.2246L170.405 49.0554L177.355 52.3148L225.71 -51.9974V-51.9651ZM197.48 -51.6962L191.524 -54.4931L143.629 48.7865L149.585 51.5833L197.48 -51.7285V-51.6962ZM169.25 -51.4273L164.277 -53.7616L116.842 48.5176L121.814 50.8519L169.25 -51.4595V-51.4273ZM141.02 -51.1583L137.042 -53.0301L90.0663 48.2594L94.0442 50.1311L141.02 -51.1906V-51.1583ZM112.789 -50.8894L109.806 -52.2878L63.3011 48.0012L66.2845 49.3996L112.8 -50.9324L112.789 -50.8894ZM84.5593 -50.6205L82.5596 -51.5564L36.5146 47.7323L38.5142 48.6682L84.57 -50.6635L84.5593 -50.6205ZM56.0939 -49.846L56.3291 -50.3516L55.324 -50.8249L9.97399 46.9685L9.73873 47.4741L10.7439 47.9474L56.1046 -49.889L56.0939 -49.846ZM28.099 -50.0826L28.0776 -50.1041L-17.0371 47.1944L-17.0157 47.2159L28.099 -50.1257V-50.0826Z" fill="url(#paint0_linear_181_364)"/>
+            </g>
+            <defs>
+            <linearGradient id="paint0_linear_181_364" x1="508" y1="-1.48176" x2="-17.0371" y2="-1.48176" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#00FFD2"/>
+            <stop offset="0.34" stop-color="#FCEA06"/>
+            <stop offset="0.71" stop-color="#E5007D"/>
+            </linearGradient>
+            <clipPath id="clip0_181_364">
+            <rect width="500" height="50" fill="white"/>
+            </clipPath>
+            </defs>
+  </svg>
 
+</p>
+<h1>Carte Interactive Pure CSS</h1>
 <p class="description" style="color:rgb(230, 241, 27);background:rgba(1, 20, 25, 0.546);text-align:center;justify-content: center;font-family:'Cyber';">
 
             <br>
             Règles alternatives sur mobiles : <br><strong style="color:rgb(65, 204, 238);"><br>Cliquez sur les points pour agrandir<br>
               <strong style="color:rgb(248, 208, 11); text-shadow: 0 3px 5px rgb(191, 191, 192); font-size: 2.5em;">↓</strong></strong>
-   <br></p>
+   <br>
+  </p>
 
 <div class="distribution-map">
   <picture style="background:rgba(1, 20, 25, 0.407);">
@@ -581,9 +1046,9 @@ CYBERPUNK
             <div class="centered-y">
 
                 <p class="sky-neon" style="border-radius:16px;">
-                  <a class="cybr-btn" href="https://www.cyberpunk.net/artbook/fr/">
+                  <a class="cybr-btn" href="https://www.cyberpunk.net/artbook/fr/" title="artbook" alt="artbook">
         <h4 class="sky-neon">ArtBook</h4></a>
-        <img class="sky-neon" style="border-radius:16px;" src="images/artbook.png" alt=""></p>
+        <img class="sky-neon" style="border-radius:16px;" src="images/artbook.png" alt="img"></p>
             </div>
         </div>
     </button>
@@ -591,153 +1056,26 @@ CYBERPUNK
     <button class="map-point breath-neon heart-bit-neon" style="top:36%;left:44%">
         <div class="content">
             <div class="centered-y">
-                <p class="sky-neon" style="border-radius:16px;"><a class="cybr-btn" href="https://www.cyberpunk.net/comicbook/fr/"><h4 class="breath-neon">ComicBook</h4></a><img class="sky-neon" style="border-radius:16px;" src="images/comicbook.png" alt=""></p>
+                <p class="sky-neon" style="border-radius:16px;"><a class="cybr-btn" href="https://www.cyberpunk.net/comicbook/fr/" title="comicbook" alt="comicbook"><h4 class="breath-neon">ComicBook</h4></a><img class="sky-neon" style="border-radius:16px;" src="images/comicbook.png" alt="img"></p>
     </div>
 </div>
 </button>
-<br>
-<p class="description">
 
- <svg width="500" height="50" viewBox="0 0 500 50" fill="none" xmlns="http://www.w3.org/1000/svg">
-            <g clip-path="url(#clip0_181_364)">
-            <path d="M0 0H463V40H0V0Z" fill="transparent" class=" flex justify-center items-center "/>
-            <path d="M455.026 59.5867L438.174 51.6802L491.148 -62.5609L508.001 -54.6544L455.026 59.5867ZM479.781 -54.3855L463.923 -61.8295L411.409 51.4112L427.267 58.8552L479.77 -54.3855H479.781ZM451.551 -54.1166L436.677 -61.098L384.622 51.1423L399.496 58.1237L451.551 -54.1166V-54.1166ZM423.321 -53.8476L409.441 -60.3665L357.846 50.8841L371.726 57.403L423.321 -53.8476ZM395.091 -53.5787L382.195 -59.635L331.06 50.6152L343.956 56.6715L395.091 -53.5787V-53.5787ZM366.861 -53.3098L354.959 -58.8927L304.294 50.3678L316.196 55.9508L366.861 -53.3098ZM338.63 -53.0409L327.723 -58.1613L277.519 50.0989L288.426 55.2193L338.63 -53.0516V-53.0409ZM310.4 -52.7719L300.477 -57.4298L250.732 49.8299L260.655 54.4878L310.4 -52.7934V-52.7719ZM282.17 -52.503L273.241 -56.6983L223.956 49.5718L232.885 53.7671L282.17 -52.5245V-52.503ZM253.94 -52.2341L245.995 -55.956L197.17 49.3136L205.115 53.0356L253.94 -52.2556V-52.2341ZM225.71 -51.9651L218.759 -55.2246L170.405 49.0554L177.355 52.3148L225.71 -51.9974V-51.9651ZM197.48 -51.6962L191.524 -54.4931L143.629 48.7865L149.585 51.5833L197.48 -51.7285V-51.6962ZM169.25 -51.4273L164.277 -53.7616L116.842 48.5176L121.814 50.8519L169.25 -51.4595V-51.4273ZM141.02 -51.1583L137.042 -53.0301L90.0663 48.2594L94.0442 50.1311L141.02 -51.1906V-51.1583ZM112.789 -50.8894L109.806 -52.2878L63.3011 48.0012L66.2845 49.3996L112.8 -50.9324L112.789 -50.8894ZM84.5593 -50.6205L82.5596 -51.5564L36.5146 47.7323L38.5142 48.6682L84.57 -50.6635L84.5593 -50.6205ZM56.0939 -49.846L56.3291 -50.3516L55.324 -50.8249L9.97399 46.9685L9.73873 47.4741L10.7439 47.9474L56.1046 -49.889L56.0939 -49.846ZM28.099 -50.0826L28.0776 -50.1041L-17.0371 47.1944L-17.0157 47.2159L28.099 -50.1257V-50.0826Z" fill="url(#paint0_linear_181_364)"/>
-            </g>
-            <defs>
-            <linearGradient id="paint0_linear_181_364" x1="508" y1="-1.48176" x2="-17.0371" y2="-1.48176" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#00FFD2"/>
-            <stop offset="0.34" stop-color="#FCEA06"/>
-            <stop offset="0.71" stop-color="#E5007D"/>
-            </linearGradient>
-            <clipPath id="clip0_181_364">
-            <rect width="500" height="50" fill="white"/>
-            </clipPath>
-            </defs>
-  </svg>
-</p>
 </div>
 </div>
 
-
+  </div>
 
 </section>
-<br>
-<section class="container">
-
-<div class="bg-gray-900 h-screen flex justify-center items-center gap-x-20 text-white" id="home">
-<div
-class="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective"
->
-<div
-class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000"
->
-<div class="absolute backface-hidden border-2 w-full h-full">
-<img data-lightbox="example-set"  data-title="Optional caption." src="src/assets/Cyberpunk_2077_Lifepath_Nomad.png" class="w-full h-full"  alt="c77"/>
-</div>
-<div
-class="absolute my-rotate-y-180 backface-hidden w-full h-full bg-gray-600 overflow-hidden"
->
-<div
-class="text-center flex flex-col items-center justify-center h-full text-gray-900 px-2 pb-24"
->
-<h1 class="text-3xl font-semibold">Nomad</h1>
-<p class="my-2">9.0 Rating</p>
-<p>
-Lorem ipsum sit amet consectetur adipisicing elit, odit natus
-veritatis enim culpa nam inventore doloribus quidem temporibus
-amet accusamus.
-</p>
-<button
-class="bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125"
->
-Watch Now
-</button>
-</div>
-</div>
-</div>
-</div>
-
-<div
-class="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective"
->
-<div
-class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000"
->
-<div class="absolute backface-hidden border-2 w-full h-full">
-<img   data-lightbox="example-set"  data-title="Optional caption." src="src/assets/Cyberpunk_2077_Lifepath_Streetkid.png" class="w-full h-full" alt="c77"/>
-</div>
-
-<div
-class="absolute my-rotate-y-180 backface-hidden w-full h-full bg-gray-600 overflow-hidden"
->
-<div
-class="text-center flex flex-col items-center justify-center h-full text-gray-900 px-2 pb-24"
-><br>
-<h1 class="text-3xl font-semibold">Street</h1>
-<p class="my-2">8.00 Rating</p>
-<p><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="src/assets/Cyberpunk_2077_Lifepath_Nomad_Streetkid_Corpo.png" alt="c77"/>
-<!-- <div class="bg-transparent">
-
-</div> -->
-</p>
-<button
-class="bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125"
->
-Watch Now
-</button>
-</div>
-
-</div>
-
-</div>
-</div>
 
 
-<div
-class="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective"
->
-<div
-class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000"
->
-<div class="absolute backface-hidden border-2 w-full h-full">
-<img   data-lightbox="example-set"  data-title="Optional caption." src="src/assets/Cyberpunk_2077_Lifepath_Corpo.png" class="w-full h-full" alt="c77"/>
-</div>
-<div
-class="absolute my-rotate-y-180 backface-hidden w-full h-full bg-gray-600 overflow-hidden"
->
-<div
-class="text-center flex flex-col items-center justify-center h-full text-gray-900 px-2 pb-24"
->
-<h1 class="text-3xl font-semibold">Corpo</h1>
-<p class="my-2">7.0 Rating</p>
-<p>
-Lorem ipsum odit natus veritatis enim culpa nam inventore doloribus quidem temporibus
-amet velit accusamus.
-</p>
-<button
-class="bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125"
->
-Watch Now
-</button>
-</div>
-</div>
-</div>
-<span class="c-news__image--glitch-effect" src="background-image: url(https://static.cdprojektred.com/cms.cdprojektred.com/16x9_big/23f12c864022304aeaf05d8f760417d583a1602d-1280x720.jpg);"></span>
-</div>
-
-</div>
-
-<br>
-</section>
-
-<section class="cyber-slider" id="skills">
-
+<section class="cyber-slider" id="cyberSlider">
 <div id="cyberSlider" class="cyber-slider">
 
 <ul class="cyber-slider__wrapper">
 <li data-slideid="9" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (9).png" alt="Slide 9">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (9).png" alt="img" alt="Slide 9">
 <span class="glitch-area">
 
 </span>
@@ -751,13 +1089,13 @@ Watch Now
 <p>
 <br>
 Devenez un hors-la-loi urbain équipé d'améliorations cybernétiques et forgez votre légende dans les rues de Night City.</p>
-<br><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (9).png" alt="Slide 17"><br></div>
+<br><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (9).png" alt="img" alt="Slide 17"><br></div>
 </div>
 </li>
 
 <li data-slideid="10" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (10).png" alt="Slide 10">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (10).png" alt="img" alt="Slide 10">
 <span class="glitch-area">
 
 </span>
@@ -768,14 +1106,14 @@ Devenez un hors-la-loi urbain équipé d'améliorations cybernétiques et forgez
 <div class="cyber-slider__slidetext">
 Slide 10 : <h3 class="heading-lg">FORGEZ VOTRE LÉGENDE</h3>
 <p>Arpentez les rues d’une ville immense, explorez des zones où les guerres de gangs font rage, dévalisez des paradis fiscaux et sillonnez un centre-ville en effervescence.</p>
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (10).png" alt="Slide 10">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (10).png" alt="img" alt="Slide 10">
 </div>
 </div>
 </li>
 
 <li data-slideid="11" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (11).png" alt="Slide 11">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (11).png" alt="img" alt="Slide 11">
 <span class="glitch-area">
 
 </span>
@@ -785,7 +1123,7 @@ Slide 10 : <h3 class="heading-lg">FORGEZ VOTRE LÉGENDE</h3>
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
 Slide 11<h3 class="heading-lg">PNJ</h3>
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (11).png" alt="Slide 11">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (11).png" alt="img" alt="Slide 11">
 <p>
 Lancez-vous dans des aventures risquées et nouez des relations avec des personnages inoubliables dont le sort dépendra de vos choix.</p>
 </div>
@@ -794,7 +1132,7 @@ Lancez-vous dans des aventures risquées et nouez des relations avec des personn
 
 <li data-slideid="12" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (12).png" alt="Slide 12">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (12).png" alt="img" alt="Slide 12">
 <span class="glitch-area">
 
 </span>
@@ -803,7 +1141,7 @@ Lancez-vous dans des aventures risquées et nouez des relations avec des personn
 <div class="cyber-slider__content">
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
-Slide 12<h3 class="heading-lg"></h3><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (12).png" alt="Slide 12">
+Slide 12<h3 class="heading-lg"></h3><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (12).png" alt="img" alt="Slide 12">
 <p>Enter the massive open world of Night City, a place that sets new standards in terms of
 visuals, complexity and depth.</p>
 
@@ -813,7 +1151,7 @@ visuals, complexity and depth.</p>
 
 <li data-slideid="13" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (13).png" alt="Slide 13">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (13).png" alt="img" alt="Slide 13">
 <span class="glitch-area">
 
 </span>
@@ -822,7 +1160,7 @@ visuals, complexity and depth.</p>
 <div class="cyber-slider__content">
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
-Slide 13<h3 class="heading-lg"></h3><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (13).png" alt="Slide 13">
+Slide 13<h3 class="heading-lg"></h3><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (13).png" alt="img" alt="Slide 13">
 <p>Enter the massive open world of Night City, a place that sets new standards in terms of
 visuals, complexity and depth.</p>
 </div>
@@ -831,7 +1169,7 @@ visuals, complexity and depth.</p>
 
 <li data-slideid="14" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (14).png" alt="Slide 14">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (14).png" alt="img" alt="Slide 14">
 <span class="glitch-area">
 
 </span>
@@ -840,7 +1178,7 @@ visuals, complexity and depth.</p>
 <div class="cyber-slider__content">
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
-Slide 14<h3 class="heading-lg"></h3><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (14).png" alt="Slide 14">
+Slide 14<h3 class="heading-lg"></h3><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (14).png" alt="img" alt="Slide 14">
 <p>Enter the massive open world of Night City, a place that sets new standards in terms of
 visuals, complexity and depth.</p>
 </div>
@@ -849,7 +1187,7 @@ visuals, complexity and depth.</p>
 
 <li data-slideid="15" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (15).png" alt="Slide 15">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (15).png" alt="img" alt="Slide 15">
 <span class="glitch-area">
 
 </span>
@@ -858,7 +1196,7 @@ visuals, complexity and depth.</p>
 <div class="cyber-slider__content">
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
-Slide 15<h3 class="heading-lg"></h3><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (15).png" alt="Slide 15">
+Slide 15<h3 class="heading-lg"></h3><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (15).png" alt="img" alt="Slide 15">
 <p>Enter the massive open world of Night City, a place that sets new standards in terms of
 visuals, complexity and depth.</p>
 </div>
@@ -867,7 +1205,7 @@ visuals, complexity and depth.</p>
 
 <li data-slideid="16" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (16).png" alt="Slide 16">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (16).png" alt="img" alt="Slide 16">
 <span class="glitch-area">
 
 </span>
@@ -877,7 +1215,7 @@ visuals, complexity and depth.</p>
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
 Slide 16<h3 class="heading-lg"></h3>
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (16).png" alt="Slide 5">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (16).png" alt="img" alt="Slide 5">
 <p>Enter the massive open world of Night City, a place that sets new standards in terms of
 visuals, complexity and depth.</p>
 </div>
@@ -896,80 +1234,12 @@ visuals, complexity and depth.</p>
 <li data-slide="16"><a href="#Slide 16"><span class="sr-only">Slide 16</span></a></li>
 </ul>
 </div>
-
-</section>
-
-<section class="bg-auto h-screen flex justify-center items-center gap-x-16 text-white">
-<hr>
-<div class="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective">
-<div class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
-<div class="absolute backface-hidden border-2 w-full h-full">
-<img   data-lightbox="example-set"  data-title="Optional caption." src="img/Cyberpunk_2077_Lifepath-01.jpg" class="w-full h-full" alt="c77">
-</div>
-
-<div class="absolute my-rotate-y-180 backface-hidden w-full h-full bg-gray-800 overflow-hidden" >
-<div class="text-center flex flex-col items-center justify-center h-full text-gray-900 px-2 pb-24" >
-<h1 class="text-3xl font-semibold">The 01</h1>
-<p class="my-2">9.0 Rating</p>
-<p>
-
-
-</p>
-<button
-class="bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125"
->
-Watch Now
-</button>
-</div>
-</div>
-</div>
-</div>
-
-<div
-class="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective"
->
-<div
-class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000"
->
-<div class="absolute backface-hidden border-2 w-full h-full">
-<img   data-lightbox="example-set"  data-title="Optional caption." src="img/Cyberpunk_2077_Lifepath-02.jpg" class="w-full h-full"  alt="c77"/>
-</div>
-<div
-class="absolute my-rotate-y-180 backface-hidden w-full h-full bg-gray-800 overflow-hidden"
->
-<div
-class="text-center flex flex-col items-center justify-center h-full text-gray-900 px-2 pb-24"
->
-<h1 class="text-3xl font-semibold">The 02</h1>
-<p class="my-2">10.0 Rating</p>
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-itaque assumenda saepe animi maxime libero non quasi.
-</p><a href="https://cdn-l-mkt.cdprojektred.com/document/Rules-FR_p6yd6fw7cmsyisfc.pdf"></a>
-<button
-class="bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125"
->
-Watch Now
-</button>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="cyber-slider">
-<iframe id="ytplayer"  class="card about__img intro" style="animation:textWave 6s;"  type="video/mp4" width="100%"  height="240" src="https://www.youtube.com/embed/gyM_HysQN7s" title="Cyberpunk 2077: Phantom Liberty — Teaser officiel" alt="Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-</section>
-
-<section class="cyber-slider" id="cyberSlider">
-
 <div id="cyberSlider" class="cyber-slider">
 
 <ul class="cyber-slider__wrapper">
 <li data-slideid="17" class="cyber-slider__slide active">
 <span class="cyber-slider__imgwrap">
-<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (17).png" alt="Slide 17">
+<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (17).png" alt="img" alt="Slide 17">
 <span class="glitch-area">
 
 </span>
@@ -982,13 +1252,13 @@ Slide 17 : <h3 class="heading-lg">CRÉEZ VOTRE PROPRE CYBERPUNK</h3>
 <p>
 
 Devenez un hors-la-loi urbain équipé d'améliorations cybernétiques et forgez votre légende dans les rues de Night City.</p>
-<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (17).png" alt="Slide 17"><br></div>
+<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (17).png" alt="img" alt="Slide 17"><br></div>
 </div>
 </li>
 
 <li data-slideid="18" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (18).png" alt="Slide 18">
+<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (18).png" alt="img" alt="Slide 18">
 <span class="glitch-area">
 
 </span>
@@ -998,14 +1268,14 @@ Devenez un hors-la-loi urbain équipé d'améliorations cybernétiques et forgez
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
 Slide 18 : <h3 class="heading-lg">FORGEZ VOTRE LÉGENDE</h3>
-<p>Arpentez les rues d’une ville immense, explorez des zones où les guerres de gangs font rage, dévalisez des paradis fiscaux et sillonnez un centre-ville en effervescence.</p><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (18).png" alt="Slide 18">
+<p>Arpentez les rues d’une ville immense, explorez des zones où les guerres de gangs font rage, dévalisez des paradis fiscaux et sillonnez un centre-ville en effervescence.</p><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (18).png" alt="img" alt="Slide 18">
 </div>
 </div>
 </li>
 
 <li data-slideid="19" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (19).png" alt="Slide 19">
+<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (19).png" alt="img" alt="Slide 19">
 <span class="glitch-area">
 
 </span>
@@ -1014,7 +1284,7 @@ Slide 18 : <h3 class="heading-lg">FORGEZ VOTRE LÉGENDE</h3>
 <div class="cyber-slider__content">
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
-Slide 19<h3 class="heading-lg"></h3><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (19).png" alt="Slide 19">
+Slide 19<h3 class="heading-lg"></h3><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (19).png" alt="img" alt="Slide 19">
 <p>
 Lancez-vous dans des aventures risquées et nouez des relations avec des personnages inoubliables dont le sort dépendra de vos choix.</p>
 </div>
@@ -1023,7 +1293,7 @@ Lancez-vous dans des aventures risquées et nouez des relations avec des personn
 
 <li data-slideid="20" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (20).png" alt="Slide 20">
+<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (20).png" alt="img" alt="Slide 20">
 <span class="glitch-area">
 
 </span>
@@ -1032,7 +1302,7 @@ Lancez-vous dans des aventures risquées et nouez des relations avec des personn
 <div class="cyber-slider__content">
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
-Slide 20<h3 class="heading-lg"></h3><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (20).png" alt="Slide 20">
+Slide 20<h3 class="heading-lg"></h3><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (20).png" alt="img" alt="Slide 20">
 <p>Enter the massive open world of Night City, a place that sets new standards in terms of
 visuals, complexity and depth.</p>
 
@@ -1042,7 +1312,7 @@ visuals, complexity and depth.</p>
 
 <li data-slideid="21" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (21).png" alt="Slide 21">
+<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (21).png" alt="img" alt="Slide 21">
 <span class="glitch-area">
 
 </span>
@@ -1051,7 +1321,7 @@ visuals, complexity and depth.</p>
 <div class="cyber-slider__content">
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
-Slide 21<h3 class="heading-lg"></h3><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (21).png" alt="Slide 21">
+Slide 21<h3 class="heading-lg"></h3><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (21).png" alt="img" alt="Slide 21">
 <p>Enter the massive open world of Night City, a place that sets new standards in terms of
 visuals, complexity and depth.</p>
 </div>
@@ -1060,7 +1330,7 @@ visuals, complexity and depth.</p>
 
 <li data-slideid="22" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (22).png" alt="Slide 22">
+<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (22).png" alt="img" alt="Slide 22">
 <span class="glitch-area">
 
 </span>
@@ -1069,7 +1339,7 @@ visuals, complexity and depth.</p>
 <div class="cyber-slider__content">
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
-Slide 22<h3 class="heading-lg"></h3><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (22).png" alt="Slide 22">
+Slide 22<h3 class="heading-lg"></h3><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (22).png" alt="img" alt="Slide 22">
 <p>Enter the massive open world of Night City, a place that sets new standards in terms of
 visuals, complexity and depth.</p>
 </div>
@@ -1078,7 +1348,7 @@ visuals, complexity and depth.</p>
 
 <li data-slideid="23" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (23).png" alt="Slide 23">
+<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (23).png" alt="img" alt="Slide 23">
 <span class="glitch-area">
 
 </span>
@@ -1087,7 +1357,7 @@ visuals, complexity and depth.</p>
 <div class="cyber-slider__content">
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
-Slide 23<h3 class="heading-lg"></h3><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (23).png" alt="Slide 23">
+Slide 23<h3 class="heading-lg"></h3><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (23).png" alt="img" alt="Slide 23">
 <p>Enter the massive open world of Night City, a place that sets new standards in terms of
 visuals, complexity and depth.</p>
 </div>
@@ -1096,7 +1366,7 @@ visuals, complexity and depth.</p>
 
 <li data-slideid="24" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (24).png" alt="Slide 24">
+<img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (24).png" alt="img" alt="Slide 24">
 <span class="glitch-area">
 
 </span>
@@ -1105,7 +1375,7 @@ visuals, complexity and depth.</p>
 <div class="cyber-slider__content">
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
-Slide 24<h3 class="heading-lg"></h3><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (24).png" alt="Slide 24">
+Slide 24<h3 class="heading-lg"></h3><img   data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (24).png" alt="img" alt="Slide 24">
 <p>Enter the massive open world of Night City, a place that sets new standards in terms of
 visuals, complexity and depth.</p>
 </div>
@@ -1127,70 +1397,12 @@ visuals, complexity and depth.</p>
 
 </div>
 
-
-</section>
-
-<section class="bg-gray-900 h-screen flex justify-center items-center gap-x-16 text-white">
-<div class="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective">
-<div class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
-<div class="absolute backface-hidden border-2 w-full h-full">
-<img data-lightbox="example-set"  data-title="Optional caption." src="img/slides/slide (108).png" class="w-full card__glare" alt="c77">
-<h1 class="text-3xl font-semibold">The 03</h1><img data-lightbox="example-set"  data-title="Optional caption." src="img/slides/slide (71).png" class="w-full card__glare" alt="c77">
-</div>
-
-<div class="absolute my-rotate-y-180 backface-hidden w-full h-full text-gray-900 bg-gray-200 overflow-hidden" >
-<div class="text-center flex flex-col items-center justify-center h-full bg-neutral-900 px-2 pb-36" >
-<h1 class="text-3xl font-semibold">The 03</h1>
-<p class="my-2">9.5 Rating</p>
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-itaque assumenda saepe animi maxime libero non quasi.
-</p>
-<button
-class="bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125"
->
-Watch Now
-</button>
-</div>
-</div>
-</div>
-</div>
-<div class="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective">
-<div class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
-<div class="absolute backface-hidden border-2 w-full h-full" id="">
-<img   data-lightbox="example-set"  data-title="Optional caption." src="img/slides/slide (71).png" class="w-full card__glare" alt="c77">
-<h1 class="text-3xl font-semibold">The 04</h1><img   data-lightbox="example-set"  data-title="Optional caption." src="img/slides/slide (108).png" class="w-full card__glare" alt="c77">
-</div>
-
-<div class="absolute my-rotate-y-180 backface-hidden w-full h-full text-gray-900 overflow-hidden" >
-<div class="text-center flex flex-col items-center justify-center h-full bg-neutral-900 px-2 pb-36" >
-<h1 class="text-3xl font-semibold">The 04</h1>
-<p class="my-2">X Rating</p>
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-itaque assumenda saepe animi maxime libero non quasi.
-</p>
-<button
-class="bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125"
->
-Watch Now
-</button>
-</div>
-</div>
-</div>
-</div>
-
-
-</section>
-
-<section class="cyber-slider">
-
 <div id="cyberSlider" class="cyber-slider">
 
 <ul class="cyber-slider__wrapper">
 <li data-slideid="25" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (25).png" alt="Slide 25">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (25).png" alt="img" alt="Slide 25">
 <span class="glitch-area">
 
 </span>
@@ -1203,13 +1415,13 @@ Slide 25 : <h3 class="heading-lg">CRÉEZ VOTRE PROPRE CYBERPUNK</h3>
 <p>
 
 Devenez un hors-la-loi urbain équipé d'améliorations cybernétiques et forgez votre légende dans les rues de Night City.</p>
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (25).png" alt="Slide 25"><br></div>
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (25).png" alt="img" alt="Slide 25"><br></div>
 </div>
 </li>
 
 <li data-slideid="26" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (26).png" alt="Slide 26">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (26).png" alt="img" alt="Slide 26">
 <span class="glitch-area">
 
 </span>
@@ -1220,14 +1432,14 @@ Devenez un hors-la-loi urbain équipé d'améliorations cybernétiques et forgez
 <div class="cyber-slider__slidetext">
 Slide 26 : <h3 class="heading-lg">FORGEZ VOTRE LÉGENDE</h3>
 <p>Arpentez les rues d’une ville immense, explorez des zones où les guerres de gangs font rage, dévalisez des paradis fiscaux et sillonnez un centre-ville en effervescence.</p>
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (26).png" alt="Slide 26">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (26).png" alt="img" alt="Slide 26">
 </div>
 </div>
 </li>
 
 <li data-slideid="27" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (27).png" alt="Slide 27">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (27).png" alt="img" alt="Slide 27">
 <span class="glitch-area">
 
 </span>
@@ -1237,7 +1449,7 @@ Slide 26 : <h3 class="heading-lg">FORGEZ VOTRE LÉGENDE</h3>
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
 Slide 27<h3 class="heading-lg"></h3>
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (27).png" alt="Slide 27">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (27).png" alt="img" alt="Slide 27">
 <p>
 Lancez-vous dans des aventures risquées et nouez des relations avec des personnages inoubliables dont le sort dépendra de vos choix.</p>
 </div>
@@ -1246,7 +1458,7 @@ Lancez-vous dans des aventures risquées et nouez des relations avec des personn
 
 <li data-slideid="28" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (28).png" alt="Slide 28">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (28).png" alt="img" alt="Slide 28">
 <span class="glitch-area">
 
 </span>
@@ -1255,7 +1467,7 @@ Lancez-vous dans des aventures risquées et nouez des relations avec des personn
 <div class="cyber-slider__content">
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
-Slide 28<h3 class="heading-lg"></h3><img data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (28).png" alt="Slide 28">
+Slide 28<h3 class="heading-lg"></h3><img data-lightbox="example-set"  data-title="Optional caption." class="slide-image" src="./img/slides/slide  (28).png" alt="img" alt="Slide 28">
 <p>Enter the massive open world of Night City, a place that sets new standards in terms of
 visuals, complexity and depth.</p>
 
@@ -1265,7 +1477,7 @@ visuals, complexity and depth.</p>
 
 <li data-slideid="29" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (29).png" alt="Slide 29">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (29).png" alt="img" alt="Slide 29">
 <span class="glitch-area">
 
 </span>
@@ -1275,7 +1487,7 @@ visuals, complexity and depth.</p>
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
 <h3 class="heading-lg">Slide 29</h3>
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (29).png" alt="Slide 29">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (29).png" alt="img" alt="Slide 29">
 <p>Enter the massive open world of Night City, a place that sets new standards in terms of
 visuals, complexity and depth.</p>
 </div>
@@ -1284,7 +1496,7 @@ visuals, complexity and depth.</p>
 
 <li data-slideid="30" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (30).png" alt="Slide 30">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (30).png" alt="img" alt="Slide 30">
 <span class="glitch-area">
 
 </span>
@@ -1293,7 +1505,7 @@ visuals, complexity and depth.</p>
 <div class="cyber-slider__content">
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
-Slide 30<h3 class="heading-lg"></h3><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (30).png" alt="Slide 30">
+Slide 30<h3 class="heading-lg"></h3><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (30).png" alt="img" alt="Slide 30">
 <p>Enter the massive open world of Night City, a place that sets new standards in terms of
 visuals, complexity and depth.</p>
 </div>
@@ -1302,16 +1514,16 @@ visuals, complexity and depth.</p>
 
 <li data-slideid="31" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img src="./img/slides/slide  (31).png" data-lightbox="example-set" data-title="Optional caption" class="slide-image" alt="Slide 31">
+<img src="./img/slides/slide  (31).png" alt="img" data-lightbox="example-set" data-title="Optional caption" class="slide-image" alt="Slide 31">
 <span class="glitch-area">
-  <img src="./img/slides/slide  (31).png" data-lightbox="example-set" data-title="Optional caption" class="slide-image" alt="Slide 31">
+  <img src="./img/slides/slide  (31).png" alt="img" data-lightbox="example-set" data-title="Optional caption" class="slide-image" alt="Slide 31">
 </span>
 </span>
 
 <div class="cyber-slider__content">
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
-Slide 31<h3 class="heading-lg"></h3><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (31).png" alt="Slide 31">
+Slide 31<h3 class="heading-lg"></h3><img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide  (31).png" alt="img" alt="Slide 31">
 <p>Enter the massive open world of Night City, a place that sets new standards in terms of
 visuals, complexity and depth.</p>
 </div>
@@ -1320,7 +1532,7 @@ visuals, complexity and depth.</p>
 
 <li data-slideid="32" class="cyber-slider__slide ">
 <span class="cyber-slider__imgwrap">
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide (32).png" alt="Slide 32">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide (32).png" alt="img" alt="Slide 32">
 <span class="glitch-area">
 
 </span>
@@ -1330,7 +1542,7 @@ visuals, complexity and depth.</p>
 <!-- class glitching -->
 <div class="cyber-slider__slidetext">
 <h3 class="heading-lg">Slide 32</h3>
-<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide (32).png" alt="Slide 32">
+<img data-lightbox="example-set" data-title="Optional caption." class="slide-image" src="./img/slides/slide (32).png" alt="img" alt="Slide 32">
 <p>Enter the massive open world of Night City, a place that sets new standards in terms of
 visuals, complexity and depth.</p>
 </div>
@@ -1351,368 +1563,6 @@ visuals, complexity and depth.</p>
 </ul>
 
 </div>
-<hr>
-
-</section>
-
-<section class="skills__container" id="skills">
-<article class="cyber-slider__content">
-<div class="product-grid">
-
-<div class="card stacked featured">
-<img   data-lightbox="example-set"  data-title="Optional caption." src="img/slides/slide (108).png" alt="a grey baseball hat with a small palm tree on the front" class="card__img">
-<div class="card__content">
-<h2 class="card__title">Lorem, ipsum dolor.</h2>
-<p class="card__price">$325</p>
-<p class="card__description">Lorem, ipsum dolor.</p>
-</div>
-</div>
-<div class="card stacked">
-<img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (91).png" alt="" class="card__img">
-<div class="card__content">
-<h2 class="card__title">Ullam, cum ut.</h2>
-<p class="card__price">$315</p>
-<p class="card__description">Iure, voluptate corrupti.</p>
-</div>
-</div>
-<div class="card stacked">
-<img   data-lightbox="example-set"  data-title="Optional caption." src="img/slides/slide (92).png" alt="" class="card__img">
-<div class="card__content">
-<h2 class="card__title">Libero, ab dolorem?</h2>
-<p class="card__price">$225</p>
-<p class="card__description">Eveniet, necessitatibus id.</p>
-</div>
-</div>
-<div class="card stacked">
-<img   data-lightbox="example-set"  data-title="Optional caption." src="img/slides/slide (102).png" alt="" class="card__img">
-<div class="card__content">
-<h2 class="card__title">Minima, earum ipsam.</h2>
-<p class="card__price">$500</p>
-<p class="card__description">Illo, dolorem magnam?</p>
-</div>
-</div>
-<div class="card stacked">
-<img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (90).png" alt="a grey baseball hat with a small palm tree on the front" class="card__img">
-<div class="card__content">
-<h2 class="card__title">Lorem, ipsum dolor.</h2>
-<p class="card__price">$325</p>
-<p class="card__description">Lorem, ipsum dolor.</p>
-</div>
-</div>
-<div class="card stacked">
-<img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (103).png" alt="" class="card__img">
-<div class="card__content">
-<h2 class="card__title">Odio, nam consequatur.</h2>
-<p class="card__price">$255</p>
-<p class="card__description">Quos, facere alias.</p>
-</div>
-</div>
-<div class="card stacked">
-<img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (99).png" alt="" class="card__img">
-<div class="card__content">
-<h2 class="card__title">Ullam, cum ut.</h2>
-<p class="card__price">$315</p>
-<p class="card__description">Iure, voluptate corrupti.</p>
-</div>
-</div>
-<div class="card stacked">
-<img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (100).png" alt="" class="card__img">
-<div class="card__content">
-<h2 class="card__title">Libero, ab dolorem?</h2>
-<p class="card__price">$225</p>
-<p class="card__description">Eveniet, necessitatibus id.</p>
-</div>
-</div>
-<div class="card stacked">
-<img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (101).png" alt="a grey baseball hat with a small palm tree on the front" class="card__img">
-<div class="card__content">
-<h2 class="card__title">Lorem, ipsum dolor.</h2>
-<p class="card__price">$325</p>
-<p class="card__description">Lorem, ipsum dolor.</p>
-</div>
-</div>
-<div class="card stacked">
-<img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (109).png" alt="" class="card__img">
-<div class="card__content">
-<h2 class="card__title">Ullam, cum ut.</h2>
-<p class="card__price">$315</p>
-<p class="card__description">Iure, voluptate corrupti.</p>
-</div>
-</div>
-<div class="card stacked">
-<img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (110).png" alt="" class="card__img">
-<div class="card__content">
-<h2 class="card__title">Libero, ab dolorem?</h2>
-<p class="card__price">$225</p>
-<p class="card__description">Eveniet, necessitatibus id.</p>
-</div>
-</div>
-<div class="card stacked">
-<img data-lightbox="example-set" data-title="Optional caption." src="img/slides/slide (111).png" alt="" class="card__img">
-<div class="card__content">
-<h2 class="card__title">Minima, earum ipsam.</h2>
-<p class="card__price">$500</p>
-<p class="card__description">Illo, dolorem magnam?</p>
-</div>
-</div>
-
-</div>
-</article>
-<br>
-<div class="container">
-<h1>Liens divers</h1>
-<nav class="menu nav__list" aria-hidden="false">
-<ul class=" nav__link">
-<!-- <li>Continue</li> <br> -->
-<li>New Game</li>
-<li>Load Game</li>
-<!-- <li class="">Settings & Credits</li> -->
-</ul>
-</nav>
-<br>
-<hr>
-<button class="cybr-btn">
-Cyber<span aria-hidden="true">_</span>
-<span aria-hidden="false" class="cybr-btn__glitch">
-<a href="https://www.cyberpunk.net/fr/fr/">Cyber_</a>
-</span>
-
-<span aria-hidden="false" class="cybr-btn__tag sky-neon">R24</span>
-</button>
-
-<button class="cybr-btn" aria-hidden="true">
-_<span aria-hidden="false">Buttons</span>
-<a href="https://youtu.be/gyM_HysQN7s"><span aria-hidden="true" class="cybr-btn__glitch">
-Buttons_</span></a>
-<span aria-hidden="false" class="cybr-btn__tag sky-neon">R25</span>
-</button>
-
-<button class="cybr-btn" aria-hidden="true">
-Chimères<span aria-hidden="true">_</span>
-<span aria-hidden="true" class="cybr-btn__glitch"><a href="https://www.cyberpunk.net/fr/fr/">Cyber_</a></span>
-
-<span aria-hidden="false" class="cybr-btn__tag sky-neon">R27</span>
-</button>
-
-<button class="cybr-btn" aria-hidden="true">
-_<span aria-hidden="true">Hard SF</span>
-<a href="https://youtu.be/gyM_HysQN7s"><span aria-hidden="true" class="cybr-btn__glitch">
-Buttons_</span></a>
-<span aria-hidden="false" class="cybr-btn__tag sky-neon">R28</span>
-</button>
-
-
-</div>
-<br>
-
-</section>
-
-<section class="work__container" id="work">
-
-<div class="container breath-neon">
-<hr>
-<h1>DÉFI MODE PHOTO - 2e édition</h1><br><br>N°3 : Verticalité
-<button class="cybr-btn" aria-hidden="true">
-<span aria-hidden="true">
-</span>
-<span aria-hidden="false" class="cybr-btn__glitch">°... :x ...°</span>
-<a href="https://www.cyberpunk.net/fr/photo-mode-challenge">Participer<box-icon name='down-arrow-alt' type='solid' animation='tada' flip='vertical'></box-icon></a>
-<span aria-hidden="false" class="cybr-btn__tag sky-neon"><i class='bx bxs-down-arrow-alt bx-tada bx-flip-vertical'><br></i>R26</span>
-</button>
-<br>
-<div class="container sky-neon">
-
-
-  <div class="img-slider">
-  <div class="slide active">
-  <img src="img/slides/slide (79).png" alt="">
-  <div class="info">
-  <h2>Slide 01</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-
-  <div class="slide">
-  <img src="img/slides/slide (80).png" alt="">
-  <div class="info">
-  <h2>Slide 02</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-
-  <div class="slide">
-  <img src="img/slides/slide (83).png" alt="">
-  <div class="info">
-  <h2>Slide 03</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-  <div class="slide">
-  <img src="img/slides/slide (84).png" alt="">
-  <div class="info">
-  <h2>Slide 04</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-  <div class="slide">
-  <img src="img/slides/slide (85).png" alt="">
-  <div class="info">
-  <h2>Slide 05</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-
-  <div class="slide">
-  <img src="img/slides/slide (86).png" alt="">
-  <div class="info">
-  <h2>Slide 06</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-  <div class="slide">
-  <img src="img/slides/slide (87).png" alt="">
-  <div class="info">
-  <h2>Slide 07</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-
-  <div class="slide">
-  <img src="img/slides/slide (88).png" alt="">
-  <div class="info">
-  <h2>Slide 08</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-
-
-  <div class="slide">
-  <img src="img/slides/slide (89).png" alt="">
-  <div class="info">
-  <h2>Slide 09</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-
-  <div class="slide">
-  <img src="img/slides/slide (90).png" alt="">
-  <div class="info">
-  <h2>Slide 10</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-  <div class="slide">
-  <img src="img/slides/slide (79).png" alt="">
-  <div class="info">
-  <h2>Slide 11</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-
-  <div class="slide">
-  <img src="img/slides/slide (80).png" alt="">
-  <div class="info">
-  <h2>Slide 12</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-
-  <div class="slide">
-  <img src="img/slides/slide (83).png" alt="">
-  <div class="info">
-  <h2>Slide 13</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-  <div class="slide">
-  <img src="img/slides/slide (84).png" alt="">
-  <div class="info">
-  <h2>Slide 14</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-  <div class="slide">
-  <img src="img/slides/slide (85).png" alt="">
-  <div class="info">
-  <h2>Slide 15</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-
-  <div class="slide">
-  <img src="img/slides/slide (86).png" alt="">
-  <div class="info">
-  <h2>Slide 16</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-  <div class="slide">
-  <img src="img/slides/slide (87).png" alt="">
-  <div class="info">
-  <h2>Slide 17</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-
-  <div class="slide">
-  <img src="img/slides/slide (88).png" alt="">
-  <div class="info">
-  <h2>Slide 18</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-
-
-  <div class="slide">
-  <img src="img/slides/slide (89).png" alt="">
-  <div class="info">
-  <h2>Slide 19</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-
-  <div class="slide">
-  <img src="img/slides/slide (90).png" alt="">
-  <div class="info">
-  <h2>Slide 20</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
-
-  <div class="navigation">
-  <div class="btn active"><h3>1</h3></div>
-  <div class="btn"><h3>2</h3></div>
-  <div class="btn"><h3>3</h3></div>
-  <div class="btn"><h3>4</h3></div>
-  <div class="btn"><h3>5</h3></div>
-  <div class="btn"><h3>6</h3></div>
-  <div class="btn"><h3>7</h3></div>
-  <div class="btn"><h3>8</h3></div>
-  <div class="btn"><h3>9</h3></div>
-  <div class="btn"><h3>10</h3></div>
-  <div class="btn"><h3>11</h3></div>
-  <div class="btn"><h3>12</h3></div>
-  <div class="btn"><h3>13</h3></div>
-  <div class="btn"><h3>14</h3></div>
-  <div class="btn"><h3>15</h3></div>
-  <div class="btn"><h3>16</h3></div>
-  <div class="btn"><h3>17</h3></div>
-  <div class="btn"><h3>18</h3></div>
-  <div class="btn"><h3>19</h3></div>
-  <div class="btn"><h3>20</h3></div>
-  </div>
-  </div>
-
-  </div>
-</div>
-
-
-
-
-
-
-
-
 </section>
 
 </main>
@@ -1723,10 +1573,7 @@ Buttons_</span></a>
 
 
 <div class="footer__container">
-
-
-
-  <br> <hr><ul class="footer__list">
+<ul class="footer__list">
 
 <li>
 <a href="#about" class="footer__link">A propos</a>
@@ -1756,35 +1603,16 @@ Buttons_</span></a>
 <span class="footer__copy">
 <h3>&#169; Alex. "All rights reserved"© .
 (Inspirations & Thanks to friends.)
-<br>
+<br><hr>
 </h3><h2 class="footer__title">2022 / 2023	</h2>
 </span>
 </div>
 
 </footer>
-<!--
- -->
-  <li class="nav__item nav__link">
-    <a href="#" class="back-to-top" id="back-to-top">
-      °<i class='bx bxs-up-arrow-alt bx-tada'></i>°
-    </a>
-  </li>
-
-
-<!-- -->
-
-
-
-<!--=============== Autres JS ===============-->
-
-
-<script src="tailwind.config.js"></script>
-<script src="js/lightbox.js"></script>
-
 
 <!--=============== boxicons ===============-->
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 <!--=============== SCROLLREVEAL ===============-->
 
@@ -1800,14 +1628,21 @@ Buttons_</span></a>
 
 
 <!--=============== MAIN JS ===============-->
+
 <script src="src/main.js"></script>
-<script src="js/main.js"></script>
+
+<!--=============== Autres JS ===============-->
+<!--
+  <script src="js/main.js"></script>
 
 <script src="js/carousel.js"></script>
 <script src="bower.json"></script>
 <script src="Gruntfile.js"></script>
 <script src="gulpfile.js"></script>
-<script src="script/script.js"></script>
+<script src="script/script.js"></script> -->
+
+
+<script src="js/scripts.js"></script>
 
 <script type="text/javascript">
 var slides = document.querySelectorAll('.slide');
@@ -1863,9 +1698,6 @@ currentSlide = i;
 // }
 // repeat();
 </script>
-<script src="js/scripts.js"></script>
-
-
 </body>
 
 </html>
