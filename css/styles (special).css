@@ -450,7 +450,7 @@ input, textarea {
 }
 
 .button__icon {
-  display: block;
+  display: inline-block;
   height: 1.15rem;
   line-height: 0.5;
   vertical-align: top;

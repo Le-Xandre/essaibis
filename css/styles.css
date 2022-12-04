@@ -200,10 +200,11 @@ min-width: 450px;  */
   border: 1px solid rgba(255,255,255,0.2);
   border-radius: 4rem;
   padding: .5rem 1.5rem;
-  /* suivant le navigateur */
+  /* suivant le navigateur
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);*/
   transition: .5s; /* pour l'animation du dark theme */
+  z-index: 1000;
 }
 .nav__list{
   display: flex;

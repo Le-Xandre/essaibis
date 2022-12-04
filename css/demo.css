@@ -1,3 +1,7 @@
+
+@import url("https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float|font-effect-anaglyph");
+
+
 :root {
   --ff-primary: Heebo, sans-serif;
   --ff-secondary: Bungee, cursive;
@@ -56,13 +60,19 @@ body {
 }
 
 .card {
-  aspect-ratio: 1 / 1.5;
+  aspect-ratio: 1 / 1.5;align-items: center;
+    align-self: auto;
+    justify-content: center;
+    text-align: center;
   /* border: 3px solid hotpink; */
 }
 
 .card__content {
   background: rgba(189, 189, 189, 0);
-  align-self: end;
+  align-self: end;align-items: center;
+    align-self: auto;
+    justify-content: center;
+    text-align: center;
   margin: 0.5rem 0.5rem 2rem;
   padding: 0.5rem;
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.338);
@@ -70,18 +80,27 @@ body {
 
 .card__title {
   font-size: 1.25rem;
-  line-height: 1;
+  line-height: 1;align-items: center;
+    align-self: auto;
+    justify-content: center;
+    text-align: center;
   color: rgba(207, 255, 252, 0.924);
   text-shadow: 0 0.25rem 1rem rgba(67, 247, 43, 0.883);
 }
 
 .card__price {
-  font-size: 1.35rem;
+  font-size: 1.35rem;align-items: center;
+    align-self: auto;
+    justify-content: center;
+    text-align: center;
 }
 
 .card__img {
   width: 100%;
-  aspect-ratio: 1 / 1.25;
+  aspect-ratio: 1 / 1.25;align-items: center;
+    align-self: auto;
+    justify-content: center;
+    text-align: center;
   object-fit: cover;
 }
 
@@ -112,16 +131,24 @@ body {
   padding: 0.125em 0.5em;
   text-shadow: 0 0.25rem .25rem rgba(0, 0, 0, 0.669);
   margin-bottom: 1em;
-  width: auto;
-  width: fit-content;
+  width: auto;align-items: center;
+    align-self: auto;
+    justify-content: center;
+    text-align: center;
 }
 
 p.max-content {
-  width: max-content;
+  width: max-content;align-items: center;
+    align-self: auto;
+    justify-content: center;
+    text-align: center;
 }
 
 p.min-content {
-  width: min-content;
+  width: min-content;align-items: center;
+    align-self: auto;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Remove default margin */
@@ -161,7 +188,8 @@ ol[role="list"] {
 
 /* Set core root defaults */
 html:focus-within {
-  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  /* scroll-behavior: smooth; */
 }
 
 /* Set core body defaults */
@@ -173,7 +201,7 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: none;
 }
 
 /* Make images easier to work with */
@@ -188,5 +216,8 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+  font: inherit;align-items: center;
+    align-self: auto;
+    justify-content: center;
+    text-align: center;
 }
