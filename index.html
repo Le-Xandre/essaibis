@@ -6,8 +6,11 @@
 
 
     <meta name="title" content="Al.C.77">
-    <meta name="description" content="This is a photographer portfolio html template, made by me.">
-  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+    <meta name="description" content="This is a portfolio html template, made by me.">
+
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!--
       - favicon
     -->
@@ -17,19 +20,20 @@
 <title>Portfolio CyberPunk</title>
 
 
-<!--<link rel="stylesheet" href="css/lightbox.css">
-<link rel="stylesheet" href="css/style.scss"><link rel="stylesheet" href="assets/css/ArchitectureStyleNeon.css">
-
-<link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="dist/main.css">
+<!--
+<link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/style.scss">
+<link rel="stylesheet" href="css/lightbox.css"><link rel="stylesheet" href="assets/css/ArchitectureStyleNeon.css">
+<link rel="stylesheet" href="dist/main.css">
 -->
+
+
+
 
 <link rel="stylesheet" href="css/styles (special).css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="css/ArchitectureStyleNeon.css">
-
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="normalize.css">
-
 
 
 
@@ -37,20 +41,15 @@
 <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
 
+<!--=============== SWIPER JS ===============-->
 
+<script src="js/swipper-bundle.min.js"></script>
 
-
-    <!--
-      - preload images
-    -->
-    <link rel="preload" as="image" href="assets/images/loading.png">
-    <link rel="preload" as="image" href="assets/images/loading-circle.svg">
-
-
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
   </head>
 
-  <body translate="no" data-new-gr-c-s-check-loaded="14.1009.0" data-gr-ext-installed="">
+  <body data-new-gr-c-s-check-loaded="15.1010.0" data-gr-ext-installed="">
 
 <div id="root">
 
@@ -58,98 +57,117 @@
 
  <header class="app-header" style="background-color:rgba(42, 24, 1, 0.682);">
 <nav class="menu nav-items nav-section__header">
-<img class="home__img" src="img/-C77_EN-David-Cam2.png" alt="">
+<img class="random__img" src="img/-C77_EN-David-Cam2.png" alt="">
            <div class="logo">CYBERPUNK<div class="sublogo">2077</div></div>
 
 
 
-<div class="toggle" id="change-theme-button">
-        <input title="input" type="checkbox" class="checkbox" id="dark-mode"/>
+<div class="toggle active" id="change-theme-button">
+        <input type="checkbox" class="checkbox" title="input" id="dark-mode"/>
         <label for="dark-mode" class="label">
         <i class="bx bx-moon"></i>
         <i class="bx bx-sun"></i>
-        <div class="ball active" id="dark-mode"></div>
+        <div class="ball"></div>
         </label>
         </div>
-
-          <ul class="nav__list">
-<!--
-            <li class="nav__link">
-              <a class="nav__link" href="#"><i class="bx bx-home-alt ">►</i><span class="nav__link__element">Accueil
-                </span></a>
-            </li> -->
-
-              <li class="nav__item nav__link"><i class="bx bx-loader">►</i><a class="nav__link" href="index (1).html" target="_blank">Continuer > </a></li>
-<hr><div class="app-header__anchor">
+<div class="app-header__anchor">
           <span class="app-header__anchor__text">Night-City - NetWire</span>
 
-      </div><hr>
-            <li class="nav__item nav__link">
-              <a class="nav__link nav__link--active" href="https://cyberpunkcentral.com/" target="_blank">
+      </div>
+<ul class="nav__list">
+<!--
+<li class="nav__link">
+<a class="nav__link" href="#"><i class="bx bx-home-alt ">►</i><span class="nav__link__element">Accueil
+</span></a>
+</li> -->
 
-                <span class="nav__link__element"><i class="bx bx-message">►</i>Messages</span><span class="nav__link__element"><span class="badge">11</span></span>
-              </a>
-            </li>
+<li class="nav__item nav__link"><a class="nav__link" href="index (1).html" target="_blank"><i class="bx bx-loader">► </i> Continuer ></a>
+</li>
 
-            <li class="nav__item nav__link">
-              <i class="bx bx-barcode">►</i><a class="nav__link" href="https://eu.gear.cdprojektred.com/" target="_blank"><span class="nav__link__element">Shop</span></a>
-            </li>
 
-  <li class="nav__item nav__link">
-  <i class="bx bx-map">►</i><a class="nav__link" href="https://maps.piggyback.com/cyberpunk-2077/maps/night-city" id="map" alt="Carte interactive" target="_blank"><span class="nav__link__element">Carte</span></a>
-  </li>
-  <li class="nav__item nav__link">
-  <i class="bx bx-album">►</i><a class="nav__link" href="https://www.piggyback.com/fr/guide/cyberpunk-2077/" target="_blank"><span class="nav__link__element">Fichiers</span></a>
-  </li>
-  <li class="nav__item nav__link">
-  <i class="bx bx-command">►</i><a class="nav__link" href="https://forums.cdprojektred.com/index.php?forums/cyberpunk.21/" target="_blank">
-  <span class="nav__link__element">Paramètres</span>
-  </a>
-  </li>
 
-  <li class="nav__item nav__link">
-    <i class="bx bx-file">►</i><a class="nav__link" href="https://le-xandre.github.io/Responsive-Portfolio-Alex/index.html" target="_blank">
-      <span class="nav__link__element">
-        Crédits</span>
-      </a>
-    </li>
-  </ul>
+<li class="nav__item nav__link">
+<i class="bx bx-message">►</i><a class="nav__link nav__link--active" href="https://cyberpunkcentral.com/" target="_blank">
+
+<span class="nav__link__element">Messages </span><span class="nav__link__element"><span class="badge">11</span></span>
+</a>
+</li>
+
+<li class="nav__item nav__link">
+<i class="bx bx-map">►</i><a class="nav__link" href="https://maps.piggyback.com/cyberpunk-2077/maps/night-city" id="map" alt="Carte interactive" target="_blank"><span class="nav__link__element">Carte</span></a>
+</li>
+
+<li class="nav__item nav__link">
+<i class="bx bx-barcode">►</i><a class="nav__link" href="https://eu.gear.cdprojektred.com/" target="_blank"><span class="nav__link__element">Shop</span></a>
+</li>
+
+<li class="nav__item nav__link">
+<i class="bx bx-file">►</i><a class="nav__link" href="https://le-xandre.github.io/Responsive-Portfolio-Alex/index.html" target="_blank">
+<span class="nav__link__element">
+Crédits</span>
+</a>
+</li>
+
+<li class="nav__item nav__link">
+<i class="bx bx-album">►</i><a class="nav__link" href="https://www.piggyback.com/fr/guide/cyberpunk-2077/" target="_blank"><span class="nav__link__element">Fichiers</span></a>
+</li>
+
+<li class="nav__item nav__link">
+<i class="bx bx-command">►</i><a class="nav__link" href="https://forums.cdprojektred.com/index.php?forums/cyberpunk.21/" target="_blank">
+<span class="nav__link__element">Paramètres</span>
+</a>
+</li>
+
+</ul>
 </nav>
-        <div class="app-container">
+
+<div class="app-container">
 <div class="app-b">
           <div class="pad">
             <div class="pad__body">
               <h4 class="text-heading3 undefined">Qu'est-ce que c'est ?</h4>
-              <br><hr>
-                <video controls src="video-1171926-h264_base.mp4" style="padding:5px;border-radius:22px;align-items:center;justify-content:center;width:300px;height:auto;box-shadow: 1px 0 15px rgb(255, 0, 0);" type="video/mp4"></video><hr><br>
-              <p class="text-paragraph1 undefined">Une <em>fausse</em> application de type Slack ou Discord inspirée de Cyberpunk 2077. Cette application est statique, n'implémentant pas de logiques avancées en Back-End.</p>
+                <video controls src="video-1171926-h264_base.mp4" style="padding:5px;border-radius:22px;align-items:center;justify-content:center;width:360px;height:auto;box-shadow: 1px 0 10px rgb(255, 0, 0);" type="video/mp4"></video><br><br>
+                <p class="text-paragraph1 undefined">La Bande annonce pour 1 futur jeu de société basé sur l'univers de cyberpunk 2077 du Studio Red-CdProject prévu en 2023.</p><br>
+                <li class="nav__item nav__link">
+                  <i class="bx bx-file">►</i><a class="nav__link" href="#" target="_blank">
+                    <span class="nav__link__element">
+                      Bonus 01 ()</span>
+                    </a>
+                  </li><br>
+                <p class="text-paragraph1 undefined">L'objectif est de présenter un début de kit UI.
+                  <br>Pour la création de site internet et aussi de globalement présenter l'univers associé.
+                  <br>Si vous avez joué au jeu, <br>vous remarquerez certaines similitudes avec les menus du jeu.</p>
               <br>
               <li class="nav__item nav__link">
-                <i class="bx bx-file">►</i><a class="nav__link" href="https://le-xandre.github.io/portfoliobis/Architecture.html" target="_blank">
-                  <span class="nav__link__element">
-                    Bonus 01</span>
-                  </a>
-                </li><br>
-
-              <p class="text-paragraph1 undefined">L'objectif est : <br>
-                <br>- De présenter un début de kit UI en fr. <br>
-                Si vous avez joué au jeu, vous remarquerez certaines similitudes avec les menus du jeu.</p><br>  <li class="nav__item nav__link">
                 <i class="bx bx-file">►</i><a class="nav__link" href="https://le-xandre.github.io/portfoliobis/liste.html" target="_blank">
                   <span class="nav__link__element">
-                    Bonus 02</span>
+                    Bonus 02 (liste)</span>
                   </a>
-                </li>
+                </li><br>
+<p class="text-paragraph1 undefined">Ceci est une <em>fausse</em> app. de type Slack ou Discord, inspirée de Cyberpunk 2077. Cette application est statique et n'implémente pas de logiques avancées en Back-End, proposant juste des possibilités d'intégration Ui & Ux pour des sites plus avancées si l'inspiration vous vient.</p>
+
+                <br>  <li class="nav__item nav__link">
+                  <i class="bx bx-file">►</i><a class="nav__link"  href="https://2077.io/"target="_blank">
+                    <span class="nav__link__element">
+                      Bonus 03 (Jeux ..77.. :x)</span>
+                    </a>
+                  </li>
             </div><hr>
-<a href="index (1).html" target="_blank" title="lol" id="page" role="button">◄ ↕ ►<hr><img class="about__img" src="img/logo.gif" alt=""><hr>◄ Envoi vers la page suivante ! ►</a>
+<a href="index (1).html" target="_blank" title="lol" id="page" role="button">◄ Envoi vers la page suivante ! ►<hr><img class="about__img" src="img/logo.gif" alt=""><hr>◄ ↕ ►</a>
           </div>
         </div>
 
 <div class="app-skeleton">
 <div class="app-a">
+  <div class="segment-topbar__header">
+
+
+
+
+
             <div class="segment-topbar">
               <div class="segment-topbar__header">
                 <h3 class="text-heading3 segment-topbar__title">Messages</h3>
-
              </div>
               <div class="segment-topbar__aside">
                 <div class="button-toolbar">
@@ -159,13 +177,25 @@
                     </svg>
                   </a>
                 </div>
-              </div> <div class="segment-topbar__header">
-                <span class="segment-topbar__overline segment-topbar__overline">NetWire_Seed: d869db7fe62fb07c25a0403ecaea55031744b5fb</span>
-                <h4 class="text-heading4 segment-topbar__title">
-                  <span class="channel-link"><span class="channel-link__icon">#</span><span class="channel-link__element">Watson</span></span>
-                </h4><br>
               </div>
-              <div class="segment-topbar__aside">
+<span class="channel-link">
+
+            <!-- <h4 class="text-heading4 segment-topbar__title">
+
+</h4> -->
+            <li class="nav__item nav__link segment-topbar__title">Watson<span class="nav__link__element"><span class="channel-link__element"><a class="nav__link" href="https://le-xandre.github.io/portfoliobis/Architecture.html" target="_blank">
+              <i class="bx bx-file">►</i>divers
+            </a></span>
+            </span>
+          </li>
+          <span class="channel-link__icon">#</span>
+  <span class="segment-topbar__overline segment-topbar__overline">NetWire_Seed:
+    d*869db7fe62fb07c25a0403"cætera"55031744b5-fb</span>
+        </span>
+
+
+
+               <div class="segment-topbar__aside">
                 <div class="button-toolbar">
                   <a class="button button--default">
                     <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -201,14 +231,25 @@
             </form>
             <div class="nav-section">
               <div class="nav-section__header">
-                <h2 class="nav-section__title">Flux réseaux par Secteurs</h2>
+                <h3 class="nav-section__title">Flux réseaux : Par Secteurs</h3>
               </div>
               <div class="nav-section__body">
                 <ul class="nav">
                   <li class="nav__item">
+                    <a class="nav__link nav__link--active" href="#">
+                      <span class="channel-link"><span class="channel-link__icon">#</span><span class="channel-link__element">Watson</span></span>
+                    </a>
+                  </li>
+                  <li class="nav__item">
                     <a class="nav__link" href="#">
                       <span class="channel-link conversation-link--unread">
                         <span class="channel-link__icon">#</span><span class="channel-link__element">Afterlife</span><span class="channel-link__element"><span class="badge">3</span></span>
+                      </span>
+                    </a>
+                  </li>                 <li class="nav__item">
+                    <a class="nav__link" href="#">
+                      <span class="channel-link conversation-link--unread">
+                        <span class="channel-link__icon">#</span><span class="channel-link__element">_T_SQUAD</span><span class="channel-link__element"><span class="badge">2</span></span>
                       </span>
                     </a>
                   </li>
@@ -222,24 +263,14 @@
                       <span class="channel-link"><span class="channel-link__icon">#</span><span class="channel-link__element">Pacifica</span></span>
                     </a>
                   </li>
-                  <li class="nav__item">
-                    <a class="nav__link nav__link--active" href="#">
-                      <span class="channel-link"><span class="channel-link__icon">#</span><span class="channel-link__element">Watson</span></span>
-                    </a>
-                  </li>
-                  <li class="nav__item">
-                    <a class="nav__link" href="#">
-                      <span class="channel-link conversation-link--unread">
-                        <span class="channel-link__icon">#</span><span class="channel-link__element">_T_SQUAD</span><span class="channel-link__element"><span class="badge">2</span></span>
-                      </span>
-                    </a>
-                  </li>
+
+
                 </ul>
               </div>
             </div>
             <div class="nav-section">
               <div class="nav-section__header">
-                <h2 class="nav-section__title">Flux actuel récent</h2>
+                <h3 class="nav-section__title">Flux actuel récent</h3>
               </div>
               <div class="nav-section__body">
                 <ul class="nav">
@@ -257,16 +288,8 @@
                       </span>
                     </a>
                   </li>
-                  <li class="nav__item">
-                    <a class="nav__link" href="#">
-                      <span class="conversation-link"><span class="conversation-link__icon"></span><span class="conversation-link__element">Wakado O.</span></span>
-                    </a>
-                  </li>
-                  <li class="nav__item">
-                    <a class="nav__link" href="#">
-                      <span class="conversation-link"><span class="conversation-link__icon"></span><span class="conversation-link__element">Regina Jones</span></span>
-                    </a>
-                  </li>
+
+
                   <li class="nav__item">
                     <a class="nav__link" href="#">
                       <span class="conversation-link"><span class="conversation-link__icon"></span><span class="conversation-link__element">Dexter DeShawn</span></span>
@@ -276,55 +299,58 @@
                     <a class="nav__link" href="#">
                       <span class="conversation-link"><span class="conversation-link__icon"></span><span class="conversation-link__element">Megabuilding H10 Ad.</span></span>
                     </a>
+                  </li>                  <li class="nav__item">
+                    <a class="nav__link" href="#">
+                      <span class="conversation-link"><span class="conversation-link__icon"></span><span class="conversation-link__element">Regina Jones</span></span>
+                    </a>
                   </li>
-                </ul>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">
+                      <span class="conversation-link"><span class="conversation-link__icon"></span><span class="conversation-link__element">Wakado O.</span></span>
+                    </a>
+                  </li></ul>
               </div>
-            <div class="app-main">
 
-          <div class="channel-feed">
-            <div class="segment-topbar">
+</div>     <div class="app-main">
 
-            </div>
-            <div class="channel-feed__body">
-              <div class="message">
-                <div class="message__body">
-                  <div>Pas grave, j'ai un évènement de prévu à Watson. Si tu prouves ton utilité, attends-toi à plus d'actualités à venir en parallèle. J'ai besoin d'un netrunner décent, donc contacte-moi pour te fournir des numéros ou informations d'identification etc... et à la fin, des Eddies en complément évidemment.</div>
-                </div>
-                <div class="message__footer"><span class="message__authoring">V. M. Vargas</span> - 11:04pm</div>
-              </div>
-              <div class="message">"Traduction / Translate"
-                <div class="message__body">
-                  <div>I got a gig lined up in Watson, no biggie. If you prove useful, expect more side gigs coming your way. I need a half-decent netrunner. Hit me up, provide credentials, eddies on completion.</div>
-                </div>
-                <div class="message__footer"><span class="message__authoring">V. M. Vargas</span> - 11:04pm</div>
-              </div>
-            </div>
-            <div class="channel-feed__footer">
-              <form class="channel-message-form" action="#">
-                <div class="form-group">
-                  <label class="form-label" for="message">Message</label>
-                  <div class="form-control"><textarea id="message" class="form-control" name="message"></textarea></div>
-                </div>
-                <div class="form-footer">
-                  <button class="button button--primary button--size-xl" type="submit"><span class="button__content">Envoyer</span></button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
+                  <div class="channel-feed">
+                    <div class="segment-topbar">
 
+</div>
+                    <div class="channel-feed__body">
+                      <div class="message">
+                        <div class="message__body">
+                          <div>I got a gig lined up in Watson, no biggie. If you prove useful, expect more side gigs coming your way. I need a half-decent netrunner. Hit me up, provide credentials, eddies on completion.</div>
+                        </div>
+                        <div class="message__footer"><span class="message__authoring">V. M. Vargas</span> - 23h04</div>
+                      </div>
+                      <div class="message"><h2 class="nav-section__title">" Traduction / Translate "</h2><br>
+                        <div class="message__body">
+<div>Pas grave, j'ai un évènement de prévu à Watson. Si tu prouves ton utilité, attends-toi à plus d'actualités à venir en parallèle. J'ai besoin d'un netrunner décent, donc contacte-moi pour te fournir des numéros ou informations d'identification etc... et à la fin, des Eddies en complément évidemment.</div>
+                        </div>
+                        <div class="message__footer"><span class="message__authoring">V. M. Vargas</span> - 11:04pm</div>
+                      </div>
+                      </div>
+                    <div class="channel-feed__footer">
+                      <form class="channel-message-form" action="#">
+                        <div class="form-group">
+                          <label class="form-label" for="message">Message</label>
+                          <div class="form-control"><textarea id="message" class="form-control" name="message"></textarea></div>
+                        </div>
+                        <div class="form-footer">
+                          <button class="button button--primary button--size-xl" type="submit"><span class="button__content">Envoyer</span></button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
 </div>
 </div>
 </div>
+   </div>
+   </div>
 
 </header>
 
-</div>
-
-<!--=============== SWIPER JS ===============-->
-
-<script src="js/swipper-bundle.min.js"></script>
-
 </body>
-
 </html>
