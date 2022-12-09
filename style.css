@@ -70,17 +70,18 @@ body {
 
 
 body {
-  background-color: var(--text-color-light);
+  margin: 0;
+  padding: 0;
   color: var(--hover-text-color);
-  font-family: var(--font-family);
-  text-shadow: 4px 4px 4px rgb(0, 0, 0);
-  box-shadow: 0 3px 4px rgba(226, 226, 226, 0.884);
   font-family: "GinesoSoft-ConMed";
+  background-color: var(--text-color-light);
 background-image: url('bg.png');
   /* background-image: url('https://www.cyberpunk.net/build/images/edgerunners/phase2/cover-mobile-539a2f80.jpg'); */
+  background-size: cover contain !important;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
+  box-shadow: 0 3px 4px rgba(226, 226, 226, 0.884);
+  transition: .10s; /* pour l'animation du dark theme */
 
-  background-size: cover;
-  transition: .5s; /* pour l'animation du dark theme */
 }
 
 body,button,input,textarea {
