@@ -25,17 +25,17 @@
   --red-scanline: rgba(90, 5, 8, 0.492);
   --black-scanline: rgba(1, 1, 1, 0.802);
   --black-hover-background: rgba(15, 15, 13, 0.281);
-  --blue: #3d70c8;
+  --blue: #1852b6;
   --yellow: #ffff00;
-  --text-shadow: rgb(124, 216, 255);
+  --text-shadow: rgb(83, 182, 225);
 
 
-  --premiere-color:rgb(234, 234, 234);
-  --seconde-color:rgba(216, 98, 20, 0.991);
-  --third-color:rgb(154, 243, 38);
+  --premiere-color:rgb(255, 241, 171);
+  --seconde-color:rgba(170, 25, 12, 0.991);
+  --third-color:rgb(9, 142, 34);
 
   --text-color-light-01: rgb(5, 134, 1);
-  --text-color-light-02: rgb(255, 244, 36);
+  --text-color-light-02: rgb(209, 200, 14);
   --text-color-light-03: rgb(255, 153, 0);
   --text-color-light-04: rgba(28, 17, 182, 0.972);
   --text-color-light-05: rgb(213, 17, 122);
@@ -125,10 +125,10 @@
   --text-color: hsla(var(--first-hue), 8%, 75%);
   --text-color-light: hsla(var(--second-hue), 4%, 55%);
   --container-color: hsla(var(--second-hue), 32%, 12%);
-  --blanc: #d1cecefd;
+  --blanc: #c7c7c7fd;
   --noir: #000002;
   --gris-transparent: #42404081;
-  --body-color: #a8f846fa;
+  --body-color: #3e370b9a;
 
 
   --smaller-font-size: .50rem;
@@ -321,19 +321,19 @@ text-align: center;
 
 /* Set core body defaults */
 body {
-  min-zoom: 200vh;
+  /* min-zoom: 200vh;
   width: 100%;
-min-height: 100vh;
+min-height: 100vh; */
   text-rendering: optimizeSpeed;
   line-height: 1.25;
 font-family: 'Cyber', sans-serif;
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-size: cover;
+  background: contain;
   flex-direction: column;
 grid-template-columns: auto;
-  background-color: var(--bg-color);
+  background-color: var(--background-color);
 transition: .5s; /* pour l'animation du dark theme */
 
 }
@@ -375,7 +375,7 @@ body,h1,h2,h3,h4,p,figure,blockquote,dl,
 dd {
   margin: 0;
 margin-bottom: 0.25em;
-margin-top: 0;
+background: contain !important;
 font-family: var(--font-family-06);
   align-items: center;
   justify-items: center;
@@ -683,7 +683,10 @@ header .nav-bar{
 }
 
 footer {
-  color: whitesmoke;
+  width: 100%;
+  height: auto;
+  font-size:1rem;
+  color:var(--text-color-light-01);
   align-items: center;
   font-family: fantasy;
 text-align: center;
@@ -939,11 +942,11 @@ text-align: center;
 
 .main-layout {
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 .with-sidebar {
-  grid-template-columns: 1fr 20rem;
+  grid-template-columns: 1fr 10rem;
 }
 
 
@@ -2588,15 +2591,16 @@ text-align: center;
   gap: 10px;
 }
 
-.social-link { font-weight: var(--fw-500); }
+.social-link { font-weight: var(--fw-600); }
 
 .social-link:is(:hover, :focus-visible) { text-decoration: underline; }
 
 .copyright,
-.social-list { padding-block-end: 15px; }
+.social-list { padding-block-end: 5px; }
 
 .copyright {
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
+  font-size: 1rem;
   letter-spacing: 0.5px;
   text-align: center;
 }

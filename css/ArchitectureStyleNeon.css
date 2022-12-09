@@ -24,7 +24,7 @@
 
       --noir: #1a1919f4;
       --blanc: #dfdfdff0;
-      --body-color: #0000000c;
+      --body-color: #14181e6b;
       --gris-transparent: #37383778;
 
 
@@ -72,18 +72,15 @@
 *  body h1 h2 h3 {
     margin:.25rem;
     padding: 0.25rem;
-    text-decoration: none;
-    text-overflow: clip;
-    text-align: center;
-    justify-content: center;
     align-items: center;
     justify-items: center;
     justify-content: center;
     text-align: center;
+    text-decoration: none;
+    text-overflow: clip;
 }
 
 body {
-font-family: "Helvetica", "Verdana", "Roboto", sans-serif;
 align-items: center;
 justify-content: center;
 justify-items: center;
@@ -165,12 +162,16 @@ h3 {
 
 
   .main-container {
-    padding: 4px;
+display: flex;
+padding: 4px;
     margin: 4px;
-    text-align: center;
-    text-align: center;
-    justify-content: center;
-}
+
+text-align: center;
+    position:relative;
+    justify-content:center;
+    border-radius: 22px;
+    align-items: center;
+    }
 
 .btn-row {
     -webkit-box-pack: center;
@@ -234,18 +235,6 @@ cursor:crosshair;
     background-size: 100%;
     transition: 'background' 0.5s;
   }
-
-.main-container2 {
-display: flex;
-padding: 10px;
-margin: 10px;
-text-align: center;
-position:relative;
-justify-content:center;
-border-radius: 22px;
-align-items: center;
-
-}
 
 .gr-moove {
 position: relative;

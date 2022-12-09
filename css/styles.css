@@ -21,9 +21,9 @@
   --first-color: hsla(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsla(var(--second-hue), var(--sat), 71%); /* -4% */
   --title-color: hsla(var(--second-hue), 15%, 95%);
-  --text-color: hsla(var(--first-hue), 8%, 75%);
-  --text-color-light: hsla(var(--second-hue), 4%, 55%);
-  --body-color: hsla(var(--first-hue), 48%, 8%);
+  --text-color: hsla(var(--first-hue), 48%, 75%);
+  --text-color-light: hsla(var(--second-hue), 44%, 55%);
+  --body-color: hsla(var(--first-hue), 48%, 18%);
   --container-color: hsla(var(--second-hue), 32%, 12%);
 
   /*========== Font and typography ==========*/
@@ -84,8 +84,8 @@ body,button,input,textarea {
 }
 
 body {
-  background-color: var(--body-color);
-  color: var(--text-color);
+  background-color: var(--body-color-alt);
+  color: var(--text-color-light);
   transition: .5s; /* pour l'animation du dark theme */
 }
 
@@ -258,9 +258,9 @@ min-width: 450px;  */
 }
 /*========== Variables Dark theme ==========*/
 body.light-theme{
-  --title-color: hsla(var(--second-hue), 15%, 15%);
-  --text-color: hsla(var(--second-hue), 8%, 35%);
-  --body-color: hsla(var(--second-hue), 100%, 99%);
+  --title-color: hsla(var(--second-hue), 25%, 25%);
+  --text-color: hsla(var(--second-hue), 18%, 35%);
+  --body-color: hsla(var(--second-hue), 80%, 79%);
   --container-color: #fff;
 }
 

@@ -85,7 +85,7 @@ body {
     justify-content: center;
     text-align: center;
   color: rgba(207, 255, 252, 0.924);
-  text-shadow: 0 0.25rem 1rem rgba(67, 247, 43, 0.883);
+  text-shadow: 0 0.25rem 1rem rgba(247, 223, 43, 0.78);
 }
 
 .card__price {
@@ -131,7 +131,8 @@ body {
   padding: 0.125em 0.5em;
   text-shadow: 0 0.25rem .25rem rgba(0, 0, 0, 0.669);
   margin-bottom: 1em;
-  width: auto;align-items: center;
+  width: auto;
+  align-items: center;
     align-self: auto;
     justify-content: center;
     text-align: center;
@@ -194,7 +195,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
+
   text-rendering: optimizeSpeed;
   line-height: 1.25;
 }

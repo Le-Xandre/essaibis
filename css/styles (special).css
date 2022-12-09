@@ -114,9 +114,10 @@ a {
   display: grid;
   grid-gap: 1rem;
   grid-template-areas: "a main main main side";
-  grid-template-columns: 280px 1fr 1fr 1fr 1fr;
+  grid-template-columns: 180px 1fr 1fr 1fr 1fr;
   align-items: center;
   text-align: center;
+
   height: calc(100% - 5.25rem);
 }
 
@@ -131,6 +132,8 @@ a {
 
 .app-main {
   grid-area: main;
+  margin: 0;
+  padding:0;
 }
 
 .nav-section {
@@ -143,22 +146,31 @@ a {
   border-radius: 3px;
   margin-bottom: 0.5rem;
   padding: 0.5rem 0.75rem;
+  right: 100px;
+  bottom: 100px;
+  resize: vertical;
+  width: 100%;
+  display: inline-block;
+  max-width: 560px;
 }
 
 .nav-section__body {
-  padding-left: 1rem;
+  padding-left: 1rem;  display: flex;
+  max-width: 300px;
 }
 
 .nav-section__title {
   color: #2be4ea;
   font-size: 1rem;
-  margin: 0;
+  margin: 0;  display: flex;
+  max-width: 300px;
 }
 
 .nav {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0;  display: flex;
+  max-width: 300px;
 }
 
 .nav__link {
@@ -166,12 +178,14 @@ a {
 }
 
 .nav__link__element + .nav__link__element {
-  margin-left: 0.5rem;
+  margin-left: 0.5rem;  display: flex;
+  max-width: 300px;
 }
 
 .app-header .nav {
   align-items: flex-end;
   display: flex;
+  max-width: 300px;
 }
 
 .app-header .nav__item + .nav__item {
@@ -183,7 +197,9 @@ a {
   display: flex;
   text-shadow: var(--ui-glow-text);
   text-transform: uppercase;
-  transition: transform 0.25s;
+  transition: transform 0.25s;  max-width: 660px;
+  resize: horizontal;
+  width: 100%;
 }
 
 .app-header .nav__link:hover {
@@ -285,7 +301,7 @@ a {
 .pad {
   background-color: var(--colors-bg--300);
   border: 2px solid var(--colors-primary--600);
-  clip-path: var(--ui-notch-path);
+  clip-path: var(--ui-notch-path);  max-width: 660px;
 }
 
 .pad__body {
@@ -311,7 +327,7 @@ a {
 input, textarea {
   padding: 4px;
   margin: 4px;
-  text-shadow: -2px 3px 3px rgb(0 0 0), 0 2px 1px rgb(0 0 0);
+  text-shadow: -2px 3px 3px rgb(66, 59, 59), 0 2px 1px rgb(0 0 0);
 }
 
 .form-label {
@@ -405,11 +421,13 @@ input, textarea {
 }
 
 .form-search {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.75rem;  max-width: 660px;
 }
 
 .message {
-  padding-bottom: 1rem;
+  padding-bottom: 1rem;  max-width: 660px;
+  resize: horizontal;
+  width: 100%;
 }
 
 .message__body {
@@ -418,6 +436,9 @@ input, textarea {
   border-radius: 3px;
   color: var(--colors-tertiary--500);
   padding: 0.75rem;
+  max-width: 660px;
+  resize: horizontal;
+  width: 100%;
 }
 
 .message__footer {
@@ -569,6 +590,7 @@ input, textarea {
   justify-content: space-between;
   margin-bottom: 1rem;
   min-height: 3.5rem;
+  max-width: 660px;
 }
 
 .segment-topbar::after {
