@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "normalize.css";
+/* @import "css/style.css"; */
+@import url("https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float|font-effect-anaglyph");
+
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&amp;display=swap");
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,400;8..144,600&family=Spectral:ital,wght@0,200;0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+
+@font-face {
+  font-family: 'Cyber', serif !important;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
+
+:root {
+
+  --first-hue: 198;
+  --sat: 65%;
+  --lig: 55%;
+  --second-hue: 230;
+
+  --first-color: hsla(var(--first-hue), var(--sat), var(--lig));
+  --first-color-alt: hsla(var(--second-hue), var(--sat), 75%); /* -4% */
+
+  --title-color: hsla(var(--second-hue), 25%, 25%);
+  --text-color: hsla(var(--first-hue), 38%, 35%);
+
+  --text-color-light: hsla(var(--second-hue), 64%, 85%);
+
+  --body-color: hsla(var(--first-hue), 78%, 80%);
+  --container-color: hsla(var(--second-hue), 62%, 80%);
+
+
+  --red: rgba(184, 0, 0, 0.991);
+  --red-glow: rgba(125, 31, 34, 0.91);
+  --red-scanline: rgba(141, 1, 6, 0.9);
+  --black-scanline: rgba(1, 1, 1, 0.702);
+  --black-hover-background: rgba(14, 2, 33, 0.782);
+  --blue: #07a6c2;
+  --yellow: #f8f809;
+  --text-shadow: rgba(211, 253, 207, 0.976);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+#dragger_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #344150;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#dragger {
+    width: 640px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px dashed #fbfbfb;
+    border-radius: 5px;
+    background-color: #237270;
+}
+
+#dragger.active {
+    border: 0.125em dashed #ffffff;
+}
+
+#dragger img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#filename {
+    width: 100%;
+}
+
+.fileName {
+    padding: 5px;
+    width: 100%;
+    margin: 10px 0 0 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-trash-can {
+    color: rgb(255, 225, 0);
+    cursor: pointer;
+}
+
+.icon {
+    color: #ffffff;
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+h1,h2,h3 {
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+button {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #333333;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+}

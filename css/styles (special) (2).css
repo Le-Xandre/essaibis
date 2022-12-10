@@ -113,7 +113,7 @@ a {
 .app-container {
   display: grid;
   grid-gap: 1rem;
-  grid-template-areas: "a main main main side";
+  grid-template-areas: "a main main main side to b";
   grid-template-columns: 280px 1fr 1fr 1fr 1fr;
   align-items: center;
   text-align: center;
@@ -450,9 +450,10 @@ input, textarea {
 }
 
 .button__icon {
-  display: block;
+  display: flex;
   height: 1.15rem;
   line-height: 0.5;
+  -webkit-vertical-align: top;
   vertical-align: top;
   width: 1.125rem;
   font-size: xx-large;

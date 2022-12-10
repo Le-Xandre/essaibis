@@ -73,11 +73,11 @@ body {
   margin: 0;
   padding: 0;
   color: var(--hover-text-color);
-  font-family: "GinesoSoft-ConMed";
+  font-family: "Rajdhani";
   background-color: var(--text-color-light);
 background-image: url('bg.png');
   /* background-image: url('https://www.cyberpunk.net/build/images/edgerunners/phase2/cover-mobile-539a2f80.jpg'); */
-  background-size: cover contain !important;
+  background-size: cover;
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
   box-shadow: 0 3px 4px rgba(226, 226, 226, 0.884);
   transition: .10s; /* pour l'animation du dark theme */
@@ -96,22 +96,24 @@ position: relative;
 
 header:before,
 header::before {
-  content: "";
   position: absolute;
+  display: block;
   width: 100%;
   height:auto ;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;box-shadow: 0 13px 14px rgba(226, 226, 226, 0.884);
-  display: block;
+  bottom: 0;
   font-weight: 300;
-  background: url('../build/images/home6/edgerunners-speed-pattern-dee80c47.svg');
-  background: 50% 50% / cover;
-  background-size:cover;opacity: 0.5;
+  content: "";
+  background: url('../build/images/home6/edgerunners-speed-pattern-dee80c47.svg') 50% 50% / cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
   transform-origin: center center 0;
-  transform: translateZ(-1px) scale(2);
-
+  transform: translateZ(-1px) scale(1);
+box-shadow: 0 13px 14px rgba(226, 226, 226, 0.884);
   min-height: 100vh;
   z-index: -1;
 
@@ -140,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-semibold);
   font-size: clamp(2rem,1rem + 10vw,5rem);
   text-transform: uppercase;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: 'Orbitron', "Roboto Condensed", Helvetica, sans-serif;
 }
 
 h1 {
@@ -1462,14 +1464,14 @@ Live Demo
   left: 0;
   width: 100%;
   padding-block: 18px;
-  transition: var(--transition-2);
+  transition: var(--transition-1);
   z-index: 4;
 }
 
 .header.active {
   background-color: var(--eerie-black);
   padding-block: 12px;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shimmy-distance);
 }
 
 .header .container,
@@ -1482,10 +1484,10 @@ Live Demo
 .navbar {
   position: fixed;
   top: 0;
-  right: -280px;
+  right: -180px;
   background-color: var(--eerie-black);
   height: 100vh;
-  max-width: 280px;
+  max-width: 180px;
   width: 100%;
   padding: 25px;
   overflow-y: auto;
@@ -1496,7 +1498,7 @@ Live Demo
 
 .navbar.active {
   visibility: visible;
-  transform: translateX(-280px);
+  transform: translateX(-180px);
   transition-duration: 0.5s;
 }
 

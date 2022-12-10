@@ -19,6 +19,28 @@
   font-style: normal;
 }
 
+@import "normalize.css";
+@import "css/style.css";
+
+
+@import url("https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float|font-effect-anaglyph");
+
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&amp;display=swap");
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,400;8..144,600&family=Spectral:ital,wght@0,200;0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+
+@font-face {
+  font-family: 'Cyber', serif !important;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
 body {
   background-color: var(--yellow-color);
   padding: 0px;
@@ -26,7 +48,7 @@ body {
 }
 
 body * {
-  font-family: "Advent Pro", arial ;
+  font-family: 'Cyber', serif,'Rajdhani', arial, sans-serif;
 }
 
 /* Form fields */
@@ -50,7 +72,7 @@ select.cyberpunk {
   padding: 12px;
   font-size: 1.7rem;
   font-weight: 700;
-  /*caret-shape: underscore;*/
+  caret-shape: underscore;
 }
 
 input[type="password"].cyberpunk {
@@ -204,7 +226,7 @@ hr.cyberpunk.glitched {
   animation-name: hr;
   animation-duration: var(--glitched-long-duration);
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
 }
 
 @keyframes hr {
@@ -222,12 +244,12 @@ hr.cyberpunk.glitched {
     transform: skew(20deg);
     clip-path: polygon(1px 0px, 0px 0px, 0px 0px, 8px 14px, 13px 14px, 22px 7px, 42px 6px, 49px 2px, 100% 2px, 100% 0px, 42px 0px, 35px 5px, 22px 6px, 13px 13px, 9px 13px);
     margin-left: -20px;
-  
+
   }
   20% {
     transform: skew(-20deg);
     clip-path: polygon(1px 0px, 0px 0px, 0px 0px, 8px 14px, 13px 14px, 22px 7px, 42px 6px, 49px 2px, 100% 2px, 100% 0px, 42px 0px, 35px 5px, 22px 6px, 13px 13px, 9px 13px);
-    margin-left: 20px;  
+    margin-left: 20px;
   }
   21% {
     transform: skew(0deg);
@@ -245,12 +267,12 @@ hr.cyberpunk.glitched {
     clip-path: polygon(1px 0px, 0px 0px, 0px 0px, 8px 14px, 13px 14px, 22px 7px, 42px 6px, 49px 2px, 100% 2px, 100% 0px, 42px 0px, 35px 5px, 22px 6px, 13px 13px, 9px 13px);
     margin-left: -5px;
     transform: scaleX(-1);
-  
+
   }
   70% {
     transform: skew(40deg);
     clip-path: polygon(1px 0px, 0px 0px, 0px 0px, 8px 14px, 13px 14px, 22px 7px, 42px 6px, 49px 2px, 100% 2px, 100% 0px, 42px 0px, 35px 5px, 22px 6px, 13px 13px, 9px 13px);
-    margin-left: 20px;  
+    margin-left: 20px;
     transform: scaleX(-1);
   }
   71% {
@@ -460,7 +482,7 @@ ul.cyberpunk li.glitched {
   animation-name: liglitched;
   animation-duration: var(--glitched-duration);
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
 }
 
 ol.cyberpunk li.glitched:nth-child(3n+3),
@@ -471,7 +493,7 @@ ul.cyberpunk li.glitched:nth-child(1) {
 ol.cyberpunk li.glitched:nth-child(5n+5),
 ul.cyberpunk li.glitched:nth-child(5n+5) {
   animation-duration: calc(var(--glitched-duration) * 0.7);
-  animation-timing-function: ease-out; 
+  animation-timing-function: ease-out;
 }
 
 ol.cyberpunk li.glitched:nth-child(2n+2),
@@ -542,7 +564,7 @@ ul.cyberpunk li.glitched:nth-child(4n+4) {
   animation-name: scanneda;
   animation-duration: var(--glitched-duration);
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
   animation-direction: alternate;
 }
 
@@ -808,7 +830,7 @@ a.cyberpunk2077:focus {
   animation-name: buttonhover;
   animation-duration: var(--glitched-duration);
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
 }
 
 button.cyberpunk2077.green,
@@ -1100,7 +1122,7 @@ section.cyberpunk.black input[type="password"].cyberpunk,
 section.cyberpunk.black select.cyberpunk {
   border-color: var(--yellow-color);
   background-color: #000;
-  color: var(--yellow-color); 
+  color: var(--yellow-color);
 }
 
 section.cyberpunk.black input[type="time"]::-webkit-calendar-picker-indicator,
@@ -1109,7 +1131,7 @@ section.cyberpunk.black input[type="date"]::-webkit-calendar-picker-indicator{
 }
 
 section.cyberpunk.black input[type="radio"].cyberpunk {
-  background-color: var(--yellow-color); 
+  background-color: var(--yellow-color);
 }
 
 section.cyberpunk.black input[type="radio"].cyberpunk:after {

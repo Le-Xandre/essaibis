@@ -29,14 +29,15 @@ const linkAction = () =>{
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-const scrollHeader = () =>{
-    const header = document.getElementById('header')
-    // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-    this.scrollY >= 50 ? header.classList.add('scroll-header') 
-                       : header.classList.remove('scroll-header')
+/* Link active work */
+const linkWork = document.querySelectorAll('.work__item')
+
+function activeWork(){
+    linkWork.forEach(l=> l.classList.remove('active-work'))
+    this.classList.add('active-work')
 }
-window.addEventListener('scroll', scrollHeader)
+
+linkWork.forEach(l=> l.addEventListener('click', activeWork))
 
 /*=============== SWIPER TESTIMONIAL ===============*/
 let swiperTestimonial = new Swiper(".testimonial__container", {
@@ -49,7 +50,7 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-    
+
       // And if we need scrollbar
       scrollbar:{
         el: '.swiper-scrollbar',
@@ -65,6 +66,29 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
         },
     },
 });
+/*=============== SERVICES MODAL ===============*/
+const modalViews = document.querySelectorAll('.services__modal'),
+    modalBtns = document.querySelectorAll('.services__button'),
+    modalClose = document.querySelectorAll('.services__modal-close')
+
+let modal = function(modalClick){
+modalViews[modalClick].classList.add('active-modal')
+}
+
+modalBtns.forEach((mb, i) =>{
+mb.addEventListener('click', () =>{
+    modal(i)
+})
+})
+
+modalClose.forEach((mc) =>{
+    mc.addEventListener('click', () =>{
+    modalViews.forEach((mv) =>{
+    mv.classList.remove('active-modal')
+    })
+    })
+})
+
 
 /*=============== TESTIMONIAL SWIPER ===============*/
 let testimonialSwiper = new Swiper(".testimonial-swiper", {
@@ -97,7 +121,7 @@ let newSwiper = new Swiper(".new-swiper", {
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
-    
+
 const scrollActive = () =>{
   	const scrollY = window.pageYOffset
 
@@ -106,22 +130,22 @@ const scrollActive = () =>{
 			  sectionTop = current.offsetTop - 58,
 			  sectionId = current.getAttribute('id'),
 			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
-            
+
 
 		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-			
+
             document.querySelector(sectionsClass.classList.add('active-link')),('.nav__menu a[href*=' + sectionId + ']')
-            
+
 		}
         else{
 			document.querySelector(sectionsClass.classList.remove('active-link')),('.nav__menu a[href*=' + sectionId + ']')
-            
-		}                                              
+
+		}
 	})
 
 }
 window.addEventListener('scroll', scrollActive)
-/*=============== SHOW SCROLL UP ===============*/ 
+/*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () =>{
 	const scrollUp = document.getElementById('scroll-up')
     // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
@@ -129,6 +153,27 @@ const scrollUp = () =>{
 						: scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay:400,
+    reset:true,
+})
+sr.reveal('.home__data')
+sr.reveal('.home__handle', {delay:700})
+sr.reveal('.home__social, .home__scroll',{delay:900,origin:'bottom'})
+/*=============== MIXITUP FILTER PORTFOLIO ===============*/
+let mixerPortfolio = mixitup('.work__container', {
+    selectors: {
+    target: '.work__card'
+    },
+    animation: {
+    duration: 300
+    }
+});
 
 /*=============== SHOW CART ===============*/
 const cart = document.getElementById('cart'),
@@ -151,50 +196,17 @@ if(cartClose){
     })
 }
 
-/*=============== SERVICES MODAL ===============*/
-const modalViews = document.querySelectorAll('.services__modal'),
-    modalBtns = document.querySelectorAll('.services__button'),
-    modalClose = document.querySelectorAll('.services__modal-close')
-
-let modal = function(modalClick){
-modalViews[modalClick].classList.add('active-modal')
+/*=============== CHANGE BACKGROUND HEADER ===============*/
+const scrollHeader = () =>{
+    const header = document.getElementById('header')
+    // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+    this.scrollY >= 50 ? header.classList.add('scroll-header')
+                       : header.classList.remove('scroll-header')
 }
+window.addEventListener('scroll', scrollHeader)
 
-modalBtns.forEach((mb, i) =>{
-mb.addEventListener('click', () =>{
-    modal(i)
-})
-})
 
-modalClose.forEach((mc) =>{
-    mc.addEventListener('click', () =>{
-    modalViews.forEach((mv) =>{
-    mv.classList.remove('active-modal')
-    })
-    })
-})
-
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
-let mixerPortfolio = mixitup('.work__container', {
-    selectors: {
-    target: '.work__card'
-    },
-    animation: {
-    duration: 300
-    }
-});
-
-/* Link active work */ 
-const linkWork = document.querySelectorAll('.work__item')
-
-function activeWork(){
-    linkWork.forEach(l=> l.classList.remove('active-work'))
-    this.classList.add('active-work')
-}
-
-linkWork.forEach(l=> l.addEventListener('click', activeWork))
-
-/*=============== DARK LIGHT THEME ===============*/ 
+/*=============== DARK LIGHT THEME ===============*/
 const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'
 const iconTheme = 'bx-sun'
@@ -224,15 +236,3 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay:400,
-    //reset:true,
-})
-sr.reveal('.home__data')
-sr.reveal('.home__handle', {delay:700})
-sr.reveal('.home__social, .home__scroll',{delay:900,origin:'bottom'})

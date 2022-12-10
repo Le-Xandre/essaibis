@@ -11,7 +11,7 @@
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: #e5e7eb; /* 2 */
+  border-color: #ebebe520; /* 2 */
 }
 
 ::before,
@@ -191,7 +191,7 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  -webkit-appearance: button; /* 1 */
+  -webkit-appearance: button; /* 1 */appearance: button;
   background-color: transparent; /* 2 */
   background-image: none; /* 2 */
 }
@@ -235,7 +235,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 */
 
 [type='search'] {
-  -webkit-appearance: textfield; /* 1 */
+  -webkit-appearance: textfield; /* 1 */appearance: textfield;
   outline-offset: -2px; /* 2 */
 }
 
@@ -244,7 +244,7 @@ Remove the inner padding in Chrome and Safari on macOS.
 */
 
 ::-webkit-search-decoration {
-  -webkit-appearance: none;
+  -webkit-appearance: none;appearance: none;
 }
 
 /*
@@ -253,7 +253,7 @@ Remove the inner padding in Chrome and Safari on macOS.
 */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
+  -webkit-appearance: button; /* 1 */appearance: button;
   font: inherit; /* 2 */
 }
 
@@ -356,7 +356,7 @@ audio,
 iframe,
 embed,
 object {
-  display: block; /* 1 */
+  display: inline-block; /* 1 */
   vertical-align: middle; /* 2 */
 }
 
