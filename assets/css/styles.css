@@ -25,7 +25,7 @@
   --first-color: hsla(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsla(var(--second-hue), var(--sat), 95%); /* -4% */
   --title-color: hsla(var(--first-hue), 25%, 95%);
-  --text-color: hsla(var(--first-hue), 10%, 25%);
+  --text-color: hsla(var(--first-hue), 30%, 35%);
   --text-color-light: hsla(var(--first-hue), 4%, 85%);
   --body-color: hsla(var(--second-hue), 50%, 8%);
   --container-color: hsla(var(--second-hue), 35%, 14%);
@@ -193,7 +193,7 @@ address { font-style: normal; }
 html {
   font-family: var(--ff-gordita);
   font-size: 10px;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -1700,8 +1700,8 @@ position: absolute;
 }
 .about__img{
   display: flex;
-  max-width: 45%;
-border-radius: 100%;
+  max-width: 55%;
+border-radius: 10%;
   justify-self: center;
   justify-content: center;
   background-color: var(--body-color);

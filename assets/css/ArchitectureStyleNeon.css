@@ -153,12 +153,10 @@ h3 {
     font-size: var(--h3-font-size);
     font-family: 'Sylfaen';
     text-decoration-style: double;
-    text-decoration: none;
+
     text-align: center;
-     color: var(--text-color-light-04);
-    text-shadow: 0 0 5px #fff, 0 0 20px #fff,
-    0 0 25px #f44b03, 0 0 30px #4ff403, 0 0 35px #03a9f4, 0 0 40px #03a9f4,
-    0 0 50px #031a24;
+     color: var(--text-color-light-03);
+    text-shadow: 0 4px 5px rgb(0, 0, 0);
 }
 
   form {
