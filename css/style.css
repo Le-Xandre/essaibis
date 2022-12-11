@@ -28,16 +28,33 @@
   --blue: #1852b6;
   --yellow: #ffff00;
   --text-shadow: rgb(83, 182, 225);
-
+  --border-shadow: rgb(83, 182, 225);
 
   --premiere-color:rgb(255, 241, 171);
   --seconde-color:rgba(170, 25, 12, 0.991);
   --third-color:rgb(9, 142, 34);
 
+  --first-hue: 201;
+    --sat: 55%;
+  --lig: 55%;
+
+  --second-hue: 235;
+
+  --first-color: hsla(var(--first-hue), var(--sat), var(--lig));
+  --first-color-alt: hsla(var(--second-hue), var(--sat), 71%); /* -4% */
+  --title-color: hsla(var(--second-hue), 75%, 55%);
+  --text-color: hsla(var(--first-hue), 8%, 75%);
+  --text-color-light: hsla(var(--second-hue), 4%, 55%);
+  --container-color: hsla(var(--second-hue), 32%, 12%);
+  --blanc: #c7c7c7fd;
+  --noir: #000002;
+  --gris-transparent: #42404081;
+  --body-color: #3e370b9a;
+
   --text-color-light-01: rgb(5, 134, 1);
   --text-color-light-02: rgb(209, 200, 14);
   --text-color-light-03: rgb(255, 153, 0);
-  --text-color-light-04: rgba(28, 17, 182, 0.972);
+  --text-color-light-04: rgb(111, 204, 254);
   --text-color-light-05: rgb(213, 17, 122);
   --text-color-light-06: rgba(20, 4, 46, 0.884);
 
@@ -113,23 +130,6 @@
   --smaller-font-size: .75rem;
   --tiny-font-size: .625rem;
 
-  --first-hue: 201;
-    --sat: 55%;
-  --lig: 55%;
-
-  --second-hue: 235;
-
-  --first-color: hsla(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsla(var(--second-hue), var(--sat), 71%); /* -4% */
-  --title-color: hsla(var(--second-hue), 75%, 55%);
-  --text-color: hsla(var(--first-hue), 8%, 75%);
-  --text-color-light: hsla(var(--second-hue), 4%, 55%);
-  --container-color: hsla(var(--second-hue), 32%, 12%);
-  --blanc: #c7c7c7fd;
-  --noir: #000002;
-  --gris-transparent: #42404081;
-  --body-color: #3e370b9a;
-
 
   --smaller-font-size: .50rem;
   --normal-font-size: 1rem;
@@ -165,47 +165,7 @@
   --z-fixed: 100;
   --z-modal: 1000;
 
-}
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-
-@media only screen and (min-width: 65em) {
-  :root {
-    --fs-100: 0.725rem;
-    --fs-200: 0.875rem;
-    --fs-300: 1rem;
-    --fs-400: 1.125rem;
-    --fs-500: 1.325rem;
-    --fs-600: 2rem;
-    --fs-700: 2.75rem;
-    --fs-800: 3.5rem;
-    --fs-900: 5rem;
-  }
-}
-@media only screen and (min-width: 50em) {
-  :root {
-    --fs-100: 0.725rem;
-    --fs-200: 0.875rem;
-    --fs-300: 1rem;
-    --fs-400: 1.125rem;
-    --fs-500: 1.325rem;
-    --fs-600: 2rem;
-    --fs-700: 2.75rem;
-    --fs-800: 3.25rem;
-    --fs-900: 4rem;
-  }
-}
-
-
-  *,  *::before,  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    /* scroll-behavior: auto !important; */
-  }
-}
-
-   /*========== color theme ==========*/
+}   /*========== color theme ==========*/
 
    :root.blue {
     --bg-color:#0c4a60db;
@@ -297,6 +257,46 @@
     --font-family: 'Roboto Flex', sans-serif;
     --font-size : var(--font-family);
   }
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+
+@media only screen and (min-width: 65em) {
+  :root {
+    --fs-100: 0.725rem;
+    --fs-200: 0.875rem;
+    --fs-300: 1rem;
+    --fs-400: 1.125rem;
+    --fs-500: 1.325rem;
+    --fs-600: 2rem;
+    --fs-700: 2.75rem;
+    --fs-800: 3.5rem;
+    --fs-900: 5rem;
+  }
+}
+@media only screen and (min-width: 50em) {
+  :root {
+    --fs-100: 0.725rem;
+    --fs-200: 0.875rem;
+    --fs-300: 1rem;
+    --fs-400: 1.125rem;
+    --fs-500: 1.325rem;
+    --fs-600: 2rem;
+    --fs-700: 2.75rem;
+    --fs-800: 3.25rem;
+    --fs-900: 4rem;
+  }
+}
+
+
+  *,  *::before,  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    /* scroll-behavior: auto !important; */
+  }
+}
+
 
 
 

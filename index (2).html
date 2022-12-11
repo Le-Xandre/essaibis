@@ -19,21 +19,21 @@ rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Roboto:wght@400;700&display=swap"
 rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 
-
-
-<link href="cyberpunk-2077.css" rel="stylesheet" />
-<link href="Assets/Css/style.css" rel="stylesheet" />
-
-
-
-<!--<link href="assets/css/styleport.css" rel="stylesheet" />
-<link href="assets/css/styles.css" rel="stylesheet"/><link href="normalize.css" rel="stylesheet" /><link href="style.css" rel="stylesheet"/>
+<link href="css/lightbox.css" rel="stylesheet" />
 <link rel="stylesheet" href="indexGrag.css" />
-<link href="css/lightbox.css" rel="stylesheet" /><link href="css/swiper-bundle.min.css" rel="stylesheet" />
+<link href="src/app.css" rel="stylesheet"/><link href="src/input.css" rel="stylesheet"/>
+<link href="Assets/Css/style.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/><link href="cyberpunk-2077.css" rel="stylesheet"/>
+<link href="normalize.css" rel="stylesheet" />
+
+<!--
+
+<link href="assets/css/styleport.css" rel="stylesheet"/>
+
 
 
 -->
-
+<link href="css/swiper-bundle.min.css" rel="stylesheet" />
 
 </head>
 
@@ -43,12 +43,12 @@ rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Poppins:wg
 <!-- header -->
 
 <section class="header" id="#home">
+  <h1 class="bx-fade-up-hover" name="slogan" animation='tada-hover'>
 
-<img class="logo" src="Assets/images/NextTOZeBest.svg" alt="slogan" id="logo">
-<h1 class="bx-fade-up-hover" name="slogan" animation='tada-hover'>
-<strong><em>NexToZeBes</em>T►</strong>
+<strong>►<em>NexToZeBes</em>T</strong>
 </h1>
 
+  <img class="logo" src="Assets/images/NextTOZeBest.svg" alt="slogan" id="logo">
 <h2 style="color:rgb(0, 141, 241); text-align:center;">
 <em>@ Le WebZine du futur</em></h2>
 <box-icon class="bx-fade-right-hover" name="rocket" animation='tada-hover'></box-icon>
@@ -56,14 +56,14 @@ rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Poppins:wg
 <nav class="menu">
 <ul class="navbar-list">
 <li class="nav__link" id="#home">
-<a class="nav__link" href="index (1).html"target="_blank"><span class="nav__link__element"><i class="bx bx-home-alt bx-tada-hover"></i> . Accueil
+<a class="nav__link" href="index (1).html"target="_blank"><span class="nav__link__element"><i class="fa fa-home-alt bx-tada-hover"> . Accueil</i>
 </a>
 </li>
-<li><a href="#"target="_blank"><span class="nav__link__element"><i class="fa fa-blog bx-tada-hover"></i> . Blog</a></li>
+<li><a href="#"target="_blank"><span class="nav__link__element"><i class="fa fa-blog bx-tada-hover"> . Blog</i></a></li>
 <li><a href="#"><span class="nav__link__element">
-<i class="fa fa-sliders-h bx-tada-hover" aria-hidden="false"></i> . WebTech
-</a></li><li><a href="#"><span class="nav__link__element"><i class="fa fa-barcode bx-fade-up-hover" aria-hidden="false"></i> . Société</a></li>
-<li><a href="#"><span class="nav__link__element"><i class="fa fa-contact-card bx-tada-hover" aria-hidden="false"></i> . Contact</a></li>
+<i class="fa fa-sliders-h bx-tada-hover" aria-hidden="false"> . WebTech</i>
+</a></li><li><a href="#"><span class="nav__link__element"><i class="fa fa-barcode bx-fade-up-hover" aria-hidden="false"> . Société</i></a></li>
+<li><a href="#"><span class="nav__link__element"><i class="fa fa-contact-card bx-tada-hover" aria-hidden="false"> . Contact</i></a></li>
 
 
 </ul>
@@ -77,7 +77,8 @@ rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Poppins:wg
 </section>
 
 
-<section class="container">
+< class="container" id="intro">
+    <br> <br> <br> <br> </br> </br>
 <div class="title">
 <!-- Titre -->
 <h1>◄ La ville du futur ►</h1>
@@ -96,7 +97,7 @@ rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Poppins:wg
 
 </section>
 
-<section class="container">
+<section class="container" id="metropolis">
 
 
 <article class="metropolis">
@@ -125,7 +126,7 @@ c'est la structure pyramidale, chère à l'Art Déco, qui est mise en avant à l
 
 </section>
 
-<section class="container">
+<section class="container" id="blade runner">
 <!-- Article blade runner -->
 
 <article class="blade_runner">
@@ -142,8 +143,10 @@ Ses enseignes lumineuses qui dématérialisent la ville, qui dissimulent les bâ
 qui anéantissent les frontières entre intérieur et extérieur viennent jeter la confusion dans la
 cité.
 Los Angeles en 2019 est à l'image des villes japonaises qui...
-<br><img class="poster" src="Assets/images/blade runner_compress.jpg"
-alt="vignette Blade Runner"><img width="500" height="300" src="Assets/images/Blade Runner Film GIF by Tech Noir - Find & Share on GIPHY.gif" alt=" Blade Runner"> </p><button><a class='big-btn' href="#">Lire plus</a></button>
+<br>
+<!-- <img class="poster" src="Assets/images/blade runner_compress.jpg"
+alt="vignette Blade Runner"> -->
+<img width="500" height="300" src="Assets/images/Blade Runner Film GIF by Tech Noir - Find & Share on GIPHY.gif" alt=" Blade Runner"> </p><button><a class='big-btn' href="#">Lire plus</a></button>
 <span class="vertical-line">
 
 </span>
@@ -152,7 +155,7 @@ alt="vignette Blade Runner"><img width="500" height="300" src="Assets/images/Bla
 
 </section>
 
-<section class="container">
+<section class="container" id="gattaca">
 
 <!-- article gattaca -->
 
@@ -177,7 +180,7 @@ nombreux
 la symbolique de la double hélice de l’ADN, comme l’escalier de forme hélicoïdale de l’appartement
 de
 Jérôme...<br>
-<!--  --><img class="poster" src="Assets/images/Bienvenue à Gattaca.jpg" alt="Gattaca appartement Jerome"><img  src="Assets/images/Gattaca_08.jpg" alt="Gattaca appartement Jerome">
+<img class="poster" src="Assets/images/Bienvenue à Gattaca.jpg" alt="Gattaca appartement Jerome"><!--  <img  src="Assets/images/Gattaca_08.jpg" alt="Gattaca appartement Jerome">-->
 </p>
 <button><a class='big-btn' href="#">Lire plus</a></button>
 <span class="vertical-line"></span>
@@ -185,7 +188,7 @@ Jérôme...<br>
 
 </section>
 
-<section class="container">
+<section class="container" id="Neom">
 
 <!-- article Neom -->
 <article class="neom">
@@ -212,19 +215,24 @@ Un projet pharaonique à 500 milliards de dollars...<br>
 <span class="vertical-line"></span>
 </article>
 </section>
-
+<!-- footer -->
 <section class="section footer" id="footer">
-
+    <br>
 <div class="last">
 <p>
-<h1><strong><em>NexToZeBes</em>T►</strong>
-</h1><h3 style="color:rgb(0, 141, 241); text-align:center;">
-@<em>Le WebZine du futur</em></h3> <a class="button_1" style="color: rgb(0, 141, 241);" href="#"><span class="nav__link__element bx-fade-down-hover" name="Neo" animation='tada-hover'> ► Abonnez-vous ◄ </span> </a></p>
+<h1 class="bx-fade-up-hover" name="slogan" animation='tada-hover'><strong>►<em>NexToZeBes</em>T</strong>
+</h1><h3 style="color:rgb(0, 141, 241); text-align:center;" class="bx-fade-up-hover" name="slogan" animation='tada-hover'>
+@<em> Le WebZine du futur</em></h3>
+<a class="button_1" style="color: rgb(0, 141, 241);" href="#"><span class="nav__link__element bx-fade-down-hover" name="Neo" animation='tada-hover'>► Abonnez-vous ◄</span>
+</a>
+</p>
 
 </div>
+<br>
 <hr>
+
 <div class="nav-section">
-<!-- footer -->
+
 
 <ul>
 <li><a href="#">Accueil</a></li>
@@ -237,7 +245,7 @@ Un projet pharaonique à 500 milliards de dollars...<br>
 
 </div>
 <hr>
-<span class="zebest">
+<br><span class="zebest">
 <h3 style="color:rgb(109, 193, 229);text-align:center;">
 Réalisé par Michel K. ◄ Copyright &copy 2011-2021-20xx ► customisé par Alex. C. </h3>
 </span>
