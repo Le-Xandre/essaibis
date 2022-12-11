@@ -77,7 +77,7 @@ body {
   background-color: var(--text-color-light);
 background-image: url('bg.png');
   /* background-image: url('https://www.cyberpunk.net/build/images/edgerunners/phase2/cover-mobile-539a2f80.jpg'); */
-  background-size: cover;
+  background: 50% / 50% cover !important;
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
   box-shadow: 0 3px 4px rgba(226, 226, 226, 0.884);
   transition: .10s; /* pour l'animation du dark theme */
@@ -738,7 +738,7 @@ text-align: center;
   background: var(--black-hover-background);
   background-image: url('bg.png');/* bg.png */
   border-color: var(--bg-color);
-  background: contain !important;
+  background: cover !important;
   transition: color 0.23s linear infinite;
   transition: border-color 0.23s linear;
 }
@@ -839,15 +839,16 @@ text-align: center;
   box-shadow: 5px 5px 20px -5px rgba(51, 227, 240, 0.6);
   cursor: pointer;
   display: inline-block;
-  height: 325px;
-  padding: 10px 15px;  margin: 10px;
+  height: 460px;
+  padding: 45px 45px;
+  margin: 10px;
   overflow: hidden;
   perspective: 1200px;
   position: relative;
   transform-style: preserve-3d;
-  transform: translatez(35px);
-  transition: transform 200ms ease-out;
-  width: 240px;
+  transform: translateZ(45px);
+  transition: transform 100ms ease-out;
+  width: 340px;
   align-items: center;
     align-self: auto;
     justify-content: center;
@@ -908,8 +909,11 @@ text-align: center;
 
 
 .card__two{
-    top: 25px;
-    background: url('img/Cyberpunk_2077_Lifepath_Corpo.png') center / cover no-repeat;
+  top: 14px;
+  text-shadow:  1px 4px 4px rgba(5, 92, 114, 0.89);
+  right: -10px;
+  height: 110%;
+    background: url('./img/Cyberpunk_2077_Lifepath_Corpo.png') center / cover no-repeat;
   }
 
   .card__text {
@@ -953,6 +957,10 @@ text-align: center;
 }
 
   .card__four{
+    top: 14px;
+    text-shadow:  1px 4px 4px rgba(5, 92, 114, 0.89);
+    right: -10px;
+    height: 110%;
     background: url('img/slides/slide (118).png') center / cover no-repeat;
 
   }
@@ -972,6 +980,10 @@ text-align: center;
     z-index: 2;
 }
   .card__five{
+    top: 14px;
+    text-shadow:  1px 4px 4px rgba(5, 92, 114, 0.89);
+    right: -10px;
+    height: 110%;
     background: url('img/Cyberpunk_2077_Lifepath-01.jpg') center / cover no-repeat;
 
   }.card__text {
@@ -990,9 +1002,13 @@ text-align: center;
     z-index: 2;
 }
   .card__six{
+    top: 14px;
+    text-shadow:  1px 4px 4px rgba(5, 92, 114, 0.89);
+    right: -10px;
+    height: 110%;
     background: url('img/Cyberpunk_2077_Lifepath-02.jpg') center / cover no-repeat;
+}
 
-  }
   .card__text {
     position: relative;
     display: flex;
