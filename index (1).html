@@ -57,11 +57,11 @@ rel="stylesheet">
 <link rel="stylesheet" href="cyberpunk-2077.css"/>
 <link rel="stylesheet" href="indexGrag.css"/>
 <link rel="stylesheet" href="css/normalize.min.css"/>
-
+<link rel="stylesheet" href="assets/css/ArchitectureStyleNeon.css"/>
 <!-- =============== lightbox CSS  ===============-->
 <link rel="stylesheet" href="css/lightbox.css"/>
+<link rel="stylesheet" href="../dist/css/lightbox.min.css">
 
-<link rel="stylesheet" href="assets/css/ArchitectureStyleNeon.css"/>
 
 <!-- =============== SWIPER Css  ===============-->
 <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
@@ -831,18 +831,48 @@ class="text-center flex flex-col items-center justify-center h-full text-gray-90
         </button>
 
 
+<h2>1 mini slider<br>
+    (Cliquez sur l'image)</h2>
+  <div>
+    <a class="example-image-link" href="img/C77-(00).jpg" data-lightbox="example-set" data-title="Chromebook 2020. (data réelle : 19 / 09 / 2019)">
+      <!-- <img class="example-image" src="img/C77-(00).jpg" alt="" /> -->
+    </a>
+    <a class="example-image-link" href="img/C77-(0).jpg" data-lightbox="example-set" data-title="Chromebook 2020. (data réelle : 26 / 10 / 2019)">
+      <img style="width:25%;height:auto;" class="example-image" src="img/C77-(0).jpg" alt="" />
+    </a>
 
+    <a class="example-image-link" href="img/C77-(2).jpg" data-lightbox="example-set" data-title="Vous pouvez appuyer sur les flèches de votre clavier pour vous déplacer ◄► / Chromebook 2020. (data réelle : 17 / 10 / 2019)">
+      <!-- <img class="example-image" src="img/C77-(2).jpg" alt=""/> -->
+    </a>
+   <a class="example-image-link" href="img/02 (5).jpg" data-lightbox="example-set" data-title="Si vous le souhaitez vous pouvez Cliquer en dehors de l'image ou sur la petite X (en bas à droite) pour Fermer l'ensemble. / Chromebook 2020. 1er Background : ' Sonate Hydrogène '">
+      <!-- <img class="example-image" src="img/02 (5).jpg" alt="" /> -->
+    </a>  <a class="example-image-link" href="img/C77-(1).jpg" data-lightbox="example-set" data-title="Chromebook 2020. Step One : ' Destructuration '">
+<!-- <img class="example-image" src="img/C77-(1).jpg" data-title="Cliquez où vous voulez en dehors de l'image ou sur la petite X pour fermer celle-ci. alt="image-1"/> -->
+</a>
+    <a class="example-image-link" href="img/C77-(4).jpg" data-lightbox="example-set" data-title="Bon visionage à vous ;) / CP 2020 - Chromebook one / Chromebook 2020. (data réelle : 18 / 12 / 2019)">
+      <!-- <img class="example-image" src="img/C77-(4).jpg" alt="" /> -->
+    </a>
+    <a class="example-image-link" href="img/C77-(3).jpg" data-lightbox="example-set" data-title="A chaque image celle-ci se pré-uploade dans le viewer. / GB 2077 - Chromebook two / ChromeBook 2020. (data réelle : 18 / 12 / 2019) [Ar] 3d⁵4s¹" >
+      <!-- <img class="example-image" src="img/C77-(3).jpg" alt="" /> -->
+    </a>
+    <a class="example-image-link" href="img/vaporwolfwave2.jpg" data-lightbox="example-set" data-title="vaporwolfwave. / GB 2077 - Chromebook two / ChromeBook 2020. (data réelle : 18 / 12 / 2019) [Ar] 3d⁵4s¹" >
+      <!-- <img class="example-image" src="img/vaporwolfwave2.jpg" alt="" /><i class="fa fa-video-camera" aria-hidden="true"></i>
+ -->
+    </a>
+
+
+  </div>
 <div id="dragger_wrapper">
-<span>Relancer la page pour télécharger de nouveau 1 image</span><hr>
-<div id="fileName"><br>Le nom de celui-ci s'affichera ici :<hr><br>
-</div>
+
 <div id="dragger">
 <h1 id="drag-text">Glisser & Déposer</h1>
            <h2>Où</h2><div class="icon"><i class="fa-solid fa-images"></i></div>
             <button class="button" id="browseFile">Parcourir les fichiers</button>
 <input type="file" hidden id="fileInputField"/>
 </div>
-
+<span>Relancer la page pour télécharger de nouveau 1 image</span><hr>
+<div id="fileName"><br>Le nom de celui-ci s'affichera ici :<hr><br>
+</div>
   <div id="carousel-container">
 
 <div class="img-slider">
@@ -1012,8 +1042,8 @@ class="text-center flex flex-col items-center justify-center h-full text-gray-90
 
 
 
-<div class="navigation">
-    <div class="btn active"><h3>1</h3></div>
+<div class="navigation active">
+    <div class="btn"><h3>1</h3></div>
     <div class="btn"><h3>2</h3></div>
     <div class="btn"><h3>3</h3></div>
     <div class="btn"><h3>4</h3></div>
@@ -1057,8 +1087,7 @@ class="text-center flex flex-col items-center justify-center h-full text-gray-90
   </script></div> -->
 </div>
 <br>
-</section>
-
+  </section>
 
 <section class="skills__container" id="skills">
   <div class="container_slider">
@@ -1803,7 +1832,8 @@ currentSlide = i;
 </script>
 
 <script src="assets/js/scriptport.js"></script>
-
+<!--  --><script src="js/index.js"></script>
+<script src="../dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>
