@@ -2,14 +2,14 @@
   --glitched-duration: 0.9s;
   --glitched-long-duration: 3s;
   --yellow-color: #f9f002;
-  --yellow-color-opacity: #f9f00242;
-  --orange-color: #ff9800;
-  --border-color: #8ae66e;
+  --yellow-color-opacity: #f9f10266;
+  --orange-color: #ffb300;
+  --border-color: #aee66e;
   --red-color: #ff003c;
-  --blue-color: #136377;
-  --green-color: #446d44;
+  --blue-color: #1597b7;
+  --green-color: #0c860c;
   --purple-color: purple;
-  --neon-color: #39ff14;
+  --neon-color: #82fac0;
 }
 
 @import "normalize.css";
