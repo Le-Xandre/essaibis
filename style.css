@@ -4156,7 +4156,7 @@ animation: pulse 5s infinite;
 .pip-wrapper {
   position: absolute;
   cursor: pointer;
-  -moz-appearance: none;
+  -moz-appearance: none;appearance: none;
   background: none;
   color: inherit;
   border: none;
