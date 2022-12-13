@@ -656,11 +656,11 @@ text-rendering: optimizeLegibility;
 
 .menu {
   display: inline-block;
-  align-items: center;
-  text-align: center;
-  margin-left: 40px;
-  width: 350px;
-  height: 80%;
+  align-items: left;
+  text-align: left;
+  margin-left: 20px;
+  /* width: 480px; */
+  height: 50%;
   background: repeating-linear-gradient(
       to bottom,
       transparent 0%,
@@ -679,7 +679,7 @@ text-rendering: optimizeLegibility;
 
 .menu ul {
   list-style-type: none;
-  padding: 0px 24px;
+  padding: 0px 10px;
 }
 
 .menu ul li {
@@ -687,11 +687,14 @@ text-rendering: optimizeLegibility;
   cursor: pointer;
   /* layout */
   position: relative;
-  padding: 2px;
-  margin: 2px 0px;
+  padding: 1px;
+  margin: 1px;
   overflow: hidden;
-  width: 250px;
-  height: 47.25px;
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+  width: 320px;
+  height: 45.25px;
   clip-path: polygon(350px 0px, 350px 29px, 322px 57px, 0px 57px, 0px 0px);
 
   /* font */
@@ -736,7 +739,7 @@ text-align: center;
 .menu ul li:hover {
   color: var(--blue);
   background: var(--black-hover-background);
-  background-image: url('bg.png');/* bg.png */
+  background-image: url('');/* bg.png */
   border-color: var(--bg-color);
   background: cover !important;
   transition: color 0.23s linear infinite;

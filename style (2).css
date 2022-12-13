@@ -461,7 +461,7 @@ h3 {
 .menu ul li:hover {
   color: var(--blue);
   background: var(--black-hover-background);
-  background-image: url("bg.png");
+  background-image: url("");
   border-color: var(--blue);
 
   transition: color 0.23s linear;
