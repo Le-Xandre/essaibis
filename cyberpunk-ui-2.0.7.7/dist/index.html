@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Cyberpunk UI 2.0.7.7</title>
+<style>
+a{
+  text-decoration: none;
+}
 
+
+</style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./indexGrag.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./cyberpunk-2077.css">
+<link rel="stylesheet" href="./styles (special).css">
 
 
 
 
-<link rel="stylesheet" href="./cyberpunk-2077.css"><link rel="stylesheet" href="./style.css">
 
 
 
@@ -22,18 +31,51 @@
 
 
 
-<h3> ◄ <a href="https://le-xandre.github.io/essaibis/" class="cyberpunk2077" alt="Cyberpunk" target="_blank">Retour Accueil</a>Version originale par Mitch Anderson ► <a href="https://codepen.io/tmanderson/pen/ExLmybB" class="cyberpunk2077" alt="Cyberpunk UI 2" target="_blank">Cyberpunk UI 2 CodePen</a></h3>
+<h3> ◄ <a href="https://le-xandre.github.io/essaibis/" class="cyberpunk2077 green font-light" alt="Cyberpunk" target="_blank">Retour Accueil</a>Version originale par Mitch Anderson ► <a href="https://codepen.io/tmanderson/pen/ExLmybB" class="cyberpunk2077 blue" alt="Cyberpunk UI 2" target="_blank">Cyberpunk UI 2 CodePen</a></h3>
 <!-- partial:index.partial.html -->
-<div class="flex row w-100 ml-2" style="max-width:98%;">
+<div class="flex row w-98 ml-1" style="max-width:99%;">
 
-  <div class="column w-65 p-1">
+
+  <div class="column w-100 p-1">
+
     <h2 class="play-once">Personnage</h2>
-    <div class="row w-100">
-      <div class="field w-59">
-        <label class="glow text">Nom</label>
+<div class="row w-100">
+
+
+<div class="field w-90% h-40">
+ <div id="dragger">  <div class="icon"><i class="fa-solid fa-images"></i></div>
+      <button class="button" id="browseFile">Parcourir les fichiers</button>
+      <input type="file" hidden id="fileInputField" />
+
+
+  </div><div id="fileName">
+</div>
+<h4 id="drag-text">Relancer ou glisser-déposer de nouveau</h4>
+
+</div>
+      <div class="field w-29">
+        <label class="glow text">Nom du Personnage</label>
         <input type="text" pattern="\w+" />
       </div>
-      <div class="field w-39">
+      <div class="field w-29">
+        <label class="glow text">Nom du joueur / joueuse</label>
+        <input type="text" pattern="\w+" />
+      </div>
+
+    </div>
+<hr>
+    <div class="flex row w-100 justify-space-around flex-wrap">
+                        <div class="field w-14 cyberpunk green">
+              <label class="glow text">Orientation</label>
+              <select>
+                <option value="human">Nomad</option>
+                <option value="human">Gosse des Rues</option>
+                <option value="human">Corpo</option>
+                <option value="human">Lifepath 01</option>
+                <option value="human">Lifepath 02</option>
+              </select>
+            </div>
+      <div class="field w-14 cyberpunk blue">
         <label class="glow text">Meta-type</label>
         <select>
           <option value="human">Humain</option>
@@ -42,22 +84,27 @@
           <option value="human">Orque</option>
           <option value="human">Troll</option>
         </select>
+      </div><div class="field w-14 cyberpunk red">
+        <label class="glow text">Sexe</label>
+                <select>
+          <option value="human">Homme</option>
+          <option value="human">Femme</option>
+          <option value="human">Non Genré</option>
+          <option value="human">Non Binaire</option>
+          <option value="human">Autres</option>
+        </select>
+
       </div>
-    </div>
-    <div class="flex row w-100 justify-space-between flex-wrap">
-      <div class="field w-24 error">
+      <div class="field w-14 cyberpunk purple">
         <label class="glow text">Taille</label>
         <input />
       </div>
-      <div class="field w-24" data-unit="Kg">
+      <div class="field w-14 cyberpunk yellow" data-unit="Kg">
         <label class="glow text">Poids</label>
         <input type="number" />
       </div>
-      <div class="field w-24">
-        <label class="glow text">Sexe</label>
-        <input />
-      </div>
-      <div class="field w-24" data-unit="Ans">
+
+      <div class="field w-14 cyberpunk no-underline" data-unit="Ans">
         <label class="glow text">Age</label>
         <input type="number" />
       </div>
@@ -119,32 +166,33 @@
 
     <div class="flex row mt-1"><button class="green">Accepter</button>
 
- <button class="blue">Info</button><button class="cyberpunk blue cyberpunk2077">
+
+<button class="blue">Corriger</button>
+<button class="red">annuler</button>
+
+
+<button class="purple">Info</button>
+<button class="cyberpunk yellow">
   <a href="https://cyberpunk-jdr.fr/index.php">Lien vers la Communauté Fr du jdr officiel</a>
 </button>
-
-
-<button class="red">annuler</button><button style="width:10%" class="cyberpunk purple">
+<button style="width:10%;height:40px;" class="yellow cyberpunk">
     <a class="cyberpunk"
-    href="creations_personnages/21-07-19-17-06-02_CyberpunkRed-fiche-de-personnage_editable.pdf" alt="fiche-de-personnage" target="blank"> PDF
-    <img class="cyberpunk" style="width:100%" src="creations_personnages/21-07-19-17-06-02_img_CyberpunkRed-fiche-de-personnage.jpg" alt="fiche-de-personnage"><em>interactif</em></a></button>
-<button class="yellow">Corriger</button>
-
-
-
+    href="creations_personnages/21-07-19-17-06-02_CyberpunkRed-fiche-de-personnage_editable.pdf" alt="fiche-de-personnage" target="blank">
+    <img class="cyberpunk" style="width:50%" src="creations_personnages/21-07-19-17-06-02_img_CyberpunkRed-fiche-de-personnage.jpg" alt="fiche-de-personnage"> PDF</a><em>interactif</em></button>
   </div>
 
-  </div><div class="flex column w-32 p-1">
-    <h2>Engrenages <h3>Magasin d'équipements :
-       <br>armements offensifs & défensifs</h3></h2>► DV: Defensive Value ► AR : Nbre de balles / rafales
-    <br>►MODES : (auto, semi-auto, etc...)
+  </div>
+  <div class="flex column w-42 p-1">
+    <h2>Engrenages</h2>
+       <h6> Magasin d'équipements : <em>armements offensifs & défensifs</em></h6>► DV : Defensive Value <br>► AR : Nbre de balles / rafales
+    <br>► MODES : (auto, semi-auto, etc...)
     <div class="flex column mb-1 hoverable">
       <div class="glow text flex row justify-space-between">
         <strong>
           Ares Predator I
         </strong>
         <strong>
-          € 500
+          € 200
         </strong>
       </div>
       <div class="glow flex column p-1 pb-2">
@@ -163,7 +211,7 @@
           </div>
           <div class="flex column px-1">
             <strong>MUNITIONS</strong>
-            <span class="glow text">25(c)</span>
+            <span class="glow text">24(c)</span>
           </div>
           <div class="flex column px-1">
             <strong>Nbre d'utilisations</strong>
@@ -195,13 +243,13 @@
           Ares Predator II
         </strong>
         <strong>
-          € 600
+          € 400
         </strong>
       </div>
       <div class="glow flex row justify-space-between p-1 pb-2 flex-wrap">
         <div class="flex column px-1">
           <strong>DV</strong>
-          <span class="glow text">12</span>
+          <span class="glow text">14</span>
         </div>
         <div class="flex column px-1">
           <strong>MODES</strong>
@@ -209,15 +257,15 @@
         </div>
         <div class="flex column px-1">
           <strong>AR</strong>
-          <span class="glow text">9/9/7/-/-</span>
+          <span class="glow text">10/10/10/-/-</span>
         </div>
         <div class="flex column px-1">
           <strong>MUNITIONS</strong>
-          <span class="glow text">25(c)</span>
+          <span class="glow text">30(c)</span>
         </div>
         <div class="flex column px-1">
           <strong>Nbre d'utilisations</strong>
-          <span class="glow text">2(L)</span>
+          <span class="glow text">3(L)</span>
         </div>
       </div>
     </div>
@@ -235,13 +283,13 @@
           Ares Predator III
         </strong>
         <strong>
-          € 700
+          € 600
         </strong>
       </div>
       <div class="glow flex row justify-space-between p-1 pb-2 flex-wrap">
         <div class="flex column px-1">
           <strong>DV</strong>
-          <span class="glow text">12</span>
+          <span class="glow text">16</span>
         </div>
         <div class="flex column px-1">
           <strong>MODES</strong>
@@ -249,15 +297,15 @@
         </div>
         <div class="flex column px-1">
           <strong>AR</strong>
-          <span class="glow text">9/9/7/-/-</span>
+          <span class="glow text">12/12/5/5/-</span>
         </div>
         <div class="flex column px-1">
           <strong>MUNITIONS</strong>
-          <span class="glow text">25(c)</span>
+          <span class="glow text">34(c)</span>
         </div>
         <div class="flex column px-1">
           <strong>Nbre d'utilisations</strong>
-          <span class="glow text">2(L)</span>
+          <span class="glow text">4(L)</span>
         </div>
       </div>
     </div>
@@ -281,7 +329,7 @@
       <div class="glow flex row justify-space-between p-1 pb-2 flex-wrap">
         <div class="flex column px-1">
           <strong>DV</strong>
-          <span class="glow text">12</span>
+          <span class="glow text">18</span>
         </div>
         <div class="flex column px-1">
           <strong>MODES</strong>
@@ -289,15 +337,15 @@
         </div>
         <div class="flex column px-1">
           <strong>AR</strong>
-          <span class="glow text">9/9/7/-/-</span>
+          <span class="glow text">12/12/10/10/-</span>
         </div>
         <div class="flex column px-1">
           <strong>MUNITIONS</strong>
-          <span class="glow text">25(c)</span>
+          <span class="glow text">40(c)</span>
         </div>
         <div class="flex column px-1">
           <strong>Nbre d'utilisations</strong>
-          <span class="glow text">2(L)</span>
+          <span class="glow text">4(L)</span>
         </div>
       </div>
     </div>
@@ -315,13 +363,13 @@
           Ares Predator V
         </strong>
         <strong>
-          € 900
+          € 1000
         </strong>
       </div>
       <div class="glow flex row justify-space-between p-1 pb-2 flex-wrap">
         <div class="flex column px-1">
           <strong>DV</strong>
-          <span class="glow text">12</span>
+          <span class="glow text">20</span>
         </div>
         <div class="flex column px-1">
           <strong>MODES</strong>
@@ -329,15 +377,15 @@
         </div>
         <div class="flex column px-1">
           <strong>AR</strong>
-          <span class="glow text">9/9/7/-/-</span>
+          <span class="glow text">10/10/10/10/10</span>
         </div>
         <div class="flex column px-1">
           <strong>MUNITIONS</strong>
-          <span class="glow text">25(c)</span>
+          <span class="glow text">50(c)</span>
         </div>
         <div class="flex column px-1">
           <strong>Nbre d'utilisations</strong>
-          <span class="glow text">2(L)</span>
+          <span class="glow text">5(L)</span>
         </div>
       </div>
     </div>
@@ -459,7 +507,7 @@
       <button class="green">Accept</button>
       <button class="red">Cancel</button>
       <button class="blue">Info</button>
-      <button class="yellow">WARN</button>
+      <button class="yellow">WARNING</button>
     </div>
   </div>
 
@@ -688,6 +736,6 @@
 
 
 </div>
-
+<script src="scriptDrag.js" defer></script>
 </body>
 </html>
