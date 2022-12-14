@@ -41,29 +41,34 @@ a{
     <h2 class="play-once">Personnage</h2>
 <div class="row w-100">
 
-
-<div class="field w-90% h-40">
- <div id="dragger">  <div class="icon"><i class="fa-solid fa-images"></i></div>
-      <button class="button" id="browseFile">Parcourir les fichiers</button>
-      <input type="file" hidden id="fileInputField" />
-
-
-  </div><div id="fileName">
-</div>
-<h4 id="drag-text">Relancer ou glisser-déposer de nouveau</h4>
-
-</div>
-      <div class="field w-29">
-        <label class="glow text">Nom du Personnage</label>
-        <input type="text" pattern="\w+" />
-      </div>
       <div class="field w-29">
         <label class="glow text">Nom du joueur / joueuse</label>
         <input type="text" pattern="\w+" />
       </div>
+<div class="field w-29">
+
+  <label class="glow text drag-text">Portrait / Photo / <em style="color:yellow;font-size:12px;">Relancer ou glisser-déposer</em></label>
+
+ <div class="dragger" id="dragger">
+
+      <button class="button" id="browseFile"><div class="icon">
+    <i class="fa-solid fa-images"></i>
+  </div>Parcourir les fichiers</button>
+
+  </div>  <input type="file" hidden id="fileInputField" />
+
+
+
+</div>
+      <div class="field w-29">
+        <label class="glow text">Nom du Personnage</label><div id="fileName">
+</div>
+        <input type="text" pattern="\w+" />
+      </div>
+
 
     </div>
-<hr>
+
     <div class="flex row w-100 justify-space-around flex-wrap">
                         <div class="field w-14 cyberpunk green">
               <label class="glow text">Orientation</label>
@@ -407,7 +412,7 @@ a{
   </footer>
 </div>
 </div>
-
+<hr>
  <h1> ► <em> Original Version by Mitch Anderson</h1> </em>
 <div class="flex row w-100 ml-2" style="max-width:1200px;">
 
