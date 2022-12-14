@@ -1,3 +1,62 @@
+@import url(swiper-bundle.min.css);
+@import url(normalize.min.css);
+
+@import url(lightbox.css);
+
+@import url("https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float|font-effect-anaglyph");
+
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&amp;display=swap");
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,400;8..144,600&family=Spectral:ital,wght@0,200;0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+
+@font-face {
+  font-family: 'Cyber', serif !important;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
+
+
+:root {
+
+  --first-hue: 201;
+  --sat: 65%;
+  --lig: 55%;
+  --second-hue: 225;
+
+  --first-color: hsla(var(--first-hue), var(--sat), var(--lig));
+  --first-color-alt: hsla(var(--second-hue), var(--sat), 75%);
+  /* -4% */
+
+  --title-color: hsla(var(--second-hue), 15%, 35%);
+  --text-color: hsla(var(--first-hue), 18%, 55%);
+
+  --text-color-light: hsla(var(--second-hue), 64%, 25%);
+
+  --body-color: hsla(var(--first-hue), 78%, 50%);
+  --container-color: hsla(var(--second-hue), 62%, 70%);
+
+
+  --red: rgba(184, 0, 0, 0.991);
+  --red-glow: rgba(125, 31, 34, 0.91);
+  --red-scanline: rgba(141, 1, 6, 0.9);
+  --black-scanline: rgba(1, 1, 1, 0.702);
+  --black-hover-background: rgba(55, 9, 4, 0.514);
+  --blue: #6ddaed;
+  --yellow: #d5d506;
+  --text-shadow: rgba(211, 253, 207, 0.976);
+}
+
+
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   background: #002939;
@@ -881,19 +940,19 @@ button {
 }
 
 .bt-0 {
-  border-width-top: 0px;
+  -webkit-border-width-top: 0px;
 }
 
 .bl-0 {
-  border-width-left: 0px;
+  -webkit-border-width-left: 0px;
 }
 
 .br-0 {
-  border-width-right: 0px;
+  -webkit-border-width-right: 0px;
 }
 
 .bb-0 {
-  border-width-bottom: 0px;
+  -webkit-border-width-bottom: 0px;
 }
 
 .bx-0 {
@@ -965,19 +1024,19 @@ button {
 }
 
 .bt-1 {
-  border-width-top: 1px;
+  -webkit-border-width-top: 1px;
 }
 
 .bl-1 {
-  border-width-left: 1px;
+  -webkit-border-width-left: 1px;
 }
 
 .br-1 {
-  border-width-right: 1px;
+  -webkit-border-width-right: 1px;
 }
 
 .bb-1 {
-  border-width-bottom: 1px;
+  -webkit-border-width-bottom: 1px;
 }
 
 .bx-1 {
@@ -1049,19 +1108,19 @@ button {
 }
 
 .bt-2 {
-  border-width-top: 2px;
+  -webkit-border-width-top: 2px;
 }
 
 .bl-2 {
-  border-width-left: 2px;
+  -webkit-border-width-left: 2px;
 }
 
 .br-2 {
-  border-width-right: 2px;
+  -webkit-border-width-right: 2px;
 }
 
 .bb-2 {
-  border-width-bottom: 2px;
+  -webkit-border-width-bottom: 2px;
 }
 
 .bx-2 {
@@ -1133,19 +1192,19 @@ button {
 }
 
 .bt-3 {
-  border-width-top: 3px;
+  -webkit-border-width-top: 3px;
 }
 
 .bl-3 {
-  border-width-left: 3px;
+  -webkit-border-width-left: 3px;
 }
 
 .br-3 {
-  border-width-right: 3px;
+  -webkit-border-width-right: 3px;
 }
 
 .bb-3 {
-  border-width-bottom: 3px;
+  -webkit-border-width-bottom: 3px;
 }
 
 .bx-3 {
@@ -1217,19 +1276,19 @@ button {
 }
 
 .bt-4 {
-  border-width-top: 4px;
+  -webkit-border-width-top: 4px;
 }
 
 .bl-4 {
-  border-width-left: 4px;
+  -webkit-border-width-left: 4px;
 }
 
 .br-4 {
-  border-width-right: 4px;
+  -webkit-border-width-right: 4px;
 }
 
 .bb-4 {
-  border-width-bottom: 4px;
+  -webkit-border-width-bottom: 4px;
 }
 
 .bx-4 {
@@ -1301,19 +1360,19 @@ button {
 }
 
 .bt-5 {
-  border-width-top: 5px;
+  -webkit-border-width-top: 5px;
 }
 
 .bl-5 {
-  border-width-left: 5px;
+  -webkit-border-width-left: 5px;
 }
 
 .br-5 {
-  border-width-right: 5px;
+  -webkit-border-width-right: 5px;
 }
 
 .bb-5 {
-  border-width-bottom: 5px;
+  -webkit-border-width-bottom: 5px;
 }
 
 .bx-5 {
@@ -1385,19 +1444,19 @@ button {
 }
 
 .bt-6 {
-  border-width-top: 6px;
+  -webkit-border-width-top: 6px;
 }
 
 .bl-6 {
-  border-width-left: 6px;
+  -webkit-border-width-left: 6px;
 }
 
 .br-6 {
-  border-width-right: 6px;
+  -webkit-border-width-right: 6px;
 }
 
 .bb-6 {
-  border-width-bottom: 6px;
+  -webkit-border-width-bottom: 6px;
 }
 
 .bx-6 {
@@ -1469,19 +1528,19 @@ button {
 }
 
 .bt-7 {
-  border-width-top: 7px;
+  -webkit-border-width-top: 7px;
 }
 
 .bl-7 {
-  border-width-left: 7px;
+  -webkit-border-width-left: 7px;
 }
 
 .br-7 {
-  border-width-right: 7px;
+  -webkit-border-width-right: 7px;
 }
 
 .bb-7 {
-  border-width-bottom: 7px;
+  -webkit-border-width-bottom: 7px;
 }
 
 .bx-7 {
@@ -1553,19 +1612,19 @@ button {
 }
 
 .bt-8 {
-  border-width-top: 8px;
+  -webkit-border-width-top: 8px;
 }
 
 .bl-8 {
-  border-width-left: 8px;
+  -webkit-border-width-left: 8px;
 }
 
 .br-8 {
-  border-width-right: 8px;
+  -webkit-border-width-right: 8px;
 }
 
 .bb-8 {
-  border-width-bottom: 8px;
+  -webkit-border-width-bottom: 8px;
 }
 
 .bx-8 {
@@ -1637,19 +1696,19 @@ button {
 }
 
 .bt-9 {
-  border-width-top: 9px;
+  -webkit-border-width-top: 9px;
 }
 
 .bl-9 {
-  border-width-left: 9px;
+  -webkit-border-width-left: 9px;
 }
 
 .br-9 {
-  border-width-right: 9px;
+  -webkit-border-width-right: 9px;
 }
 
 .bb-9 {
-  border-width-bottom: 9px;
+  -webkit-border-width-bottom: 9px;
 }
 
 .bx-9 {
@@ -1721,19 +1780,19 @@ button {
 }
 
 .bt-10 {
-  border-width-top: 10px;
+  -webkit-border-width-top: 10px;
 }
 
 .bl-10 {
-  border-width-left: 10px;
+  -webkit-border-width-left: 10px;
 }
 
 .br-10 {
-  border-width-right: 10px;
+  -webkit-border-width-right: 10px;
 }
 
 .bb-10 {
-  border-width-bottom: 10px;
+  -webkit-border-width-bottom: 10px;
 }
 
 .bx-10 {
@@ -2047,6 +2106,8 @@ button.fill {
 button:hover {
   animation: 0.8s ease-out infinite alternate glowing;
   background: var(--color);
+  color: #000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   transform: scale(1) rotateZ(var(--skew));
   transition: transform 0.05s ease, opacity 0.15s ease;
   opacity: 1;
