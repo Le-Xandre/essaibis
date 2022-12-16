@@ -3223,8 +3223,12 @@ text-align: center;
   }
 
   .navigation.active{
-      visibility: visible;
-      opacity: 1;
+      /* visibility: visible;
+      opacity: 1; */
+      position: relative;
+
+        display: grid;
+        place-content: center;
   }
 
   .navigation .nav-items{

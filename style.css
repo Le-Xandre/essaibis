@@ -3761,13 +3761,13 @@ Live Demo
   width: 100%;
   padding: 25px;
   overflow-y: auto;
-  z-index: 2;
+  z-index: 5;
   transition: 0.25s var(--cubic-out);
   visibility: hidden;
 }
 
 .navbar.active {
-  visibility: visible;
+  /* visibility: visible; */
   transform: translateX(-180px);
   transition-duration: 0.5s;
 }
@@ -5729,7 +5729,7 @@ animation: pulse 5s infinite;
 .img-slider .navigation{
   z-index: 10;
   position: absolute;
-  display: flex;
+  display: inline-block;
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);

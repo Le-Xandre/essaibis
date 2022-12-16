@@ -195,7 +195,7 @@ min-width: 450px;  */
   position: fixed;
   bottom: 1rem;
   background-color: hsla(var(--second-hue), 32%, 16%, .8);
-  width: 92%;
+  width: 92%;left: 5px;
   height: auto;
   border: 1px solid rgba(255,255,255,0.2);
   border-radius: 4rem;
