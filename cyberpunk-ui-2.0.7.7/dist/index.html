@@ -38,14 +38,16 @@ a{
 
   <div class="column w-100 p-1">
 
-    <h2 class="play-once">Personnage</h2>
-<div class="row w-100">
-
-      <div class="field w-29">
+    <h2 class="play-once">◄ Personnage  ►</h2>
+    <div class="row w-100"><div class="field w-18">
         <label class="glow text">Nom du joueur / joueuse</label>
         <input type="text" pattern="\w+" />
+      </div><hr><div class="field w-18">
+        <label class="glow text">Nom du Personnage</label><div id="fileName">
+</div>
+        <input type="text" pattern="\w+" />
       </div>
-<div class="field w-29">
+ <div class="field w-72 img with-fallback-color">
 
   <label class="glow text drag-text">Portrait / Photo / <em style="color:yellow;font-size:12px;">Relancer ou glisser-déposer</em></label>
 
@@ -59,16 +61,15 @@ a{
 
 
 
-</div>
-      <div class="field w-29">
-        <label class="glow text">Nom du Personnage</label><div id="fileName">
-</div>
-        <input type="text" pattern="\w+" />
-      </div>
+</div><hr>
+
+
+
 
 
     </div>
 
+<br>
     <div class="flex row w-100 justify-space-around flex-wrap">
                         <div class="field w-14 cyberpunk green">
               <label class="glow text">Orientation</label>
@@ -113,6 +114,7 @@ a{
         <label class="glow text">Age</label>
         <input type="number" />
       </div>
+
     </div>
     <h2>ATTRIBUTS</h2>
     <div class="yellow mb-1">

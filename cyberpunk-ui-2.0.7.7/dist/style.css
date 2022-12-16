@@ -1870,6 +1870,26 @@ h6:empty {
   margin: 0;
 }
 
+
+img {
+  margin: 2px;
+  padding: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  clip-path: polygon(0px 25px, 26px 0px, calc(60% - 35px) 0px, 65% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) calc(100% - 0px), 10px calc(100% - 0px), 0% calc(100% - 10px));
+  background-color: #000;
+  max-width: calc(100% - 10px);
+  border-radius: 22px;
+}
+
+img.with-fallback-color {
+  background-image: image("img/-C77_Overlay-A-Cam Lucy_EN.png#xywh=20,30,500,300", #123456);
+}
+
+
+
+
 .glowbox, .glow:not(.text) {
   background-color: var(--transparent-color);
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
