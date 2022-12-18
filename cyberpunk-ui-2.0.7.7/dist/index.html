@@ -16,6 +16,11 @@ a{
 <link rel="stylesheet" href="./cyberpunk-2077.css">
 <link rel="stylesheet" href="./styles (special).css">
 
+<link rel="stylesheet" href="augmented-ui/augmented-ui.min.css">
+<link rel="stylesheet" href="augmented-ui/aug-core.min.css">
+<link rel="stylesheet" href="augmented-ui/shape-mixins.min.css">
+<link rel="stylesheet" href="augmented-ui/region-mixins.min.css">
+<link rel="stylesheet" href="augmented-ui/region-mixins.min.css">
 
 
 
@@ -31,22 +36,27 @@ a{
 
 
 
-<h3> ◄ <a href="https://le-xandre.github.io/essaibis/" class="cyberpunk2077 green font-light" alt="Cyberpunk" target="_blank">Retour Accueil</a>Version originale par Mitch Anderson ► <a href="https://codepen.io/tmanderson/pen/ExLmybB" class="cyberpunk2077 blue" alt="Cyberpunk UI 2" target="_blank">Cyberpunk UI 2 CodePen</a></h3>
+<h3> ◄ <a href="https://le-xandre.github.io/essaibis/" class="cyberpunk2077 green font-light" alt="Cyberpunk" target="_blank">Retour Accueil</a></h3>
 <!-- partial:index.partial.html -->
 <div class="flex row w-98 ml-1" style="max-width:99%;">
 
 
   <div class="column w-100 p-1">
-
+<hr>►Différents Exemples Ui/UX sont disponibles déjà en ligne, comme cet exemple-ci : <a href="https://github.com/propjockey/augmented-ui">Augmented-ui</a> <img src="8631e5ctgvj31.png" alt="">
     <h2 class="play-once">◄ Personnage  ►</h2>
-    <div class="row w-100"><div class="field w-18">
+    <div class="row w-100">
+      <div class="field w-18">
         <label class="glow text">Nom du joueur / joueuse</label>
         <input type="text" pattern="\w+" />
-      </div><hr><div class="field w-18">
-        <label class="glow text">Nom du Personnage</label><div id="fileName">
+      </div>
+      <hr>
+      <div class="field w-18">
+        <label class="glow text">Nom du Personnage</label>
+        <div id="fileName">
 </div>
         <input type="text" pattern="\w+" />
       </div>
+
  <div class="field w-72 img with-fallback-color">
 
   <label class="glow text drag-text">Portrait / Photo / <em style="color:yellow;font-size:12px;">Relancer ou glisser-déposer</em></label>
@@ -61,7 +71,9 @@ a{
 
 
 
-</div><hr>
+</div>
+
+<hr>
 
 
 
@@ -171,22 +183,24 @@ a{
       </div>
     </div>
 
-    <div class="flex row mt-1"><button class="green">Accepter</button>
+<div class="flex row mt-1"><button class="green">Accepter</button>
 
 
-<button class="blue">Corriger</button>
-<button class="red">annuler</button>
+  <button class="blue">Corriger</button>
+  <button class="red">annuler</button>
 
 
-<button class="purple">Info</button>
-<button class="cyberpunk yellow">
-  <a href="https://cyberpunk-jdr.fr/index.php">Lien vers la Communauté Fr du jdr officiel</a>
-</button>
-<button style="width:10%;height:40px;" class="yellow cyberpunk">
-    <a class="cyberpunk"
-    href="creations_personnages/21-07-19-17-06-02_CyberpunkRed-fiche-de-personnage_editable.pdf" alt="fiche-de-personnage" target="blank">
-    <img class="cyberpunk" style="width:50%" src="creations_personnages/21-07-19-17-06-02_img_CyberpunkRed-fiche-de-personnage.jpg" alt="fiche-de-personnage"> PDF</a><em>interactif</em></button>
-  </div>
+  <button class="purple">Info</button>
+  <button class="cyberpunk yellow">
+    <a href="https://cyberpunk-jdr.fr/index.php">Lien vers la Communauté Fr du jdr officiel</a>
+  </button>
+  <button style="width:10%;height:40px;" class="yellow cyberpunk">
+    PDF<a class="cyberpunk" href="creations_personnages/21-07-19-17-06-02_CyberpunkRed-fiche-de-personnage_editable.pdf"
+      alt="fiche-de-personnage" target="blank">
+      <img class="cyberpunk" style="width:50%"
+        src="creations_personnages/21-07-19-17-06-02_img_CyberpunkRed-fiche-de-personnage.jpg"
+        alt="fiche-de-personnage"> </a><em>interactif</em></button>
+</div>
 
   </div>
   <div class="flex column w-42 p-1">
@@ -414,7 +428,7 @@ a{
   </footer>
 </div>
 </div>
-<hr>
+Version originale par Mitch Anderson ► <a href="https://codepen.io/tmanderson/pen/ExLmybB" class="cyberpunk2077 blue" alt="Cyberpunk UI 2" target="_blank">Cyberpunk UI 2 CodePen</a>
  <h1> ► <em> Original Version by Mitch Anderson</h1> </em>
 <div class="flex row w-100 ml-2" style="max-width:1200px;">
 
@@ -721,9 +735,10 @@ a{
     </div>
   </div>
 </div>
-<div class="modal glow" hidden>
+<!-- <div class="modal glow" hidden>
   <header>
     Compléter la commande ?
+
   </header>
   <section>
 
@@ -736,13 +751,15 @@ a{
       Oui
     </button>
   </footer>
-</div>
+</div> -->
 <!-- partial -->
 
 <!-- partial:index.partial.html -->
 
 
 </div>
+
 <script src="scriptDrag.js" defer></script>
+<script src="augmented-ui/package.json" defer></script>
 </body>
 </html>
