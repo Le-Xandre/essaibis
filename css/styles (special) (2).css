@@ -52,9 +52,9 @@ body {
   color: var(--colors-on_bg--500);
   font-family: var(--fonts-primary);
   font-size: 100%;
-  line-height: 1.4;
+  line-height: 1.25;
   margin: 0;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 a {
@@ -65,8 +65,7 @@ a {
 }
 
 .app-skeleton {
-  padding: 0 1rem;
-  height: 100vh;
+  padding: 0 0.25rem;
   max-width: 80em;
   margin: auto;
   align-items: center;
@@ -93,7 +92,7 @@ a {
   align-items: center;
   text-align: center;
   left: 0;
-  width: 100%;
+  width: 80%;
 }
 
 .app-header__anchor {
@@ -122,7 +121,7 @@ a {
 
 .app-a {
   grid-area: a;
-  height: 100%;
+  height: 80%;
 }
 .app-main {
   grid-area: main;
@@ -142,8 +141,8 @@ a {
   background-color: var(--colors-bg--300);
   border: 1px solid #5d2322;
   border-radius: 3px;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.25rem;
+  padding: 0.5rem 0.55rem;
 }
 
 .nav-section__body {
@@ -163,7 +162,7 @@ a {
 }
 
 .nav__link {
-  line-height: 1.4rem;
+  line-height: 1.25rem;
 }
 
 .nav__link__element + .nav__link__element {
@@ -171,12 +170,12 @@ a {
 }
 
 .app-header .nav {
-  align-items: flex-end;
+  align-items: flex-start;
   display: flex;
 }
 
 .app-header .nav__item + .nav__item {
-  margin-left: 3rem;
+  margin-left: 2.5rem;
 }
 
 .app-header .nav__link {
@@ -269,17 +268,17 @@ a {
   border-radius: 3px;
   color: var(--colors-tertiary--500);
   display: inline-block;
-  font-size: 0.92rem;
+  font-size: 0.52rem;
   font-weight: normal;
   line-height: 1;
-  padding: 0.15em 0.34em;
+  padding: 0.15em 0.15em;
   vertical-align: middle;
   align-items: center;
   text-align: center;
 }
 
 .slate__title {
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -319,7 +318,7 @@ input, textarea {
   background-color: var(--colors-primary--600);
   color: var(--colors-on_primary--500);
   font-family: var(--fonts-secondary);
-  font-size: 0.92rem;
+  font-size: 0.72rem;
   display: inline-block;
   padding: 0.125em 0.75em;
   padding-right: 2em;
@@ -418,12 +417,12 @@ input, textarea {
   border: 1px solid var(--colors-tertiary--500);
   border-radius: 3px;
   color: var(--colors-tertiary--500);
-  padding: 0.75rem;
+  padding: 0.55rem;
 }
 
 .message__footer {
   color: var(--colors-tertiary--500);
-  font-size: 0.85rem;
+  font-size: 0.55rem;
   margin-top: 0.25rem;
 }
 
@@ -452,7 +451,7 @@ input, textarea {
 
 .button__icon {
   display: flex;
-  height: 1.15rem;
+  height: 1.05rem;
   line-height: 0.5;
   -webkit-vertical-align: top;
   vertical-align: top;
@@ -523,7 +522,7 @@ input, textarea {
 .channel-feed {
   display: flex;
   flex-direction: column;
-  height: 100%;
+
 }
 
 .channel-feed__body {
@@ -532,15 +531,15 @@ input, textarea {
 
 .channel-feed__footer {
 
-  padding: 4px;
-  margin: 4px;
+  padding: 3px;
+  margin: 3px;
   text-shadow: -2px 3px 3px rgb(0 0 0), 0 2px 1px rgb(0 0 0);
 }
 
 .channel-message-form {
   align-items: flex-start;
   display: flex;
-  padding-bottom: 1rem;
+  padding-bottom: .75rem;
 }
 
 .channel-message-form .form-group {
@@ -549,11 +548,11 @@ input, textarea {
 
 .channel-message-form .form-footer {
   margin-left: 1rem;
-  margin-top: 1.42rem;
+  margin-top: 1.25rem;
 }
 
 .channel-message-form .form-control {
-  width: 100%;
+  width: 90%;
 }
 
 .text-heading1,
@@ -570,7 +569,7 @@ input, textarea {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
-  min-height: 3.5rem;
+  min-height: 2.5rem;
 }
 
 .segment-topbar::after {
