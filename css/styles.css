@@ -16,13 +16,13 @@
   --first-hue: 201;
   --sat: 35%;
   --lig: 75%;
-  --second-hue: 245;
+  --second-hue: 375;
 
   --first-color: hsla(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsla(var(--second-hue), var(--sat), 21%); /* -4% */
   --title-color: hsla(var(--second-hue), 25%, 55%);
   --text-color: hsla(var(--first-hue), 28%, 45%);
-  --text-color-light: hsla(var(--second-hue), 54%, 65%);
+  --text-color-light: hsla(var(--second-hue), 84%, 65%);
   --body-color: hsla(var(--first-hue), 48%, 28%);
   --container-color: hsla(var(--second-hue), 32%, 12%);
 
