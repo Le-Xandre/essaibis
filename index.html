@@ -46,7 +46,7 @@
 <link rel="stylesheet" href="augmented-ui/shape-mixins.min.css">
 <link rel="stylesheet" href="augmented-ui/region-mixins.min.css">
 <link rel="stylesheet" href="augmented-ui/border-inlay-mixins.min.css">
-
+<link rel="stylesheet" href="codevember-26/dist/style.css" />
 <!--=============== SWIPER css & JS ===============-->
 <link rel="stylesheet" href="dist/css/lightbox.min.css">
 
@@ -78,14 +78,17 @@
 <h4>
    ☺ Chromium ☻
 </h4>
-<div class="logo">
-CYBERPUNK <video muted loop poster="" src="img/desktop_dark.mp4" style="background-color:rgba(49, 3, 3, 0.638);padding:6px;border-radius:100%;align-items:center;justify-content:center;width:60px;height:60px;box-shadow: 1px 0 12px rgb(255, 251, 0);" type="video/mp4"autoplay>
+
+<div class="logo">CYBERPUNK <video muted loop poster="" src="img/desktop_dark.mp4" style="background-color:rgba(49, 3, 3, 0.638);padding:6px;border-radius:100%;align-items:center;justify-content:center;width:60px;height:60px;box-shadow: 1px 0 12px rgb(255, 251, 0);" type="video/mp4"autoplay>
   </video>
 
 <div class="sublogo">
   <h6>2077</h6>
   <span class="app-header__anchor__text">Night-City - NetWire</span>
-</div>
+<div id="globe">
+  <canvas id="town"></canvas>
+  <canvas id="snowFlakes"></canvas>
+</div></div>
 </div>
 
 </div>
@@ -306,7 +309,8 @@ certains des liens sont déjà accessibles ou connus.
                       <!-- <img class="example-image" src="img/vaporwolfwave2.jpg" alt=""/>
                        -->
                     </a>
-</div></div>
+</div>
+</div>
 
 
 </div>
@@ -450,15 +454,16 @@ certains des liens sont déjà accessibles ou connus.
 </div>
 
 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+<script src="codevember-26/dist/script.js"></script></body>
 
 
-<!-- <script src="assets/js/scriptport.js"></script> -->
 <script src="../dist/js/lightbox-plus-jquery.min.js"></script>
-</body>
+
 
 </html>
 <!-- <script src="js/index.js"></script> -->
-
+<!-- <script src="assets/js/scriptport.js"></script> -->
 
 
 
