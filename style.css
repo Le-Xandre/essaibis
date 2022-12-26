@@ -5761,8 +5761,11 @@ animation: pulse 5s infinite;
    * REUSED STYLE
    */
 
-  .section { position: relative;   justify-content: center;
-    align-items: center;}
+  .section {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
 
   .container { max-width: 960px; }
 
