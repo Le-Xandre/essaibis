@@ -109,7 +109,7 @@ a {
   text-transform: uppercase;
 }
 
-.app-container {
+/* .app-container {
   display: grid;
   grid-gap: 1rem;
   grid-template-areas: "a main main main side to b";
@@ -117,6 +117,19 @@ a {
   align-items: center;
   text-align: center;
   height: calc(100% - 5.25rem);
+} */
+.app-container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: "a main main main side to b";
+        grid-template-columns: 30px 2fr 2fr 2fr 2fr;
+        align-items: stretch;
+        text-align: center;
+        height: calc(100% - 5.25rem);
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        justify-content: space-around;
 }
 
 .app-a {
