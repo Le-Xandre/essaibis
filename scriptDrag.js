@@ -15,7 +15,7 @@ draggerArea.addEventListener('dragover', (e) => {
     e.preventDefault(); dragText.textContent = "Relancer la page pour glisser et déposer de nouveau 1 ou plusieurs images"
 });
 draggerArea.addEventListener('dragleave', () => {
-    dragText.textContent = "Drag and Drop File", dragText.textContent = "Relancer la page pour télécharger de nouveau 1 ou plusieurs images"
+    dragText.textContent = "Relancer la page pour télécharger de nouveau 1 ou plusieurs images"
   });
 
 draggerArea.addEventListener('drop', (e) => {
@@ -42,9 +42,12 @@ const fileHandler = (file) => {
         draggerArea.classList.add('active')
     } else {
         draggerArea.classList.remove('active');
-        dragText.textContent = "Drag and Drop File",
+        
         dragText.textContent = 'Relancer la page pour télécharger de nouveau 1 image'
 
     }
 };
+
+
+
 

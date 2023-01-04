@@ -1886,8 +1886,10 @@ body.light-theme{
 }
 
 .glitching .cyber-slider__imgwrap .glitch-area {
-  position: absolute;animation: textWave 0.12s ease forwards;
-   -webkit-animation: textWave 0.12s ease forwards;animation-name: textWave 0.12s ease forwards;
+  position: absolute;
+  -webkit-animation: textWave 0.12s ease forwards;
+  animation: textWave 0.12s ease forwards;
+   animation-name: textWave 0.12s ease forwards;
   left: 0;
   top: 0;
   width:80%;

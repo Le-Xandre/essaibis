@@ -225,6 +225,39 @@ p {
     transition: all .24s ease-in-out;
 }
 
+
+
+#chatbot-output {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+    width: 50%;
+      height: 200px;
+      background-color: white;
+      border: 1px solid black;
+      overflow: auto;
+}
+
+#chatbot-input {
+  width: 70%;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#chatbot-submit {
+  width: 30%;
+  height: 35px;
+  background-color: lightblue;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+
+
 /* slider */
 
 
@@ -2280,7 +2313,7 @@ h6:empty {
   transform: scale(0.95);
   opacity: 0.5;
   transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
-  user-select: none;
+  /* user-select: none; */
 }
 
 .hoverable .module {
@@ -4360,7 +4393,7 @@ animation: pulse 5s infinite;
   /* Prevent selection from interacting weirdly with the page,
    * see bug 1766093. Our text selection story with shadow dom should be
    * better, see bug 1590379 */
-  user-select: none;
+  /* user-select: none; */
   /* Prevent unwanted style inheritance. See bug 554717. */
   text-align: left;
   list-style-image: none !important;
@@ -5005,10 +5038,10 @@ animation: pulse 5s infinite;
   margin-right: var(--pip-toggle-margin);
 }
 
-.pip-expanded,
+/* .pip-expanded,
 .pip-explainer {
   user-select: none;
-}
+} */
 
 .pip-small {
   background-color: rgba(12,12,13,0.65);
@@ -5051,14 +5084,14 @@ animation: pulse 5s infinite;
   border-radius: 8px;
   opacity: 0;
   align-items: center;
-  scale: 0.33 1;
+  /* scale: 0.33 1; */
   font-size: 14px;
 }
 
-.pip-wrapper[position="right"] > .pip-expanded {
+/* .pip-wrapper[position="right"] > .pip-expanded {
   translate: calc(-100% + var(--pip-icon-width-with-margins));
   transform-origin: right;
-}
+} */
 
 .pip-wrapper:is([small-video],[has-used]) > .pip-expanded,
 .pip-wrapper[position="right"]:not([small-video],[has-used]) > .pip-icon {
@@ -5102,11 +5135,11 @@ animation: pulse 5s infinite;
   pointer-events: none;
 }
 
-.pip-wrapper:not([small-video],[has-used]) > .pip-expanded {
+/* .pip-wrapper:not([small-video],[has-used]) > .pip-expanded {
   opacity: 1;
   scale: 1;
   pointer-events: auto;
-}
+} */
 
 .pip-wrapper:not([small-video],[has-used]).hovering > .pip-expanded {
   border-bottom-right-radius: 0px;
@@ -5124,7 +5157,7 @@ animation: pulse 5s infinite;
 
 .pip-explainer {
   padding: 6px 16px 8px 8px;
-  translate: 0;
+  /* translate: 0; */
   transition: opacity 250ms, translate 190ms;
   transition-timing-function: cubic-bezier(.07,.95,0,1);
   background: rgba(12,12,13,0.65);
@@ -5153,10 +5186,10 @@ animation: pulse 5s infinite;
 .pip-wrapper.hovering > .pip-expanded > .pip-explainer {
   opacity: 1;
 }
-
+/* 
 .pip-wrapper.hovering > .pip-expanded > .pip-explainer {
   translate: 0 calc(40px - var(--pip-highlight-width));
-}
+} */
 
 @media (min-aspect-ratio: 16/9) {
   .video-foreground { height: 300%; top: -100%; }
