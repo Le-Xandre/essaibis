@@ -81,7 +81,7 @@ const range = 60;
 
 //const calcValue = (a, b) => (((a * 100) / b) * (range / 100) -(range / 2)).toFixed(1);
 // thanks @alice-mx
-const calcValue = (a, b) => (a/b*range-range/2).toFixed(1) ;
+const calcValue = (a, b) => (a/b*range-range/2).toFixed(0.45) ;
 
 let timeout;
 document.addEventListener('mousemove', ({x, y}) => {
@@ -100,7 +100,7 @@ document.addEventListener('mousemove', ({x, y}) => {
     });
 
     [].forEach.call(backgrounds, (background) => {
-      background.style.backgroundPosition = `${xValue*.45}px ${-yValue*.45}px`;
+      background.style.backgroundPosition = `${xValue}px ${-yValue}px`;
     })
 	})
 }, false);

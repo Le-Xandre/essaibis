@@ -120,14 +120,14 @@ a {
 } */
 .app-container {
         display: grid;
-        grid-gap: 1rem;
+        grid-gap: 0.5rem;
         grid-template-areas: "a main main main side to b";
         grid-template-columns: 30px 2fr 2fr 2fr 2fr;
         align-items: stretch;
         text-align: center;
         height: calc(100% - 5.25rem);
         flex-direction: row-reverse;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-content: space-around;
         justify-content: space-around;
 }
@@ -192,7 +192,7 @@ a {
 }
 
 .app-header .nav__link {
-  align-items: baseline;
+  align-items: flex-start;
   display: flex;
   text-shadow: var(--ui-glow-text);
   text-transform: uppercase;

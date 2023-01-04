@@ -131,8 +131,24 @@ button {
       .about {
         background-color: #e6b800;
       }
-</style>
 
+  /* Use CSS to style the chatbot output element */
+  #chatbot-output {
+    width: 50%;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    overflow: auto;
+  }
+
+  /* Use CSS to style the chatbot's responses */
+  .chatbot-response {
+    margin: 10px;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 5px;
+  }
+</style>
 </head>
 
 
@@ -190,8 +206,19 @@ button {
 
 
 
-</section><hr><section>
+</section>
+<hr>
+<section>
+<!--<div id="chatbot-output"import openai openai.Completion.create(engine="davinci",
+prompt="Make a list of astronomical observatories:"
+)>
+   This element will hold the chatbot's responses
+</div>
 
+<form>
+  <input type="text" id="chatbot-input" placeholder="Type your message here...">
+  <button type="button" id="chatbot-submit" onclick="sendMessage()">Send</button>
+</form>-->
 <div class="title">
 <!-- Titre -->
 <h1>◄ La ville du futur ►</h1>
@@ -370,8 +397,6 @@ Réalisé par Michel K. ◄ Copyright &copy 2011-2021-20xx ► customisé par Al
 <script src="assets/js/all.min.js" defer></script>
 <script src="assets/js/scriptport.js"></script>
 <script src="assets/js/app.js"></script>
-
-
 
 <script src="js/swiper-bundle.min.js" defer></script>
 
