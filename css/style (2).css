@@ -299,7 +299,7 @@
 
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   font-family: var(--font-family);
 align-items: center;
 justify-items: center;
@@ -430,7 +430,7 @@ p {
   text-shadow: 1px 2px 4px rgb(0 0 0);
   box-shadow: 0 2px 5px rgb(0 0 0 / 53%);
   background: #5e78406b;
-  text-align: match-parent;
+  /* text-align: match-parent; */
   line-height: 1.25;
   transition: all .27s ease-in-out;
 }
@@ -514,8 +514,8 @@ nav{
 
       z-index: 1;
       /* Using a mask for the dropdown */
-      clip-path: circle(100px at 85% -25%);
       -webkit-clip-path: circle(100px at 85% -25%);
+      clip-path: circle(100px at 85% -25%);
       transition: all 0.5s ease-out;
 
       /* Non clickable when closed */
@@ -523,8 +523,8 @@ nav{
   }
 
   .nav-links.open{
+    -webkit-clip-path: circle(1000px at 85% -25%);
       clip-path: circle(1000px at 85% -25%);
-      -webkit-clip-path: circle(1000px at 85% -25%);
       z-index: 1;
       pointer-events: all;
   }

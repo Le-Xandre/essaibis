@@ -47,9 +47,9 @@ ol[role="list"] {
 }
 
 /* Set core root defaults */
-html:focus-within {
+/* html:focus-within {
   scroll-behavior: smooth;
-}
+} */
 
 /* Set core body defaults */
 body {
@@ -59,9 +59,9 @@ body {
 }
 
 /* A elements that don't have a class get default styles */
-a:not([class]) {
+/* a:not([class]) {
   text-decoration-skip-ink: auto;
-}
+} */
 
 /* Make images easier to work with */
 img,
@@ -80,9 +80,9 @@ select {
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
+  /* html:focus-within {
     scroll-behavior: auto;
-  }
+  } */
 
   *,
   *::before,
@@ -90,7 +90,7 @@ select {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+    /* scroll-behavior: auto !important; */
   }
 }
 
@@ -122,10 +122,10 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
-.card {
+ /*.card {
   aspect-ratio: 1 / 1.5;
-  /* border: 3px solid hotpink; */
-}
+  border: 3px solid hotpink;
+}*/
 
 .card__content {
   background: rgb(189, 189, 189);
@@ -147,13 +147,14 @@ body {
 
 .card__img {
   width: 100%;
-  aspect-ratio: 1 / 1.25;
+  /* aspect-ratio: 1 / 1.25; */
   object-fit: cover;
 }
 
 @media (min-width: 60em) {
   .card__img {
-    aspect-ratio: 1 / 1;
+    /* aspect-ratio: 1 / 1; */
+    object-fit: cover;
   }
 
   .card.featured {
@@ -162,7 +163,8 @@ body {
   }
 
   .card.featured .card__img {
-    aspect-ratio: 1 / 1.25;
+    /* aspect-ratio: 1 / 1.25; */
+    object-fit: cover;
   }
 
   .card.featured .card__title {
@@ -178,7 +180,7 @@ body {
   padding: 0.125em 0.5em;
   margin-bottom: 1em;
   width: auto;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 p.max-content {

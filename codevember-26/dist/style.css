@@ -11,10 +11,10 @@
   position: absolute;
   /* top: -50%;
 transform: translate(-50%, -50%);*/
-  left: 15%;
-  bottom: -15px;
-  width:15vmin;
-  height: 15vmin;
+  right: 55%;
+  bottom: -25px;
+  width:25vmin;
+  height: 25vmin;
   transform-origin: 50% 50%;
    animation: animateBgColor 10s linear infinite;
 }

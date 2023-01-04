@@ -74,8 +74,8 @@
 
 html {
   font-size: 100%;
-  -webkit-scroll-behavior:smooth;
-  scroll-behavior:smooth;
+  /* -webkit-scroll-behavior:smooth;
+  scroll-behavior:smooth; */
 }
 
 body,button,input,textarea {
