@@ -14,7 +14,7 @@
 <title>Portfolio CyberPunk - 02 _ Possibilités pour Cards CSS en Holographic Effect</title>
 
 <!--=============== FAVICON ===============-->
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'defer rel='stylesheet'>
 <link rel="preload" as="image" href="assets/images/loading.png" alt="img" />
 <link rel="preload" as="image" href="assets/images/loading-circle.svg" />
 
@@ -119,75 +119,58 @@
     </div>Edge Runners
   </div>
 
-  <nav id="main-nav" class="nav__menu flex items-center justify-between">
+<nav id="main-nav" class="nav__menu flex items-center justify-between">
+  <iframe id="ytplayer" type="text/html" width="35" height="35"
+    src="https://www.youtube-nocookie.com/embed/videoseries?list=PLDisKgcnAC4SqX0mi1J5_gd7-hrIS5yJp"
+    title="YouTube video player" frameborder="0" allowfullscreen>
 
-    <ul id="toggled-menu" class="nav__list w-full left-0 md:w-min md:border-none ">
+  </iframe>
+  <ul id="toggled-menu" class="nav__list">
 
-      <li class="nav__item" id="#home">
-        <a href="#home" class="nav__link active" title="home">
-          <i class='bx bx-home-heart'></i>
-        </a>
-        <h3 class="nav__item-title">Accueil</h3>
-      </li>
+    <li class="nav__item" id="#home">
+      <a rel="noopener" href="#home" class="nav__link active" title="home">
+        <i class='bx bx-home-heart'></i>
+      </a>
+      <h3 class="nav__item-title">Accueil</h3>
+    </li>
 
-      <li class="nav_item" id="#about">
-        <a href="#about" class="nav__link" title="about">
-          <i class="bx bx-user"></i>
-        </a>
-        <h3 class="nav__item-title">01</h3>
-      </li>
+    <li class="nav_item" id="#about">
+      <a rel="noopener" href="#about" class="nav__link" title="about">
+        <i class="bx bx-user"></i>
+      </a>
+      <h3 class="nav__item-title">01</h3>
+    </li>
 
-      <li class="nav__item" id="#skills">
-        <a href="#skills" class="nav__link" title="skills">
-          <i class="bx bx-book-open"></i>
-        </a>
-        <h3 class="nav__item-title">02</h3>
-      </li>
+    <li class="nav__item" id="#skills">
+      <a rel="noopener" href="#skills" class="nav__link" title="skills">
+        <i class="bx bx-book-open"></i>
+      </a>
+      <h3 class="nav__item-title">02</h3>
+    </li>
 
-      <li class="nav__item" id="#services">
-        <a href="#services" class="nav__link" title="services">
-          <i class="bx bx-briefcase"></i>
-        </a>
-        <h3 class="nav__item-title">03</h3>
-      </li>
+    <li class="nav__item" id="#services">
+      <a rel="noopener" href="#services" class="nav__link" title="services">
+        <i class="bx bx-briefcase"></i>
+      </a>
+      <h3 class="nav__item-title">03</h3>
+    </li>
 
-      <!-- <li class="nav__item" id="#work">
-<a href="#work" class="nav__link" title="work">
-<i class="bx bx-briefcase-alt"></i>
-</a><h3 class="nav__item-title">04</h3>
-</li> -->
+    <li class="nav__item" id="#contact">
+      <a rel="noopener" href="#contact" class="nav__link" title="contact">
+        <i class="bx bx-message-square-detail"></i>
+      </a>
+      <h3 class="nav__item-title">Contacts</h3>
+    </li>
+    <li class="nav__item nav__link">
+      <a rel="noopener" href="#" class="back-to-top" id="back-to-top"><strong>
+          °<i class='bx bxs-up-arrow-alt bx-tada'></i>°</strong>
+      </a>
+    </li>
 
-      <!-- <li class="nav__item">
-<a href="#testimonial" class="nav__link" title="testimonial" alt="Témoignages">
-<i class='bx bx-male-female'></i>
-</a><h3 class="nav__item-title">Témoignages</h3>
-</li> -->
-
-      <li class="nav__item" id="#contact">
-        <a href="#contact" class="nav__link" title="contact">
-          <i class="bx bx-message-square-detail"></i>
-        </a>
-        <h3 class="nav__item-title">Contacts</h3>
-      </li>
-
-
-  <li class="nav__item nav__link">
-    <a href="#" class="back-to-top" id="back-to-top"><strong>
-        °<i class='bx bxs-up-arrow-alt bx-tada'></i>°</strong>
-    </a>
-  </li>
-    </ul>
-      <iframe id="ytplayer" type="text/html" width="35" height="35"
-        src="https://www.youtube-nocookie.com/embed/videoseries?list=PLDisKgcnAC4SqX0mi1J5_gd7-hrIS5yJp"
-        title="YouTube video player" frameborder="0" allowfullscreen>
-
-      </iframe>
+  </ul>
 
 </nav>
 
-
-
-<br>
 </header>
   <br><section class="work__container slide-image cyber-slider">
     <br><div id="cyberSlider" class="cyber-slider">
