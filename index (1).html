@@ -12,7 +12,7 @@
  <title>Portfolio CyberPunk - 01 _ Possibilités pour Cards CSS en Holographic Effect</title>
 
 <!--=============== FAVICON ===============-->
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' defer>
 <!-- <link rel="preload" as="image" href="assets/images/loading.png" alt="img"/>
 <link rel="preload" as="image" href="assets/images/loading-circle.svg"/> -->
 
@@ -97,9 +97,7 @@ CYBERPUNK
 </span>
 
 <span aria-hidden="false" class="cybr-btn__glitch">Edge Runners
-<br>
 → ▲ ←
-<br>
 </span>
 <span aria-hidden="false" class=" heart-bit-neon cybr-btn__tag">
   <a rel="noopener" rel="noopener" href="https://www.cyberpunk.net/fr/fr/" class="sky-neon" aria-hidden="false" target="_blank"> Site Officiel </a>↔ R22 ↔<a rel="noopener" href="index.html" class="sky-neon" aria-hidden="false" target="_blank"> Reset </a>
@@ -114,13 +112,15 @@ CYBERPUNK
 <div class="ball"></div>
 <i class="bx bx-sun"></i>
 </label>
-</div>Edge Runners
+</div><iframe id="ytplayer" type="text/html" width="35" height="35" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLDisKgcnAC4SqX0mi1J5_gd7-hrIS5yJp" title="YouTube video player" frameborder="0" allowfullscreen>
+
+</iframe>Edge Runners
 </div>
 
 <nav id="main-nav" class="nav__menu flex items-center justify-between">
-<iframe id="ytplayer" type="text/html" width="35" height="35" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLDisKgcnAC4SqX0mi1J5_gd7-hrIS5yJp" title="YouTube video player" frameborder="0" allowfullscreen>
-
-</iframe>
+    <a rel="noopener" href="#" class="back-to-top" id="back-to-top"><strong>
+      °<i class='bx bxs-up-arrow-alt bx-tada'></i>°</strong>
+    </a>
 <ul id="toggled-menu" class="nav__list">
 
 <li class="nav__item" id="#home">
@@ -142,24 +142,28 @@ CYBERPUNK
 </a><h3 class="nav__item-title">02</h3>
 </li>
 
-<li class="nav__item" id="#services">
-<a rel="noopener" href="#services" class="nav__link" title="services">
-<i class="bx bx-briefcase"></i>
+<li class="nav__item" id="#work">
+<a rel="noopener" href="#work" class="nav__link" title="work">
+<i class="bx bx-barcode"></i>
 </a><h3 class="nav__item-title">03</h3>
 </li>
-
+<li class="nav__item" id="#services">
+  <a rel="noopener" href="#services" class="nav__link" title="services">
+    <i class="bx bx-briefcase"></i>
+  </a>
+  <h3 class="nav__item-title">04</h3>
+</li>
 <li class="nav__item" id="#contact">
 <a rel="noopener" href="#contact" class="nav__link" title="contact">
 <i class="bx bx-message-square-detail"></i>
 </a><h3 class="nav__item-title">Contacts</h3>
 </li>
-<li class="nav__item nav__link">
-    <a rel="noopener" href="#" class="back-to-top" id="back-to-top"><strong>
-      °<i class='bx bxs-up-arrow-alt bx-tada'></i>°</strong>
-    </a>
-</li>
+
+
 
 </ul>
+
+
 
 </nav>
 
@@ -1337,7 +1341,7 @@ visuals, complexity and depth.</p>
 
 
 <!-- partial -->
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"defer></script>
 
 <!--=============== SCROLLREVEAL ===============-->
 
@@ -1349,12 +1353,21 @@ visuals, complexity and depth.</p>
 
 <!--=============== MIXITUP FILTER ===============-->
 
-<script src="js/mixitup.min.js"></script>
+<!-- <script src="js/mixitup.min.js"></script> -->
 
 
 <!--=============== MAIN JS ===============-->
 
 <script src="src/main.js"></script>
+
+
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
+
 
 <!--=============== Autres JS ===============-->
 <!--
@@ -1373,6 +1386,7 @@ visuals, complexity and depth.</p>
 <script src="../dist/js/lightbox-plus-jquery.min.js"></script>
 <script src="src/collection.js"></script>
 <script src="src/App.js"></script>
+
 <script type="text/javascript">
 var slides = document.querySelectorAll('.slide');
 var btns = document.querySelectorAll('.btn');
@@ -1427,12 +1441,22 @@ currentSlide = i;
 // }
 // repeat();
 </script>
-<script src="js/scripts.js"></script>
 
-<script  src="codevember-26/dist/script.js"></script>
-<script src="assets/js/scriptport.js"></script>
-<!-- <script src="js/index.js"></script> -->
-<script src="postcss.config.js"></script>
+
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
+
+
+<script src="js/scripts.js"defer></script>
+
+<script  src="codevember-26/dist/script.js"defer></script>
+
+<!--<script src="assets/js/scriptport.js"defer></script> <script src="js/index.js"></script><script src="postcss.config.js"defer></script> -->
+
 </body>
 
 </html>

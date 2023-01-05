@@ -104,3 +104,8 @@ document.addEventListener('mousemove', ({x, y}) => {
     })
 	})
 }, false);
+
+lightbox.option({
+  'resizeDuration': 200,
+  'wrapAround': true
+})
