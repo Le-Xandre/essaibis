@@ -472,7 +472,7 @@
                       </form>
                     </div>
                   </div>
-
+<div id="element">
                   <p class="breath-neon ">
                     <br><a rel="noopener" href="https://codepen.io/marcwoodyard/pen/eYvmxog" target="_blank" alt="">C.77
                       HTML
@@ -481,12 +481,25 @@
                     Si vous avez joué au jeu vous remarquerez certaines similitudes avec les menus et autres.
                     <a href="https://www.youtube.com/channel/UCHkCQ8im4WViaWclX4OaBqQ" target="_blank"><img
                         src="img/FondYT.png"></a>♥ Vous trouverez différentes choses au gré des liens ici & là ♫
-
+<audio src="dragon.wav" id="son"></audio>
                     ♥ N'hésitez pas à être curieux(se)s ♪
 
 
-                  </p>
+<script>
+  var element = document.getElementById('element'); // on récupère l'élément qui sera survolé pour jouer le son
+  var son = document.getElementById('son'); // on récupère l'élément <audio>
 
+  element.onmouseover = function () { // lorsque le div est survolé
+    son.play(); // on joue le son
+  };
+
+  element.onmouseout = function () { // lorsque la souris quitte le div
+    son.pause(); "son.currentTime = 0;" // on met en pause le son
+  };
+</script>
+
+                  </p>
+</div>
                 </div>
               </div>
 
@@ -575,5 +588,3 @@
 <script src="script.js"></script>
 
 </html>
-<!--  -->
-<!-- <script src="assets/js/scriptport.js"></script> -->
