@@ -81,7 +81,7 @@ const range = 60;
 
 //const calcValue = (a, b) => (((a * 100) / b) * (range / 100) -(range / 2)).toFixed(1);
 // thanks @alice-mx
-const calcValue = (a, b) => (a/b*range-range/2).toFixed(0.45) ;
+const calcValue = (a, b) => (a/b*range-range/2).toFixed(1) ;
 
 let timeout;
 document.addEventListener('mousemove', ({x, y}) => {
@@ -104,8 +104,3 @@ document.addEventListener('mousemove', ({x, y}) => {
     })
 	})
 }, false);
-
-lightbox.option({
-  'resizeDuration': 200,
-  'wrapAround': true
-})
