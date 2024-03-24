@@ -36,7 +36,7 @@ const fileHandler = (file) => {
             let imgTag = `<img src=${fileURL} alt=""/>`
             draggerArea.innerHTML = imgTag;
             let paragraph = `<div class="fileName"><i class="fa-solid fa-trash-can" onclick={deleteHandler()}></i><p>${file.name.split('.')[0]}</p></div>`
-            fileName.innerHTML = $.find(paragraph);
+            fileName.innerHTML = paragraph;
         }
         fileReader.readAsDataURL(file);
         draggerArea.classList.add('active')

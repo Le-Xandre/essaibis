@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     concat: {
       dist: {
-        src: ['bower_components/jquery/dist/jquery.js', 'js/lightbox.js'],
+        src: ['bower_components/jquery/dist/jquery.js', 'src/js/lightbox.js'],
         dest: 'dist/js/lightbox-plus-jquery.js',
       },
     },
