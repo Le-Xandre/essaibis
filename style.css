@@ -277,6 +277,57 @@ text-align: center;
 }
 
 
+#element {
+  margin: auto;
+
+  background: linear-gradient(45deg, black, deeppink, #6006ff);
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all .1s;
+}
+
+#g-img {
+  position: relative;
+
+  background:
+    url('');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  filter: brightness(1.2);
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/13471/sparkles.gif");
+    mix-blend-mode: color-dodge;
+  }
+
+  &::before {
+    content: "";
+    display: none;
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    background:
+      linear-gradient(115deg,
+        transparent 0%,
+        #06e8ff var(--per),
+        #ffab2e calc(var(--per) + 25%),
+        #ff2212 calc(var(--per) + 50%),
+        transparent 100%);
+    mix-blend-mode: color-dodge;
+  }
+
+  &:hover::after,
+  &:hover::before {
+    display: block;
+  }
+}
+
 #chatbot-output {
   position: fixed;
   bottom: 0;
@@ -6935,4 +6986,16 @@ animation: pulse 5s infinite;
   100% {
     background-position: -80px 0;
   }
+}
+/* Default styles */
+/* Write your default styles for desktop here */
+
+/* Media query for tablet devices */
+@media only screen and (max-width: 768px) {
+  /* Write your tablet-specific styles here */
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 480px) {
+  /* Write your mobile-specific styles here */
 }
