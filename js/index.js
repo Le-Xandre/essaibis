@@ -132,3 +132,11 @@ if (navigator.mediaDevices) {
   clearInterval(Generator.id);
   song.meta.bpm = Generator.bpm;
   console.log(JSON.stringify(song, null, '  '))
+// hybrid module, load with require() or import
+import { minimatch } from 'minimatch'
+// or:
+const { minimatch } = require('minimatch')
+
+minimatch('bar.foo', '*.foo') // true!
+minimatch('bar.foo', '*.bar') // false!
+minimatch('bar.foo', '*.+(bar|foo)', { debug: true }) // true, and noisy!
