@@ -1,0 +1,109 @@
+/* 🎯 responsive.css — correctifs pour mobile/tablette (viewport < 768px) */
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 1rem;
+  }
+
+  /* Navigation latérale en haut */
+  nav,
+  .sidebar,
+  .menu-left {
+    position: static !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  nav ul,
+  .menu-left ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+
+  nav li,
+  .menu-left li {
+    flex: 1 0 auto;
+    text-align: center;
+  }
+
+  nav a,
+  .menu-left a {
+    display: block;
+    padding: 0.5em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* Contenu recentré */
+  main,
+  .content,
+  .wrapper,
+  .container {
+    width: 100% !important;
+    max-width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  /* Images fluides */
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Titres et zones dynamiques */
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    font-size: clamp(1.4rem, 5vw, 2rem);
+  }
+
+  /* Fix overflow horizontal */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Boutons & éléments flottants */
+  button,
+  .btn,
+  .button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* ✅ Ajustements supplémentaires possibles (optionnels) */
+@media screen and (max-width: 480px) {
+  nav a,
+  .menu-left a {
+    font-size: 0.9rem;
+    padding: 0.3em;
+  }
+
+  .menu-toggle {
+    display: block;
+    text-align: right;
+  }
+
+  .hidden-mobile {
+    display: none !important;
+  }
+}
