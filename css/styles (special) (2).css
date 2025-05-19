@@ -133,8 +133,9 @@ a {
 }
 
 .app-a {
-  grid-area: a;
-  height: 80%;
+    grid-area: a;
+    height: 75%;
+    width: 100%;
 }
 .app-main {
   grid-area: main;
@@ -147,19 +148,19 @@ a {
 }
 
 .nav-section {
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.1rem;
 }
 
 .nav-section__header {
   background-color: var(--colors-bg--300);
   border: 1px solid #5d2322;
   border-radius: 3px;
-  margin-bottom: 0.25rem;
-  padding: 0.5rem 0.55rem;
+  margin-bottom: 0.2rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .nav-section__body {
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 
 .nav-section__title {
@@ -296,9 +297,11 @@ a {
 }
 
 .pad {
-  background-color: var(--colors-bg--300);
-  border: 2px solid var(--colors-primary--600);
-  clip-path: var(--ui-notch-path);
+    background-color: var(--colors-bg--300);
+    border: 2px solid var(--colors-primary--600);
+    clip-path: var(--ui-notch-path);
+    padding: 0.15em 0.15em;
+    margin: 0.5em;
 }
 
 .pad__body {
@@ -422,21 +425,22 @@ input, textarea {
 }
 
 .message {
-  padding-bottom: 1rem;
+  padding-bottom: 0.9em;
 }
 
 .message__body {
-  background-color: var(--colors-bg--300);
-  border: 1px solid var(--colors-tertiary--500);
-  border-radius: 3px;
-  color: var(--colors-tertiary--500);
-  padding: 0.55rem;
+    background-color: var(--colors-bg--300);
+    border: 1px solid var(--colors-tertiary--500);
+    border-radius: 3px;
+    color: var(--colors-tertiary--500);
+    padding: 0.5rem;
+    font-size: 0.9em;
 }
 
 .message__footer {
   color: var(--colors-tertiary--500);
-  font-size: 0.55rem;
-  margin-top: 0.25rem;
+  font-size: 0.5rem;
+  margin-top: 0.2rem;
 }
 
 /* @component: button */
@@ -466,7 +470,6 @@ input, textarea {
   display: flex;
   height: 1.05rem;
   line-height: 0.5;
-  -webkit-vertical-align: top;
   vertical-align: top;
   width: 1.125rem;
   font-size: xx-large;
@@ -533,9 +536,11 @@ input, textarea {
 }
 
 .channel-feed {
-  display: flex;
-  flex-direction: column;
-
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-content: center;
+    justify-content: center;
 }
 
 .channel-feed__body {
@@ -544,15 +549,15 @@ input, textarea {
 
 .channel-feed__footer {
 
-  padding: 3px;
-  margin: 3px;
+  padding: 2px;
+  margin: 2px;
   text-shadow: -2px 3px 3px rgb(0 0 0), 0 2px 1px rgb(0 0 0);
 }
 
 .channel-message-form {
   align-items: flex-start;
   display: flex;
-  padding-bottom: .75rem;
+  padding-bottom: 0.6rem;
 }
 
 .channel-message-form .form-group {
@@ -561,11 +566,11 @@ input, textarea {
 
 .channel-message-form .form-footer {
   margin-left: 1rem;
-  margin-top: 1.25rem;
+  margin-top: 1rem;
 }
 
 .channel-message-form .form-control {
-  width: 90%;
+  width: 100%;
 }
 
 .text-heading1,
