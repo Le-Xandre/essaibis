@@ -61,15 +61,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 25px;
     color: #c8edf1c2;
     text-shadow: 1px 4px 4px rgba(5, 92, 114, 0.89);
     letter-spacing: -1px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: #c8edf1c2;
 }
 
@@ -109,7 +109,7 @@ img {
 /* Styles pour les paragraphes */
 p {
     margin: 5px;
-    padding: 10px;
+    padding: 5px;
     font-family: var(--font-family-06);
     color: var(--text-color);
     font-size: 0.5rem;
@@ -1594,9 +1594,9 @@ text-align: center;
 #success_message {
   color: rgb(12, 199, 12);
   border: 1px solid rgb(3, 106, 3);
-  max-width: 400px;
-  margin: 150px auto;
-  padding: 50px;
+  max-width: 350px;
+  margin: 140px auto;
+  padding: 40px;
   box-shadow: 0 0 5px rgb(1, 42, 1);
 }
 .arrow {
@@ -3423,7 +3423,7 @@ animation: pulse 5s infinite;
         padding: 0 10px;
         text-align: center;
         font: message-box;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .statusLabel {
