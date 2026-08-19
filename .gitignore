@@ -1,0 +1,13 @@
+node_modules/
+.env
+.DS_Store
+.vscode/
+dist/
+*.log
+coverage/
+.idea/
+npm-debug.log*
+.yarn-integrity
+/.parcel-cache
+.cache/
+public/package-lock.json
