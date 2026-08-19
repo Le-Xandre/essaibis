@@ -193,7 +193,7 @@
                                             Watson
                                         </h2>  <div class="button-toolbar">
                                             <a href="" rel="noopener" class="button button--primary button--size-lg">
-                                                <svg class="button__icon" xmlns="http://www.w3.org/1000/svg" viewBox="0 0 24 24">
+                                                <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                     <path d="M24 10h-10v-10h-3v10h-10v3h10v10h3v-10h10z"></path>
                                                 </svg>
                                             </a>
@@ -488,21 +488,26 @@
     </div>
 
     <script>
-        var element = document.getElementById('element'); // on récupère l'élément qui sera survolé pour jouer le son
-        var son = document.getElementById('son'); // on récupère l'élément<audio>
+        (function () {
+          var element = document.getElementById('element'); // on récupère l'élément qui sera survolé pour jouer le son
+          var son = document.getElementById('son'); // on récupère l'élément<audio>
 
-        element.onmouseover = function () { // lorsque le div est survolé
-            son.play(); // on joue le son
-        };
+          if (element && son) {
+            element.addEventListener('mouseover', function () {
+              try { son.play(); } catch (e) { console.warn('Audio play failed', e); }
+            });
 
-        element.onmouseout = function () { // lorsque la souris quitte le div
-            son.pause(); son.currentTime = 0; // on met en pause le son
-        };
+            element.addEventListener('mouseout', function () {
+              try { son.pause(); son.currentTime = 0; } catch (e) { console.warn('Audio pause failed', e); }
+            });
+          } else {
+            console.warn('Audio hover handlers skipped: #element or #son not found.');
+          }
+        })();
     </script>
-    <!-- Le script prefixfree était référencé ici, mais il peut être obsolète ou manquer d'attributs d'intégrité.
-         Si vous en avez besoin, on peut le réactiver avec SRI (integrity + crossorigin) ou le remplacer.
-         Pour l'instant je le commente pour éviter les erreurs de chargement. -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" integrity="sha256-B4R4vA2o/QVdO/I7SltC9MdDeFZtFZyf97J3xexzgvc=" crossorigin="anonymous" onerror="(function(){console.warn('prefixfree CDN failed to load. Attempting local fallback.');var s=document.createElement('script');s.src='js/prefixfree.min.js';s.async=true;document.head.appendChild(s);})()"></script>
+
 </body>
 
 </html>
