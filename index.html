@@ -508,6 +508,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" integrity="sha256-B4R4vA2o/QVdO/I7SltC9MdDeFZtFZyf97J3xexzgvc=" crossorigin="anonymous" onerror="(function(){console.warn('prefixfree CDN failed to load. Attempting local fallback.');var s=document.createElement('script');s.src='js/prefixfree.min.js';s.async=true;document.head.appendChild(s);})()"></script>
 
+        element.onmouseout = function () { // lorsque la souris quitte le div
+            son.pause(); son.currentTime = 0; // on met en pause le son
+        };
+    </script>
+    <!-- Le script prefixfree était référencé ici, mais il peut être obsolète ou manquer d'attributs d'intégrité.
+         Si vous en avez besoin, on peut le réactiver avec SRI (integrity + crossorigin) ou le remplacer.
+         Pour l'instant je le commente pour éviter les erreurs de chargement. -->
+    <!--  -->
+                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </body>
 
 </html>
