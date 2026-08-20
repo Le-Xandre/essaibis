@@ -868,6 +868,20 @@
 
                 </a>
 
+<script>
+    const element = document.getElementById('element');
+    const son = document.getElementById('son');
+
+    element.addEventListener('mouseenter', () => {
+        son.currentTime = 0;
+        son.play().catch(() => {});
+    });
+
+    element.addEventListener('mouseleave', () => {
+        son.pause();
+        son.currentTime = 0;
+    });
+</script>
                 <br>
 
             </p>
